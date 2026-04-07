@@ -118,6 +118,16 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{91EA6AF9-CE25-434D-A27B-104DD8DE7C2F}" ShortID="552740899">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Store_coins" ID="{D2F58BD5-2895-4A55-BCAD-EFD6412AF7C0}" WorkUnitID="{84C05677-5F03-43C0-81C3-BA52CE7089EA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Pickup_WeaponType" ID="{483E897D-C45B-4AD3-818D-C2E9B50C4897}">

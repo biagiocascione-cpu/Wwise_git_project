@@ -18600,6 +18600,22 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 														<MediaID ID="190170041"/>
 													</MediaIDList>
 												</AudioFileSource>
+												<AudioFileSource Name="Pickup_book" ID="{313CA51F-05AA-410D-AFDB-C02CA7B666BC}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.132867132867133"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.195804195804196"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.153846153846154"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.53146853146853"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Pickup_book.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="343463325"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists>
 												<ObjectList Name="RTPC">
@@ -18643,212 +18659,7 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 												</ObjectList>
 											</ObjectLists>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Pickup_Book_01" ID="{BFB8D9C3-7FA8-4E6A-9ABB-96A600DFB32E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Pickup_CrystalShard" ID="{9D71DF1F-1D21-45E9-BFBF-DF5474C27A27}" ShortID="601987717">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Highpass" Type="int16">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{08DBAAD4-4A36-49CF-919D-5E621644E8B6}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																	<Property Name="Max" Type="Real64" Value="51"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Lowpass" Type="int16">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{BE646FF6-D369-4565-AED4-5CC84D5888D6}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																	<Property Name="Max" Type="Real64" Value="26"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{E5C0AF61-F333-4B72-8487-8F095384DF87}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Priority" Type="int16">
-													<ValueList>
-														<Value>80</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-25</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player_Interaction" ID="{5CA7D971-C95A-4E3B-A12F-79AACCCD1FA5}" WorkUnitID="{A6DD8683-510E-4221-B13A-801CE87E1F3F}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player" ID="{FFCB5E13-D9D6-4610-AC15-8EE7E84352F9}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_Pickup_Generic_05" ID="{4C99F65A-FBC2-47A3-AF4C-C94B427371AC}">
-													<Language>SFX</Language>
-													<AudioFile>Objects\Pickups\BAS_Pickup_Generic_05.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="767754403"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BAS_Pickup_Generic_05" ID="{4C99F65A-FBC2-47A3-AF4C-C94B427371AC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BAS_Pickup_EvilEssence" ID="{35077F58-3FB8-40A6-8347-C0924DB28938}" ShortID="853703335">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="OverrideConversion" Type="bool" Value="True"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{C329D482-7CA0-4328-9476-EECB040EECE1}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Priority" Type="int16">
-													<ValueList>
-														<Value>80</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-13</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion">
-													<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
-														<Conversion Name="Default Conversion Settings (Custom)" ID="{D34EFD41-F9D7-44C5-BF35-3280044914C7}">
-															<PropertyList>
-																<Property Name="Channels" Type="int32">
-																	<ValueList>
-																		<Value Platform="Android_Low">2</Value>
-																		<Value Platform="iOS">2</Value>
-																		<Value Platform="Mac">2</Value>
-																		<Value Platform="Windows">2</Value>
-																		<Value Platform="Android_High">2</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="LRMix" Type="Real64">
-																	<ValueList>
-																		<Value Platform="Android_Low">0</Value>
-																		<Value Platform="iOS">0</Value>
-																		<Value Platform="Mac">0</Value>
-																		<Value Platform="Windows">0</Value>
-																		<Value Platform="Android_High">0</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="MaxSampleRate" Type="int32">
-																	<ValueList>
-																		<Value Platform="Android_Low">48000</Value>
-																		<Value Platform="iOS">48000</Value>
-																		<Value Platform="Mac">48000</Value>
-																		<Value Platform="Windows">48000</Value>
-																		<Value Platform="Android_High">48000</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="MinSampleRate" Type="int32">
-																	<ValueList>
-																		<Value Platform="Android_Low">0</Value>
-																		<Value Platform="iOS">0</Value>
-																		<Value Platform="Mac">0</Value>
-																		<Value Platform="Windows">0</Value>
-																		<Value Platform="Android_High">0</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="SampleRate" Type="int32">
-																	<ValueList>
-																		<Value Platform="Android_Low">0</Value>
-																		<Value Platform="iOS">0</Value>
-																		<Value Platform="Mac">0</Value>
-																		<Value Platform="Windows">0</Value>
-																		<Value Platform="Android_High">0</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="UseDither" Type="bool">
-																	<ValueList>
-																		<Value>False</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ConversionPluginInfoList>
-																<ConversionPluginInfo Platform="Android_Low">
-																	<ConversionPlugin Name="" ID="{D463E8C8-0A45-4967-90B3-2F144AC03DBE}" PluginName="PCM" CompanyID="0" PluginID="1"/>
-																</ConversionPluginInfo>
-																<ConversionPluginInfo Platform="iOS">
-																	<ConversionPlugin Name="" ID="{D20FE59B-BAFE-404C-BDFD-4505DB90317D}" PluginName="PCM" CompanyID="0" PluginID="1"/>
-																</ConversionPluginInfo>
-																<ConversionPluginInfo Platform="Mac">
-																	<ConversionPlugin Name="" ID="{F74867B3-5420-4471-AB59-32529607C99A}" PluginName="PCM" CompanyID="0" PluginID="1"/>
-																</ConversionPluginInfo>
-																<ConversionPluginInfo Platform="Windows">
-																	<ConversionPlugin Name="" ID="{D39564E8-541E-4083-94E8-6F3B982477D3}" PluginName="PCM" CompanyID="0" PluginID="1"/>
-																</ConversionPluginInfo>
-																<ConversionPluginInfo Platform="Android_High">
-																	<ConversionPlugin Name="" ID="{5204EDAF-4CC4-4B54-8DA4-2636994E7E41}" PluginName="PCM" CompanyID="0" PluginID="1"/>
-																</ConversionPluginInfo>
-															</ConversionPluginInfoList>
-														</Conversion>
-													</Custom>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player" ID="{FFCB5E13-D9D6-4610-AC15-8EE7E84352F9}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_Pickup_EvilEssence" ID="{097BCFDE-9054-485A-B79A-2D2EE0168661}">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.954122628348214"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.52259688895089"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Objects\Pickups\BAS_Pickup_EvilEssence.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="472043901"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BAS_Pickup_EvilEssence" ID="{097BCFDE-9054-485A-B79A-2D2EE0168661}" Platform="Linked"/>
+												<ActiveSource Name="Pickup_book" ID="{313CA51F-05AA-410D-AFDB-C02CA7B666BC}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Pickup_Key" ID="{36135137-8F8F-4EAD-9EBF-16F29B590C58}" ShortID="189352295">
@@ -18907,9 +18718,25 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 														<MediaID ID="270916331"/>
 													</MediaIDList>
 												</AudioFileSource>
+												<AudioFileSource Name="Pickup_key" ID="{4E1D2DB5-932F-4B5D-9395-8500266B6709}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.132867132867133"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.265734265734266"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.531468531468531"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.34265734265734"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Pickup_key.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="113037385"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Pickup_Key_01" ID="{DE0B3434-B45B-4419-AC19-03FABF948413}" Platform="Linked"/>
+												<ActiveSource Name="Pickup_key" ID="{4E1D2DB5-932F-4B5D-9395-8500266B6709}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Pickup_Misc" ID="{C755EB1F-D1C7-4519-A80F-5605E9793ADC}" ShortID="315514006">
@@ -19041,218 +18868,203 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 													</ObjectLists>
 													<Language>SFX</Language>
 												</SourcePlugin>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Pickup" ID="{3A6BE707-ED15-4E21-81E0-6100E2E79832}" Platform="Linked"/>
-												<ActiveSource Name="Pickup_SynthOne" ID="{4B0E7F82-D758-485F-97DF-C38866631BE5}" Platform="iOS"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Pickup_Mushroom" ID="{EC36E034-2E17-46F7-8C02-4DF96E5D997B}" ShortID="1068193649">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{C2C78D2B-37B4-4A2A-862F-7A8AA9ECF6A4}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Priority" Type="int16">
-													<ValueList>
-														<Value>80</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-2</Value>
-													</ValueList>
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{C5769043-1FF3-42F3-94AB-5F3AC40BFE46}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player_Interaction" ID="{5CA7D971-C95A-4E3B-A12F-79AACCCD1FA5}" WorkUnitID="{A6DD8683-510E-4221-B13A-801CE87E1F3F}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player" ID="{FFCB5E13-D9D6-4610-AC15-8EE7E84352F9}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_Pickup_Mushroom_01" ID="{CEC8599D-5E89-4CFE-A73C-74CE40784382}">
-													<Language>SFX</Language>
-													<AudioFile>Objects\Pickups\BAS_Pickup_Mushroom_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="737856040"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="RTPC">
-													<Reference>
-														<Local>
-															<RTPC Name="" ID="{A06A3C4A-464B-4002-8469-1F9B3817A089}" ShortID="31452005">
-																<PropertyList>
-																	<Property Name="PropertyName" Type="string" Value="Pitch"/>
-																</PropertyList>
-																<ReferenceList>
-																	<Reference Name="ControlInput">
-																		<Custom>
-																			<ModulatorLfo Name="Modulator LFO (Custom)" ID="{9F0518B4-0081-4CB0-8165-927DCE3F203B}" ShortID="185131821"/>
-																		</Custom>
-																	</Reference>
-																	<Reference Name="Curve">
-																		<Custom>
-																			<Curve Name="" ID="{A5FB2796-1694-4F62-97FA-49ABE14BA51F}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-2347</YPos>
-																						<Flags>21</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>-404</YPos>
-																						<Flags>53</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</Custom>
-																	</Reference>
-																</ReferenceList>
-															</RTPC>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-											<ActiveSourceList>
-												<ActiveSource Name="BAS_Pickup_Mushroom_01" ID="{CEC8599D-5E89-4CFE-A73C-74CE40784382}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Pickup_PineCone" ID="{08B93344-8FD4-401D-AD77-96DDD0059E76}" ShortID="1022745127">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Lowpass" Type="int16">
-													<ValueList>
-														<Value>24</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Pitch" Type="int32">
-													<ValueList>
-														<Value>-500</Value>
-													</ValueList>
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{7F21D769-5275-4EDF-B326-F43F000C08DA}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Priority" Type="int16">
-													<ValueList>
-														<Value>80</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-4</Value>
-													</ValueList>
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{A15363A9-F262-4C71-8B44-6361BE5F05D6}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player_Interaction" ID="{5CA7D971-C95A-4E3B-A12F-79AACCCD1FA5}" WorkUnitID="{A6DD8683-510E-4221-B13A-801CE87E1F3F}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player" ID="{FFCB5E13-D9D6-4610-AC15-8EE7E84352F9}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_Pickup_PineCone_01" ID="{73220A4D-79D2-422F-8882-F955E2C6018E}">
+												<AudioFileSource Name="Pickup_misc" ID="{66ECF2E4-B12A-4750-B0D4-DFC291BDDE10}">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.108729192546584"/>
-														<Property Name="FadeOutShape" Type="int16" Value="6"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.307830700976042"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.048951048951049"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.636363636363636"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.15384615384615"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.02797202797203"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Objects\Pickups\BAS_Pickup_PineCone_01.wav</AudioFile>
+													<AudioFile>Pickup_misc.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="188686969"/>
+														<MediaID ID="752665836"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Pickup_PineCone_01" ID="{73220A4D-79D2-422F-8882-F955E2C6018E}" Platform="Linked"/>
+												<ActiveSource Name="Pickup_SynthOne" ID="{4B0E7F82-D758-485F-97DF-C38866631BE5}" Platform="iOS"/>
+												<ActiveSource Name="Pickup_misc" ID="{66ECF2E4-B12A-4750-B0D4-DFC291BDDE10}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Pickup_cristal" ID="{3256B3B0-5653-4412-9E1E-9B00B3CD9B08}" ShortID="926058848">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Pickup_cristal" ID="{3BEF5FE5-FF93-4493-A038-39A8E96984F2}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0594405594405594"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.265734265734266"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.622377622377623"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Pickup_cristal.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="720040774"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Pickup_cristal" ID="{3BEF5FE5-FF93-4493-A038-39A8E96984F2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Pickup_evilessence" ID="{E220477C-C935-46D5-A3EE-BCD79C713666}" ShortID="793873029">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Pickup_evilessence" ID="{4669BF2A-39BB-4767-92AC-B3E73B6EAA41}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0568181818181818"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.257867132867133"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.520104895104895"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Pickup_evilessence.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="306867097"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Pickup_evilessence" ID="{4669BF2A-39BB-4767-92AC-B3E73B6EAA41}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Pickup_pine" ID="{C7710DEA-AB7B-48EA-9BD5-F8F77D264DC1}" ShortID="625882142">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Pickup_pine" ID="{7A47FF54-92E1-49F8-A64E-0E8FC72F86BF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0209790209790209"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.277972027972028"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.62937062937063"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.3479020979021"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Pickup_pine.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="569718445"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Pickup_pine" ID="{7A47FF54-92E1-49F8-A64E-0E8FC72F86BF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Pickup_mush" ID="{C518DB57-AF4A-4D96-B273-E0394F0CFA42}" ShortID="313288898">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Pickup_mush" ID="{37270AB7-C9EF-453B-8AE2-CE8589A19BB6}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0550699275690359"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0844405556058551"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.12298950490418"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Pickup_mush.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="945602162"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Pickup_mush" ID="{37270AB7-C9EF-453B-8AE2-CE8589A19BB6}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
-												<ItemRef Name="Pickup_CrystalShard" ID="{9D71DF1F-1D21-45E9-BFBF-DF5474C27A27}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
 												<ItemRef Name="Pickup_Misc" ID="{C755EB1F-D1C7-4519-A80F-5605E9793ADC}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="Pickup_Mushroom" ID="{EC36E034-2E17-46F7-8C02-4DF96E5D997B}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Pickup_Key" ID="{36135137-8F8F-4EAD-9EBF-16F29B590C58}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="Pickup_PineCone" ID="{08B93344-8FD4-401D-AD77-96DDD0059E76}"/>
+												<ItemRef Name="Pickup_mush" ID="{C518DB57-AF4A-4D96-B273-E0394F0CFA42}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="BAS_Pickup_EvilEssence" ID="{35077F58-3FB8-40A6-8347-C0924DB28938}"/>
+												<ItemRef Name="Pickup_evilessence" ID="{E220477C-C935-46D5-A3EE-BCD79C713666}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Pickup_cristal" ID="{3256B3B0-5653-4412-9E1E-9B00B3CD9B08}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Pickup_Book" ID="{7DDA62B8-A030-4173-A8A7-72E417D04816}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Pickup_pine" ID="{C7710DEA-AB7B-48EA-9BD5-F8F77D264DC1}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
 												<SwitchRef Name="PineCone" ID="{7D238609-07F1-4183-A003-B06858FBF184}"/>
 												<ItemList>
-													<ItemRef Name="Pickup_PineCone" ID="{08B93344-8FD4-401D-AD77-96DDD0059E76}"/>
+													<ItemRef Name="Pickup_pine" ID="{C7710DEA-AB7B-48EA-9BD5-F8F77D264DC1}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
@@ -19264,19 +19076,19 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 											<Grouping>
 												<SwitchRef Name="Mushroom" ID="{04238445-8F6E-4BDE-88E7-A206A6F9C3C3}"/>
 												<ItemList>
-													<ItemRef Name="Pickup_Mushroom" ID="{EC36E034-2E17-46F7-8C02-4DF96E5D997B}"/>
+													<ItemRef Name="Pickup_mush" ID="{C518DB57-AF4A-4D96-B273-E0394F0CFA42}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="EvilEssence" ID="{D9F0456F-7C10-43EB-AB81-C02CE4A2440F}"/>
 												<ItemList>
-													<ItemRef Name="BAS_Pickup_EvilEssence" ID="{35077F58-3FB8-40A6-8347-C0924DB28938}"/>
+													<ItemRef Name="Pickup_evilessence" ID="{E220477C-C935-46D5-A3EE-BCD79C713666}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="CrystalShard" ID="{BA857697-5903-404F-BA5C-74283CA8ACA9}"/>
 												<ItemList>
-													<ItemRef Name="Pickup_CrystalShard" ID="{9D71DF1F-1D21-45E9-BFBF-DF5474C27A27}"/>
+													<ItemRef Name="Pickup_cristal" ID="{3256B3B0-5653-4412-9E1E-9B00B3CD9B08}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
@@ -19351,289 +19163,249 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Pickup_WeaponType_Dagger" ID="{1618CE9C-4BFB-40E1-81A8-F1948457EBD7}" ShortID="289583693">
+										<Sound Name="Pickup_Weapon_axe" ID="{E0DAF31D-27BE-45CD-B62A-FBBFA69403C6}" ShortID="98937590">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{25C21C13-0BA8-4401-B81D-4BA0BFBC463B}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Priority" Type="int16">
-													<ValueList>
-														<Value>80</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player_Interaction" ID="{5CA7D971-C95A-4E3B-A12F-79AACCCD1FA5}" WorkUnitID="{A6DD8683-510E-4221-B13A-801CE87E1F3F}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player" ID="{FFCB5E13-D9D6-4610-AC15-8EE7E84352F9}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Pickup_WeaponType_Dagger" ID="{78E5358E-7024-4323-B452-57C43DA49B40}">
+												<AudioFileSource Name="Pickup_Weapon_axe" ID="{3DA82A7C-DAE4-482F-B82F-7D5CD5E3462E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0437062937062937"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.096153846153846"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.506993006993007"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.76573426573427"/>
+													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Objects\Pickups\BAS_Pickup_WeaponType_Dagger.wav</AudioFile>
+													<AudioFile>Pickup_Weapon_axe.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="176533674"/>
+														<MediaID ID="213941276"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Pickup_WeaponType_Dagger" ID="{78E5358E-7024-4323-B452-57C43DA49B40}" Platform="Linked"/>
+												<ActiveSource Name="Pickup_Weapon_axe" ID="{3DA82A7C-DAE4-482F-B82F-7D5CD5E3462E}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Pickup_WeaponType_Hammer" ID="{682BE245-A85C-4412-B458-994DF12DEEBD}" ShortID="422901949">
+										<Sound Name="Pickup_Weapon_Dagger" ID="{20279D8E-F3B1-46DC-9054-E855AD91A3E3}" ShortID="505762116">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{D1825C51-F6FD-4AA4-BFD2-25143DB256CC}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Priority" Type="int16">
-													<ValueList>
-														<Value>80</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player_Interaction" ID="{5CA7D971-C95A-4E3B-A12F-79AACCCD1FA5}" WorkUnitID="{A6DD8683-510E-4221-B13A-801CE87E1F3F}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player" ID="{FFCB5E13-D9D6-4610-AC15-8EE7E84352F9}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Pickup_WeaponType_Hammer_01" ID="{1EFF0663-E734-42B5-8425-46510C790D30}">
+												<AudioFileSource Name="Pickup_Weapon_Dagger" ID="{28C644F4-25A6-4F86-A055-1AC54A67B8AB}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0314685314685315"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.132867132867133"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.524475524475525"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.1958041958042"/>
+													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Objects\Pickups\BAS_Pickup_WeaponType_Hammer_01.wav</AudioFile>
+													<AudioFile>Pickup_Weapon_Dagger.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="1008720031"/>
+														<MediaID ID="918600798"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Pickup_WeaponType_Hammer_01" ID="{1EFF0663-E734-42B5-8425-46510C790D30}" Platform="Linked"/>
+												<ActiveSource Name="Pickup_Weapon_Dagger" ID="{28C644F4-25A6-4F86-A055-1AC54A67B8AB}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Pickup_WeaponType_Axe" ID="{654451AC-562F-496E-B753-52FD4045E668}" ShortID="824872721">
+										<Sound Name="Pickup_Weapon_Hammer" ID="{830767DC-48BE-4A73-BB9B-E8661611B9DD}" ShortID="528275339">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{1CB22D69-FB81-4910-8CCE-C613BCCC5417}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Priority" Type="int16">
-													<ValueList>
-														<Value>80</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player_Interaction" ID="{5CA7D971-C95A-4E3B-A12F-79AACCCD1FA5}" WorkUnitID="{A6DD8683-510E-4221-B13A-801CE87E1F3F}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player" ID="{FFCB5E13-D9D6-4610-AC15-8EE7E84352F9}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Pickup_WeaponType_Axe_01" ID="{50D05D69-C143-4C26-AE58-AC48B0042CE5}">
+												<AudioFileSource Name="Pickup_Weapon_Hammer" ID="{D62A523E-8032-420A-9020-4C56F45CE0FD}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.136363636363636"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.204545454545454"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.461538461538462"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.38636363636364"/>
+													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Objects\Pickups\BAS_Pickup_WeaponType_Axe_01.wav</AudioFile>
+													<AudioFile>Pickup_Weapon_Hammer.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="450221518"/>
+														<MediaID ID="188156408"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Pickup_WeaponType_Axe_01" ID="{50D05D69-C143-4C26-AE58-AC48B0042CE5}" Platform="Linked"/>
+												<ActiveSource Name="Pickup_Weapon_Hammer" ID="{D62A523E-8032-420A-9020-4C56F45CE0FD}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Pickup_WeaponType_Sword" ID="{3806DE83-2CF5-4920-9E73-0EC28887358A}" ShortID="219587470">
+										<Sound Name="Pickup_Weapon_Pickaxe" ID="{5608D002-47F8-451B-B2AD-1871E27F7583}" ShortID="855830718">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{0526A737-5A57-4618-9FE2-4693E0352FAD}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Priority" Type="int16">
+												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>80</Value>
+														<Value>6</Value>
 													</ValueList>
 												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-1010</Value>
+													</ValueList>
+												</Property>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player_Interaction" ID="{5CA7D971-C95A-4E3B-A12F-79AACCCD1FA5}" WorkUnitID="{A6DD8683-510E-4221-B13A-801CE87E1F3F}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player" ID="{FFCB5E13-D9D6-4610-AC15-8EE7E84352F9}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Pickup_WeaponType_Sword_01" ID="{05C37883-995A-4768-A5EA-1BB91F181C04}">
+												<AudioFileSource Name="Pickup_Weapon_Pickaxe" ID="{BFC9FCEF-0F32-49AA-8159-28A68284657A}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0498251748251748"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.107142857142857"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.553321678321679"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.9375"/>
+													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Objects\Pickups\BAS_Pickup_WeaponType_Sword_01.wav</AudioFile>
+													<AudioFile>Pickup_Weapon_Pickaxe.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="467878330"/>
+														<MediaID ID="378308846"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Pickup_WeaponType_Sword_01" ID="{05C37883-995A-4768-A5EA-1BB91F181C04}" Platform="Linked"/>
+												<ActiveSource Name="Pickup_Weapon_Pickaxe" ID="{BFC9FCEF-0F32-49AA-8159-28A68284657A}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Pickup_WeaponType_Pickaxe" ID="{8F035743-76FE-447D-A664-2369B0A5BE3B}" ShortID="210984939">
+										<Sound Name="Pickup_Weapon_Sword" ID="{2B7F706D-5989-4F04-B617-604FF118F8E5}" ShortID="762851855">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{DE992537-8AE2-4CA6-A842-5CEF169DE624}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Priority" Type="int16">
+												<Property Name="MakeUpGain" Type="Real64">
 													<ValueList>
-														<Value>80</Value>
+														<Value>2</Value>
 													</ValueList>
 												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player_Interaction" ID="{5CA7D971-C95A-4E3B-A12F-79AACCCD1FA5}" WorkUnitID="{A6DD8683-510E-4221-B13A-801CE87E1F3F}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Player" ID="{FFCB5E13-D9D6-4610-AC15-8EE7E84352F9}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Pickup_WeaponType_Pickaxe_01" ID="{0A50421F-2935-4F6E-BD1A-A1238D3F14DA}">
+												<AudioFileSource Name="Pickup_Weapon_Sword" ID="{0F7C40D6-E137-4D17-91FF-15DA62B71372}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0401785714285714"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.138392857142857"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.40625"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.38839285714286"/>
+													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Objects\Pickups\BAS_Pickup_WeaponType_Pickaxe_01.wav</AudioFile>
+													<AudioFile>Pickup_Weapon_Sword.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="754818586"/>
+														<MediaID ID="1071502657"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Pickup_WeaponType_Pickaxe_01" ID="{0A50421F-2935-4F6E-BD1A-A1238D3F14DA}" Platform="Linked"/>
+												<ActiveSource Name="Pickup_Weapon_Sword" ID="{0F7C40D6-E137-4D17-91FF-15DA62B71372}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
-												<ItemRef Name="Pickup_WeaponType_Pickaxe" ID="{8F035743-76FE-447D-A664-2369B0A5BE3B}"/>
+												<ItemRef Name="Pickup_Weapon_Pickaxe" ID="{5608D002-47F8-451B-B2AD-1871E27F7583}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="Pickup_WeaponType_Hammer" ID="{682BE245-A85C-4412-B458-994DF12DEEBD}"/>
+												<ItemRef Name="Pickup_Weapon_axe" ID="{E0DAF31D-27BE-45CD-B62A-FBBFA69403C6}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="Pickup_WeaponType_Sword" ID="{3806DE83-2CF5-4920-9E73-0EC28887358A}"/>
+												<ItemRef Name="Pickup_Weapon_Sword" ID="{2B7F706D-5989-4F04-B617-604FF118F8E5}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="Pickup_WeaponType_Dagger" ID="{1618CE9C-4BFB-40E1-81A8-F1948457EBD7}"/>
+												<ItemRef Name="Pickup_Weapon_Dagger" ID="{20279D8E-F3B1-46DC-9054-E855AD91A3E3}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="Pickup_WeaponType_Axe" ID="{654451AC-562F-496E-B753-52FD4045E668}"/>
+												<ItemRef Name="Pickup_Weapon_Hammer" ID="{830767DC-48BE-4A73-BB9B-E8661611B9DD}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
 												<SwitchRef Name="PickAxe" ID="{EF808417-879D-4B51-B783-F713E462C722}"/>
 												<ItemList>
-													<ItemRef Name="Pickup_WeaponType_Pickaxe" ID="{8F035743-76FE-447D-A664-2369B0A5BE3B}"/>
+													<ItemRef Name="Pickup_Weapon_Pickaxe" ID="{5608D002-47F8-451B-B2AD-1871E27F7583}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="Sword" ID="{FB4B4D53-5FCA-4219-AA50-F5CE3CE8ED33}"/>
 												<ItemList>
-													<ItemRef Name="Pickup_WeaponType_Sword" ID="{3806DE83-2CF5-4920-9E73-0EC28887358A}"/>
+													<ItemRef Name="Pickup_Weapon_Sword" ID="{2B7F706D-5989-4F04-B617-604FF118F8E5}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="Hammer" ID="{2A09CD6E-3A3B-4A97-9603-1897BC265713}"/>
 												<ItemList>
-													<ItemRef Name="Pickup_WeaponType_Hammer" ID="{682BE245-A85C-4412-B458-994DF12DEEBD}"/>
+													<ItemRef Name="Pickup_Weapon_Hammer" ID="{830767DC-48BE-4A73-BB9B-E8661611B9DD}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="Dagger" ID="{2CBDAEAA-F3DA-43BF-8A22-3D3ADBD5AE1A}"/>
 												<ItemList>
-													<ItemRef Name="Pickup_WeaponType_Dagger" ID="{1618CE9C-4BFB-40E1-81A8-F1948457EBD7}"/>
+													<ItemRef Name="Pickup_Weapon_Dagger" ID="{20279D8E-F3B1-46DC-9054-E855AD91A3E3}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="Axe" ID="{BC4F34E7-7386-4380-AC5C-24DE2EEB9577}"/>
 												<ItemList>
-													<ItemRef Name="Pickup_WeaponType_Axe" ID="{654451AC-562F-496E-B753-52FD4045E668}"/>
+													<ItemRef Name="Pickup_Weapon_axe" ID="{E0DAF31D-27BE-45CD-B62A-FBBFA69403C6}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
@@ -19684,227 +19456,499 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Pickup_Coin_01" ID="{85A0861F-D498-4732-8402-F1B290B98091}" ShortID="918161092">
+										<Sound Name="Pickup_coin_01" ID="{FBEC7CA7-812E-4D0E-BECE-67B26B639604}" ShortID="664516518">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{D8CB5B93-3C31-44C8-8203-38858AF0C845}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Pickup_coin_01" ID="{8AC6D98E-4671-460B-8172-5D4244AD4CF0}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0100052492722625"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.261265164644714"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.471734468748634"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.14644714038128"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Pickup_coin_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="514365334"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Pickup_coin_01" ID="{8AC6D98E-4671-460B-8172-5D4244AD4CF0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Pickup_coin_02" ID="{FE52EB43-B838-483C-8F96-431B4140B286}" ShortID="216598258">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Pickup_coin_02" ID="{2522E65B-2AC5-4415-9A62-38D048DAA444}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0233968804159445"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.370450606585788"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.569324090121317"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.22443674176777"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Pickup_coin_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="38944243"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Pickup_coin_02" ID="{2522E65B-2AC5-4415-9A62-38D048DAA444}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Pickup_coin_03" ID="{05F1BE4D-A442-4302-9766-17E3134B908F}" ShortID="849703093">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Pickup_coin_03" ID="{AEF706B7-6D20-4C5D-B068-7C294910D425}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0194974003466205"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.34315424610052"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.542027729636048"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.46230502599654"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Pickup_coin_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="359704127"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Pickup_coin_03" ID="{AEF706B7-6D20-4C5D-B068-7C294910D425}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Store_coins" ID="{D2F58BD5-2895-4A55-BCAD-EFD6412AF7C0}" ShortID="774744684">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.65</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{05392063-FC4E-40D3-90F6-95D00D525696}">
+														<PropertyList>
+															<Property Name="Min" Type="Real64" Value="-0.2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Store_coin_01" ID="{B050EA9C-813D-4D2D-AD4C-81F94D7F7F56}" ShortID="86117755">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>17</Value>
+													</ValueList>
 												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>180</Value>
+													</ValueList>
+												</Property>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-4</Value>
+														<Value>-5</Value>
 													</ValueList>
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{0316A761-D453-4081-BD6E-8FE17BDE38DF}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="World" ID="{3B761651-1A4B-45CF-95EC-782823B15565}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Pickup_Coin_01" ID="{22511EE2-996E-4D39-B15E-0C3FA12C5322}">
-													<Language>SFX</Language>
-													<AudioFile>Objects\Pickups\BAS_Pickup_Coin_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="86058953"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BAS_Pickup_Coin_01" ID="{22511EE2-996E-4D39-B15E-0C3FA12C5322}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Pickup_Coin_02" ID="{D06C1F67-91FB-4B94-9903-DCBC14D687A7}" ShortID="541914367">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{27A2C033-FDB7-45EC-A657-EE3CF86F6EE5}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{30320EA5-1BB7-43F5-AAD2-7B72AAC8D303}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="World" ID="{3B761651-1A4B-45CF-95EC-782823B15565}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_Pickup_Coin_02" ID="{B3DFB5E4-0FAD-4124-9892-5871AD2252C5}">
-													<Language>SFX</Language>
-													<AudioFile>Objects\Pickups\BAS_Pickup_Coin_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1050138657"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BAS_Pickup_Coin_02" ID="{B3DFB5E4-0FAD-4124-9892-5871AD2252C5}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Pickup_Coin_03" ID="{36793A70-379D-4EF2-BF96-44D7FF156C4B}" ShortID="537614833">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{8EF0260E-E595-4FE5-A821-D0C88A8A2AA0}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{F8A0462B-0F40-44E9-B03B-D8067BEB95FF}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="World" ID="{3B761651-1A4B-45CF-95EC-782823B15565}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_Pickup_Coin_03" ID="{6ADE1F99-D3C8-4816-BC4E-2A0662BF2B25}">
+												<AudioFileSource Name="Store_coin_01" ID="{24519ED3-4C2A-4ED6-AB4F-D312E7851212}">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.167185388938184"/>
-														<Property Name="FadeOutShape" Type="int16" Value="6"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0428942807625651"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.218370883882149"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.733102253032929"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.70407279029463"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Objects\Pickups\BAS_Pickup_Coin_03.wav</AudioFile>
+													<AudioFile>Store_coin_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="542995811"/>
+														<MediaID ID="364559855"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Pickup_Coin_03" ID="{6ADE1F99-D3C8-4816-BC4E-2A0662BF2B25}" Platform="Linked"/>
+												<ActiveSource Name="Store_coin_01" ID="{24519ED3-4C2A-4ED6-AB4F-D312E7851212}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Pickup_Coin_04" ID="{6EFABCBE-DF33-4751-AFA8-C9292F0EDC1B}" ShortID="374655726">
+										<Sound Name="Store_coin_02" ID="{1DBD2791-DAEC-47AB-90AB-DC003578E51B}" ShortID="107534885">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{1E29BF52-4009-493C-B763-2AFEA386E547}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{14C9C32F-E296-4691-BD93-526B4133209D}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="World" ID="{3B761651-1A4B-45CF-95EC-782823B15565}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Pickup_Coin_04" ID="{F871A8AA-AADC-431C-BA1B-291A6010465E}">
+												<AudioFileSource Name="Store_coin_02" ID="{932CAE4B-1F9C-439F-96EA-53106CCF9E2D}">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.233516237799468"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.62624809228039"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.025039124376897"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0907668258662515"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.281690149240091"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.848200298530955"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Objects\Pickups\BAS_Pickup_Coin_04.wav</AudioFile>
+													<AudioFile>Store_coin_02.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="21340349"/>
+														<MediaID ID="1046866731"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Pickup_Coin_04" ID="{F871A8AA-AADC-431C-BA1B-291A6010465E}" Platform="Linked"/>
+												<ActiveSource Name="Store_coin_02" ID="{932CAE4B-1F9C-439F-96EA-53106CCF9E2D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Store_coin_03" ID="{C60186C0-6CB6-4B15-8C3A-CFE9C30A3708}" ShortID="491508330">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Store_coin_03" ID="{0B8F0422-4597-42B8-909C-B7FCAEED2365}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0122260011977433"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.107588810540141"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.244520023954866"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.762902501489639"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Store_coin_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="884386297"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Store_coin_03" ID="{0B8F0422-4597-42B8-909C-B7FCAEED2365}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Store_coin_04" ID="{4B09D8C7-03DD-42F6-B3C0-BDAF030A431D}" ShortID="889700144">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>250</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Store_coin_04" ID="{EBB988B2-29C1-4AC0-A0BC-7577D2A12A18}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0403460963790966"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.172387866347049"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.40712879073452"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.22505425225877"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Store_coin_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="729280694"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Store_coin_04" ID="{EBB988B2-29C1-4AC0-A0BC-7577D2A12A18}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Store_coin_05" ID="{7DB13BAF-C1C4-4ACC-BFFC-8F5932B4CC3E}" ShortID="845731895">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Store_coin_05" ID="{F1D4BD6A-E7F7-4063-9A24-A9AF021A4194}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0249417147166292"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0548717723765843"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.236946289807978"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.491351739791912"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Store_coin_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="185802021"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Store_coin_05" ID="{F1D4BD6A-E7F7-4063-9A24-A9AF021A4194}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Store_coin_06" ID="{4638DAB0-A3D1-4DE3-9FB8-33DF7493D35A}" ShortID="976905692">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Store_coin_06" ID="{AA153E60-D553-4854-9884-DC7D2A445AE1}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.016138364731426"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0387320753554223"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.245303143917675"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.806918223585325"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Store_coin_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="73878585"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Store_coin_06" ID="{AA153E60-D553-4854-9884-DC7D2A445AE1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Store_coin_07" ID="{4B8102A4-2842-40C8-AAF0-9688880A2123}" ShortID="555879206">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Store_coin_07" ID="{C0A78239-568F-4FFE-92B4-199EB3927F90}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.057218655454161"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.203346298614018"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.294896147340676"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.32307138448757"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Store_coin_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="985371110"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Store_coin_07" ID="{C0A78239-568F-4FFE-92B4-199EB3927F90}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Store_coin_08" ID="{A3E09598-4D83-4B55-BE99-1E71D11ED06C}" ShortID="417040896">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Store_coin_08" ID="{5D7C3D54-F974-47D4-9E6C-EA34A8E994EC}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0264084507042254"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0880281690140846"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.090962441314554"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.730633802816901"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Store_coin_08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="274739287"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Store_coin_08" ID="{5D7C3D54-F974-47D4-9E6C-EA34A8E994EC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Store_coin_09" ID="{8622A249-D210-4BDA-90B6-CA40E8710BC9}" ShortID="96858374">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>13</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Store_coin_09" ID="{809F4190-45C2-449A-B193-64F1527B32D5}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.04195980147017"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.423412542108079"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.156395623661543"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.19776159261706"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Store_coin_09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="905414122"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Store_coin_09" ID="{809F4190-45C2-449A-B193-64F1527B32D5}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -19914,6 +19958,9 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
 										<ItemRef Name="Pickup_ItemType" ID="{F799B56F-CB88-41E8-9835-0600EF86133B}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Store_coins" ID="{D2F58BD5-2895-4A55-BCAD-EFD6412AF7C0}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Pickup_WeaponType" ID="{57B777DC-3538-4215-94BD-64BA1502998B}"/>
