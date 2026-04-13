@@ -79,7 +79,7 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="BigBallFire" ID="{E327EF66-DE6B-43A8-B50D-12F3A033EDFE}" WorkUnitID="{84C05677-5F03-43C0-81C3-BA52CE7089EA}"/>
+											<ObjectRef Name="Magic_BigBall_Fire" ID="{E327EF66-DE6B-43A8-B50D-12F3A033EDFE}" WorkUnitID="{84C05677-5F03-43C0-81C3-BA52CE7089EA}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -93,7 +93,7 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Magic_Blast_Impact" ID="{A74A85B5-ABD8-4196-A54E-C764E95B2431}" WorkUnitID="{84C05677-5F03-43C0-81C3-BA52CE7089EA}"/>
+											<ObjectRef Name="Magic_Blast_Impact_Random" ID="{A74A85B5-ABD8-4196-A54E-C764E95B2431}" WorkUnitID="{84C05677-5F03-43C0-81C3-BA52CE7089EA}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

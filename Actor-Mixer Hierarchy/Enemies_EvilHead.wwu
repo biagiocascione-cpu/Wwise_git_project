@@ -57,254 +57,15 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="EvilHead_Attack_Bite" ID="{D57EF59F-28AA-4626-ABDD-7D41490878E6}" ShortID="380066084">
+						<RandomSequenceContainer Name="Evil_Head_Hurt_Random" ID="{30ACA7DC-6F2D-4229-A37B-C011A09ECFE4}" ShortID="1049192198">
 							<PropertyList>
+								<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
+								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>3</Value>
+										<Value>9</Value>
 									</ValueList>
 								</Property>
-								<Property Name="OverrideConversion" Type="bool" Value="True"/>
-								<Property Name="OverrideEffect" Type="bool" Value="True"/>
-								<Property Name="OverridePriority" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{6A7DF69F-689C-4FDC-B3A6-232420140D28}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="False"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{220EF4B0-DB47-4CB0-B424-E5F9933414FC}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="False"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Priority" Type="int16">
-									<ValueList>
-										<Value>80</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
-								<Property Name="PriorityDistanceOffset" Type="int16">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-15</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Enemy_Actions" ID="{69CF2760-DF6F-425C-B685-7637E6F37F60}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
-								</Reference>
-								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="EvilHead_Bite_02" ID="{71BCF57A-0EB6-4DFE-B4D1-41E662A66A5D}" ShortID="86092578">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{07A6CCEC-06BA-4421-ACB6-5EAC4D5A67D1}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Priority" Type="int16">
-											<ValueList>
-												<Value>60</Value>
-											</ValueList>
-										</Property>
-										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_Head_Bite_02" ID="{DA9BD9D4-E88A-4476-BEF3-3786B5EF46EA}">
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_Head_Bite_02.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="60150315"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_Head_Bite_02" ID="{DA9BD9D4-E88A-4476-BEF3-3786B5EF46EA}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="EvilHead_Bite_03" ID="{A5C8A5A9-993F-4F78-B809-2EF5ED991E9C}" ShortID="879737302">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{2EBCE999-802E-4602-8479-E1BD87F26F5F}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Priority" Type="int16">
-											<ValueList>
-												<Value>60</Value>
-											</ValueList>
-										</Property>
-										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_Head_Bite_03" ID="{9B0A4F49-1366-495C-B588-F867EDD93FB4}">
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_Head_Bite_03.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="812794088"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_Head_Bite_03" ID="{9B0A4F49-1366-495C-B588-F867EDD93FB4}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="EvilHead_Bite_01" ID="{5E594957-42B4-4718-AFC2-9F3B1F41EB0A}" ShortID="99263704">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{199269B2-A299-4D21-858D-ACC8B967C77F}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Priority" Type="int16">
-											<ValueList>
-												<Value>60</Value>
-											</ValueList>
-										</Property>
-										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_Head_Bite_01" ID="{9A3EDD82-C7A6-4D5A-924B-98A407F00D05}">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.2166916969147"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.806868269812462"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_Head_Bite_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1057116956"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_Head_Bite_01" ID="{9A3EDD82-C7A6-4D5A-924B-98A407F00D05}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{6FD4D378-1176-476E-989A-FC34F35CCBFF}" ShortID="552487597">
-												<PropertyList>
-													<Property Name="Render" Type="bool" Value="True"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="Effect">
-														<Custom CreatedFrom="{3EA7C9BD-6F9A-4000-A227-F86B5B4328EE}">
-															<Effect Name="Boost_3dB_100Hz (Custom)" ID="{7366FB3D-5CFE-4C35-954F-A1DDEC443F1D}" ShortID="83555592" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-																<PropertyList>
-																	<Property Name="FilterTypeBand2" Type="int32" Value="4"/>
-																	<Property Name="FrequencyBand1" Type="Real32" Value="85"/>
-																	<Property Name="FrequencyBand2" Type="Real32" Value="81"/>
-																	<Property Name="GainBand1" Type="Real32" Value="10.5"/>
-																	<Property Name="OnOffBand2" Type="bool" Value="False"/>
-																	<Property Name="OnOffBand3" Type="bool" Value="False"/>
-																</PropertyList>
-															</Effect>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="EvilHead_Hurt" ID="{30ACA7DC-6F2D-4229-A37B-C011A09ECFE4}" ShortID="1049192198">
-							<PropertyList>
-								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -331,7 +92,7 @@
 								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -347,128 +108,136 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="EvilHead_Hurt_01" ID="{FE62EC0B-CF34-4093-8A28-D0D48ADAFC36}" ShortID="231174234">
+								<Sound Name="Evil_Head_Hurt" ID="{AC541E22-402D-44C3-BE95-A323E0D5D73D}" ShortID="315836323">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Priority" Type="int16">
+										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>60</Value>
+												<Value>-1250</Value>
 											</ValueList>
 										</Property>
-										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_Head_Hurt_01" ID="{DFEA0624-7F4F-4A47-BA43-A7E0C2F6C80F}">
+										<AudioFileSource Name="Monster_Struggle_Grunt_240" ID="{52D637C6-DD9C-428B-BB20-66AE61B5FC53}">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.446723608590442"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0318246370235935"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.11032622504537"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.192466603615616"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0237005053228037"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.609934279300265"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_Head_Hurt_01.wav</AudioFile>
+											<AudioFile>Monster_Struggle_Grunt_240.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="60580651"/>
+												<MediaID ID="775587659"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_Head_Hurt_01" ID="{DFEA0624-7F4F-4A47-BA43-A7E0C2F6C80F}" Platform="Linked"/>
+										<ActiveSource Name="Monster_Struggle_Grunt_240" ID="{52D637C6-DD9C-428B-BB20-66AE61B5FC53}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="EvilHead_Hurt_03" ID="{DF1A2726-C71B-4F18-852E-B4E8E7EE182C}" ShortID="616568798">
+								<Sound Name="Evil_Head_Hurt_02" ID="{325B0648-000C-4C5F-BDD8-3EB9AA02F3AB}" ShortID="867569395">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Priority" Type="int16">
+										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>60</Value>
+												<Value>-1200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_Head_Hurt_03" ID="{2DCF99A0-424F-4CE7-AEFB-9BEE194433F1}">
+										<AudioFileSource Name="Monster_Struggle_Grunt_241" ID="{FACC09BA-BCC7-427F-BD83-EAF5605CF04C}">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.4027574107683"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.04511554748941"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.314676468724647"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.798432831092389"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.34794251181743"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_Head_Hurt_03.wav</AudioFile>
+											<AudioFile>Monster_Struggle_Grunt_241.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="1059060228"/>
+												<MediaID ID="867904124"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_Head_Hurt_03" ID="{2DCF99A0-424F-4CE7-AEFB-9BEE194433F1}" Platform="Linked"/>
+										<ActiveSource Name="Monster_Struggle_Grunt_241" ID="{FACC09BA-BCC7-427F-BD83-EAF5605CF04C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="EvilHead_Hurt_02" ID="{BCFFFA07-3050-4717-8A2D-5E8D47D96730}" ShortID="442996842">
+								<Sound Name="Evil_Head_Hurt_01" ID="{27D13E05-4191-4DD6-86E2-787D85D7A6C0}" ShortID="483622728">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Priority" Type="int16">
+										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>60</Value>
+												<Value>-1030</Value>
 											</ValueList>
 										</Property>
-										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_Head_Hurt_02" ID="{FD093D8B-6465-4C01-87A4-D00C6B6D866A}">
+										<AudioFileSource Name="Monster_Struggle_Grunt_24" ID="{FC50ECE5-80F1-46CB-AB1C-EFD57DD9F73D}">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.307024217332123"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.968895738808228"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.225439858190792"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.51193634464159"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.01447938824355"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_Head_Hurt_02.wav</AudioFile>
+											<AudioFile>Monster_Struggle_Grunt_24.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="247479220"/>
+												<MediaID ID="604872933"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_Head_Hurt_02" ID="{FD093D8B-6465-4C01-87A4-D00C6B6D866A}" Platform="Linked"/>
+										<ActiveSource Name="Monster_Struggle_Grunt_24" ID="{FC50ECE5-80F1-46CB-AB1C-EFD57DD9F73D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -501,7 +270,7 @@
 								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -588,6 +357,17 @@
 						<BlendContainer Name="Telegraph" ID="{512B7166-9804-490B-8A5D-BF0620A4A4D5}" ShortID="977411256">
 							<PropertyList>
 								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CC9E020D-D136-4950-8A63-6A48EB81D45A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="False"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -647,6 +427,11 @@
 										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
@@ -811,6 +596,17 @@
 								<RandomSequenceContainer Name="EvilHead_WindUp" ID="{8A6904BF-D96E-4F57-ACF7-2D790EEE1441}" ShortID="840068700">
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A9897C8D-4CAD-4C0A-BE91-B001E7F9B708}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="False"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1">
 											<ModifierList>
 												<ModifierInfo>
@@ -835,328 +631,122 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="BAS_Evil_Head_ChargeAhead" ID="{363EC972-86F8-4960-BDFF-7CF37ACB0DC9}" ShortID="119634414">
+										<Sound Name="Evil_Head_WindUp_Charge" ID="{26EA140F-78C5-4B8A-846A-3FB096D35E00}" ShortID="370993661">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-												<Property Name="CenterPercentage" Type="int32">
-													<ValueList>
-														<Value>100</Value>
-													</ValueList>
-												</Property>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 												<Property Name="Pitch" Type="int32">
-													<ValueList>
-														<Value>1200</Value>
-													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
-															<Modifier Name="" ID="{91785C83-E31D-4F60-9C49-CF67F1904734}">
+															<Modifier Name="" ID="{47835EA0-1650-42CA-9618-5384100E3917}">
 																<PropertyList>
-																	<Property Name="Min" Type="Real64" Value="-1200"/>
+																	<Property Name="Min" Type="Real64" Value="-1000"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
-												<Property Name="Priority" Type="int16">
-													<ValueList>
-														<Value>60</Value>
-													</ValueList>
-												</Property>
-												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Evil Head" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_Evil_Head_Charge" ID="{095736F8-019A-4499-BC40-B9F0484954D9}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.323876023065476"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.0739282226562502"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.823771623883928"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.91157261439732"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Creatures\BAS_Evil_Head_Charge.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1043505733"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BAS_Evil_Head_Charge" ID="{095736F8-019A-4499-BC40-B9F0484954D9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BAS_Evil_Head_Charge_Bite" ID="{3672DD2B-7FB2-4A7A-B065-7E8F4C6C3C5A}" ShortID="718363461">
-											<PropertyList>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-9</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+												<Reference Name="Conversion">
 													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Evil_Head_Charge_Bite" ID="{3B221517-3406-4297-8061-F40BD20D3C38}">
+												<AudioFileSource Name="casting_charge_matter_grow_04" ID="{7E6E5E47-12E9-49B3-8A49-63B7428FFF72}">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.170502580915179"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.00303115699404762"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.660792224702381"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0268359677544956"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Creatures\BAS_Evil_Head_Charge_Bite.wav</AudioFile>
+													<AudioFile>casting_charge_matter_grow_04.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="1028269556"/>
+														<MediaID ID="431032807"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Evil_Head_Charge_Bite" ID="{3B221517-3406-4297-8061-F40BD20D3C38}" Platform="Linked"/>
+												<ActiveSource Name="casting_charge_matter_grow_04" ID="{7E6E5E47-12E9-49B3-8A49-63B7428FFF72}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Evil_Head_Windup_Charge_01" ID="{30582F81-F702-4252-B559-819E59A3FAA0}" ShortID="1007697266">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{70D0D857-FE92-43A6-9609-22DAF153A3BD}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="500"/>
+																	<Property Name="Min" Type="Real64" Value="-500"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>15</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Untitled_1 #01" ID="{8B3AC2F3-C31B-4D16-9820-877A4048BB09}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.598239416877765"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.846195378448271"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.94860838098706"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Untitled_1 #01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="832535325"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Untitled_1 #01" ID="{8B3AC2F3-C31B-4D16-9820-877A4048BB09}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 									<ObjectLists>
 										<ObjectList Name="Playlist">
-											<Reference CompanyID="4095" PluginID="65535" PluginType="15">
-												<ObjectRef Name="BAS_Evil_Head_ChargeAhead" ID="{363EC972-86F8-4960-BDFF-7CF37ACB0DC9}" WorkUnitID="{A9BC4D19-3EEF-4EA0-98A3-36A71A510AB8}"/>
+											<Reference>
+												<ObjectRef Name="Evil_Head_WindUp_Charge" ID="{26EA140F-78C5-4B8A-846A-3FB096D35E00}" WorkUnitID="{A9BC4D19-3EEF-4EA0-98A3-36A71A510AB8}"/>
 											</Reference>
-											<Reference CompanyID="4095" PluginID="65535" PluginType="15">
-												<ObjectRef Name="BAS_Evil_Head_Charge_Bite" ID="{3672DD2B-7FB2-4A7A-B065-7E8F4C6C3C5A}" WorkUnitID="{A9BC4D19-3EEF-4EA0-98A3-36A71A510AB8}"/>
+											<Reference>
+												<ObjectRef Name="Evil_Head_Windup_Charge_01" ID="{30582F81-F702-4252-B559-819E59A3FAA0}" WorkUnitID="{A9BC4D19-3EEF-4EA0-98A3-36A71A510AB8}"/>
 											</Reference>
 										</ObjectList>
 									</ObjectLists>
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
-						<RandomSequenceContainer Name="EvilHead_Attack_Charge" ID="{2DD9CBF6-8CB2-41CC-A0A9-DDED82AEE4DF}" ShortID="1042618362">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-								<Property Name="CenterPercentage" Type="int32">
-									<ValueList>
-										<Value>100</Value>
-									</ValueList>
-								</Property>
-								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-								<Property Name="Lowpass" Type="int16">
-									<ValueList>
-										<Value>38</Value>
-									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{17371D0D-7B11-461A-89C9-02463E5550E2}">
-												<PropertyList>
-													<Property Name="Max" Type="Real64" Value="20"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>3</Value>
-									</ValueList>
-								</Property>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
-								<Property Name="OverrideConversion" Type="bool" Value="True"/>
-								<Property Name="OverridePriority" Type="bool" Value="True"/>
-								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{10FE52D2-1FCD-4013-BDA8-2D2CEE6D29D5}">
-												<PropertyList>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-152"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{3FEED4D7-B315-43F9-8CA1-D9CC7759A8AA}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="False"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Priority" Type="int16">
-									<ValueList>
-										<Value>80</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
-								<Property Name="PriorityDistanceOffset" Type="int16">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-10</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Evil Head" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-								</Reference>
-								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Enemy_Actions" ID="{69CF2760-DF6F-425C-B685-7637E6F37F60}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
-								</Reference>
-								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="EvilHead_Charge_03" ID="{6FD732B2-8CF9-49F5-A47E-F6BB5EDE6974}" ShortID="303111100">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_Head_Charge_03" ID="{E313A83B-ED2C-4FA0-9891-4173F9C90B0A}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0178166852678572"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0.235180245535714"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.231616908482143"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_Head_Charge_03.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="197932788"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_Head_Charge_03" ID="{E313A83B-ED2C-4FA0-9891-4173F9C90B0A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="EvilHead_Charge_02" ID="{FF139390-7467-4D3E-9AAB-514B6E39FFCD}" ShortID="824465014">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_Head_Charge_02" ID="{77C59012-0960-4EC6-AE90-4B0E1A91ADD2}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0290770089285714"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0.244731491815476"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.230192987351191"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_Head_Charge_02.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="745897563"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_Head_Charge_02" ID="{77C59012-0960-4EC6-AE90-4B0E1A91ADD2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="EvilHead_Charge_01" ID="{D4216B14-3808-4EE9-A8C9-73354529D541}" ShortID="257002163">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_Head_Charge_01" ID="{A5BB200A-2ECC-4A57-9E6F-2C5DA10CCE50}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0172965494791667"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0.265762855489418"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.242151692708333"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_Head_Charge_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="228435873"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_Head_Charge_01" ID="{A5BB200A-2ECC-4A57-9E6F-2C5DA10CCE50}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<BlendContainer Name="EvilHead_Death" ID="{BFB63ED3-88A3-4598-B130-38A6EC3F4B91}" ShortID="529596313">
+						<BlendContainer Name="Evil_Head_Death_Blend" ID="{BFB63ED3-88A3-4598-B130-38A6EC3F4B91}" ShortID="529596313">
 							<PropertyList>
 								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
@@ -1193,7 +783,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="EvilHead_Death_Vox" ID="{DF066DC2-143A-4B1F-984C-D93B5F7DCBE9}" ShortID="724828986">
+								<RandomSequenceContainer Name="Evil_Head_Death_Vox_Rand" ID="{DF066DC2-143A-4B1F-984C-D93B5F7DCBE9}" ShortID="724828986">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
@@ -1275,102 +865,141 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="BAS_Evil_Head_Death_Vox_01" ID="{ED50A711-9E3E-40ED-8F5B-C601EE9AA690}" ShortID="756193758">
+										<Sound Name="Evil_Head_Death" ID="{86A90AFA-1D9C-4A23-8CBB-579548865229}" ShortID="373698999">
 											<PropertyList>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-1250</Value>
+													</ValueList>
+												</Property>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+												<Reference Name="Conversion">
 													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Evil_Head_Death_Vox_01" ID="{6BD4A226-7E39-4DFF-B367-2FFA2DBA6A23}">
+												<AudioFileSource Name="Monster_Struggle_Grunt_240" ID="{8CFE06A4-CB0D-4B82-AEA5-02CB81CF8A25}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.00208643025714672"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1.51780300967937"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.623692642097137"/>
-														<Property Name="TrimEnd" Type="Real64" Value="3.42257064806413"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.192466603615616"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0237005053228037"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.609934279300265"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Creatures\BAS_Evil_Head_Death_Vox_01.wav</AudioFile>
+													<AudioFile>Monster_Struggle_Grunt_240.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="929104052"/>
+														<MediaID ID="775587659"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Evil_Head_Death_Vox_01" ID="{6BD4A226-7E39-4DFF-B367-2FFA2DBA6A23}" Platform="Linked"/>
+												<ActiveSource Name="Monster_Struggle_Grunt_240" ID="{8CFE06A4-CB0D-4B82-AEA5-02CB81CF8A25}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="BAS_Evil_Head_Death_Vox_02" ID="{F49C51AB-6725-4108-A209-1BBB1FDE00C2}" ShortID="367147003">
+										<Sound Name="Evil_Head_Death_01" ID="{B9046083-D6F8-4630-A2E2-9360F63A93F5}" ShortID="195276830">
 											<PropertyList>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-1030</Value>
+													</ValueList>
+												</Property>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+												<Reference Name="Conversion">
 													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Evil_Head_Death_Vox_02" ID="{7943A786-FD58-43CB-B729-1018B2C68B5F}">
+												<AudioFileSource Name="Monster_Struggle_Grunt_24" ID="{CB8CB04E-7A4F-4B64-8E2B-FD4114C24201}">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.255942226255293"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.246002722323049"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2.45008771929825"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.225439858190792"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.51193634464159"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.01447938824355"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Creatures\BAS_Evil_Head_Death_Vox_02.wav</AudioFile>
+													<AudioFile>Monster_Struggle_Grunt_24.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="356049012"/>
+														<MediaID ID="604872933"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Evil_Head_Death_Vox_02" ID="{7943A786-FD58-43CB-B729-1018B2C68B5F}" Platform="Linked"/>
+												<ActiveSource Name="Monster_Struggle_Grunt_24" ID="{CB8CB04E-7A4F-4B64-8E2B-FD4114C24201}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="BAS_Evil_Head_Death_Vox_03" ID="{8AE3AB76-CACF-4CF4-A537-EB9DC9F375E6}" ShortID="753061247">
+										<Sound Name="Evil_Head_Death_02" ID="{BE416B00-248D-4ED3-8717-83152223EA3F}" ShortID="962039425">
 											<PropertyList>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-1200</Value>
+													</ValueList>
+												</Property>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+												<Reference Name="Conversion">
 													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Evil_Head_Death_Vox_03" ID="{3F63F2E7-2AE8-46DC-A9FB-1EC329B66C4E}">
+												<AudioFileSource Name="Monster_Struggle_Grunt_241" ID="{2949E965-1FF3-47BB-BBD6-971F9819F73B}">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1.213125"/>
-														<Property Name="FadeOutShape" Type="int16" Value="3"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.314676468724647"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.798432831092389"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.34794251181743"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Creatures\BAS_Evil_Head_Death_Vox_03.wav</AudioFile>
+													<AudioFile>Monster_Struggle_Grunt_241.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="299395336"/>
+														<MediaID ID="867904124"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Evil_Head_Death_Vox_03" ID="{3F63F2E7-2AE8-46DC-A9FB-1EC329B66C4E}" Platform="Linked"/>
+												<ActiveSource Name="Monster_Struggle_Grunt_241" ID="{2949E965-1FF3-47BB-BBD6-971F9819F73B}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="EvilHead_Death" ID="{6F06C73C-4EB9-4EA2-B721-53E1FB4AEB07}" ShortID="137245105">
+								<RandomSequenceContainer Name="Evil_Head_Death_Explosion_Rand" ID="{6F06C73C-4EB9-4EA2-B721-53E1FB4AEB07}" ShortID="137245105">
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 										<Property Name="Pitch" Type="int32">
@@ -1396,11 +1025,6 @@
 											</ModifierList>
 										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
@@ -1411,104 +1035,131 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="BAS_Evil_Head_Death_01" ID="{F93761FC-2B23-4686-BDDD-4B3790CBD9C6}" ShortID="34803506">
+										<Sound Name="Evil_Head_Death_Explosion" ID="{92FEE6EC-0FDA-43A9-BE3B-44BF1EAE9DD9}" ShortID="677280488">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Untitled_2 #01" ID="{1BF3F404-115A-44E1-997B-CB844F8925F3}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="4.11330851809282"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.493964446800343"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.60727296489316"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Untitled_2 #01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="898475456"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Untitled_2 #01" ID="{1BF3F404-115A-44E1-997B-CB844F8925F3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Evil_Head_Death_Explosion_01" ID="{87CB3D5A-FBA8-4181-B36A-DEE5660A8126}" ShortID="580347339">
 											<PropertyList>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{D442F0D3-43ED-4DE2-9EF6-FB8F0D94F870}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
+													<ValueList>
+														<Value>500</Value>
+													</ValueList>
 												</Property>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+												<Reference Name="Conversion">
 													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Evil_Head_Death_01" ID="{7FE7B175-D687-48C1-AD45-08582742A4E1}">
+												<AudioFileSource Name="Untitled_2 #01" ID="{1A1962C7-8754-4066-A51A-0F1FDA696561}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="4.11330851809282"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.493964446800343"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.60727296489316"/>
+													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Creatures\BAS_Evil_Head_Death_01.wav</AudioFile>
+													<AudioFile>Untitled_2 #01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="824466461"/>
+														<MediaID ID="898475456"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Evil_Head_Death_01" ID="{7FE7B175-D687-48C1-AD45-08582742A4E1}" Platform="Linked"/>
+												<ActiveSource Name="Untitled_2 #01" ID="{1A1962C7-8754-4066-A51A-0F1FDA696561}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="BAS_Evil_Head_Death_02" ID="{4278B404-9460-45BC-888A-308497ECBFA6}" ShortID="726438572">
+										<Sound Name="Evil_Head_Death_Explosion_02" ID="{4B05F25D-362F-4EF6-8A1B-607951A2AE11}" ShortID="572252049">
 											<PropertyList>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{11C25649-EC8F-4544-AFC4-3C4E4780BF5C}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
+													<ValueList>
+														<Value>-500</Value>
+													</ValueList>
 												</Property>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+												<Reference Name="Conversion">
 													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Evil_Head_Death_02" ID="{81636817-6F7D-47A6-8597-E2257F4BF2B2}">
+												<AudioFileSource Name="Untitled_2 #01" ID="{3911BBF9-DE6B-472D-AC52-CF88AA650DE1}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="4.11330851809282"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.493964446800343"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.60727296489316"/>
+													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Creatures\BAS_Evil_Head_Death_02.wav</AudioFile>
+													<AudioFile>Untitled_2 #01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="155192250"/>
+														<MediaID ID="898475456"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Evil_Head_Death_02" ID="{81636817-6F7D-47A6-8597-E2257F4BF2B2}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="BAS_Evil_Head_Death_03" ID="{86FAA329-13FA-4229-9B32-5CF6C2BC7616}" ShortID="455990801">
-											<PropertyList>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_Evil_Head_Death_03" ID="{E029A63B-CBA5-444F-B7BF-948AAA8A5381}">
-													<Language>SFX</Language>
-													<AudioFile>Creatures\BAS_Evil_Head_Death_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1056851740"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BAS_Evil_Head_Death_03" ID="{E029A63B-CBA5-444F-B7BF-948AAA8A5381}" Platform="Linked"/>
+												<ActiveSource Name="Untitled_2 #01" ID="{3911BBF9-DE6B-472D-AC52-CF88AA650DE1}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1563,6 +1214,11 @@
 									</ValueList>
 								</Property>
 								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
@@ -1576,25 +1232,758 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="BAS_Evil_Head_Death_02" ID="{F987B212-47B8-49A4-B045-6716B6E19EBA}">
+								<AudioFileSource Name="Bluezone_BC0290_demolisher_debris_rubble_texture_004" ID="{45694820-84FE-4991-A672-688FFB956FB5}">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.0132908233041575"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="1.59046852206419"/>
+										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.451887992341357"/>
-										<Property Name="TrimEnd" Type="Real64" Value="2.18855557075128"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.163793103448276"/>
+										<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>Creatures\BAS_Evil_Head_Death_02.wav</AudioFile>
+									<AudioFile>Bluezone_BC0290_demolisher_debris_rubble_texture_004.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="1007331327"/>
+										<MediaID ID="101333868"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="BAS_Evil_Head_Death_02" ID="{F987B212-47B8-49A4-B045-6716B6E19EBA}" Platform="Linked"/>
+								<ActiveSource Name="Bluezone_BC0290_demolisher_debris_rubble_texture_004" ID="{45694820-84FE-4991-A672-688FFB956FB5}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<BlendContainer Name="Evil_Head_Attack_Bite_Blend" ID="{DC4C33DE-D7D4-4758-90AC-F98D13A8536C}" ShortID="1046776818">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="EvilHead_Attack_Bite_Rand" ID="{D57EF59F-28AA-4626-ABDD-7D41490878E6}" ShortID="380066084">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverridePriority" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6A7DF69F-689C-4FDC-B3A6-232420140D28}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="False"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{220EF4B0-DB47-4CB0-B424-E5F9933414FC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="False"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>80</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+										<Property Name="PriorityDistanceOffset" Type="int16">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ReflectionsVolume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Evil Head" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										</Reference>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Enemy_Actions" ID="{69CF2760-DF6F-425C-B685-7637E6F37F60}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Evil_Head_Attack_Bite" ID="{08B35604-87D9-4FAB-B173-0489E86C4E64}" ShortID="343780483">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Monster_Attack_09" ID="{90F2E54E-22D3-4B8A-B085-FBE5785FB44F}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.207105036834618"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.992177579223336"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Creature_Monster_Attack_09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="887918969"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Monster_Attack_09" ID="{90F2E54E-22D3-4B8A-B085-FBE5785FB44F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Evil_Head_Attack_Bite_01" ID="{5C278710-AE37-442F-9291-C903FBF610E4}" ShortID="688753224">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-500</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Monster_Attack_09" ID="{9C8B94DF-22F9-453C-9CCF-ECFBDAED5D76}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.356413319203761"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.491272373855888"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Creature_Monster_Attack_09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="924105264"/>
+														<MediaID Platform="Mac" ID="49235993"/>
+														<MediaID Platform="Windows" ID="49235993"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Monster_Attack_09" ID="{9C8B94DF-22F9-453C-9CCF-ECFBDAED5D76}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Evil_Head_Attack_Bite_02" ID="{31403B84-BD45-4DF9-85BF-FB9E0267E62B}" ShortID="52242054">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>250</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Monster_Attack_09" ID="{3AEE4778-B219-4F7A-9721-A3286223A425}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.568334752243835"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.992177579223336"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Creature_Monster_Attack_09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="49235993"/>
+														<MediaID Platform="Mac" ID="924105264"/>
+														<MediaID Platform="Windows" ID="924105264"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Monster_Attack_09" ID="{3AEE4778-B219-4F7A-9721-A3286223A425}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{6FD4D378-1176-476E-989A-FC34F35CCBFF}" ShortID="552487597">
+														<PropertyList>
+															<Property Name="Render" Type="bool" Value="True"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom CreatedFrom="{3EA7C9BD-6F9A-4000-A227-F86B5B4328EE}">
+																	<Effect Name="Boost_3dB_100Hz (Custom)" ID="{7366FB3D-5CFE-4C35-954F-A1DDEC443F1D}" ShortID="83555592" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																		<PropertyList>
+																			<Property Name="FilterTypeBand2" Type="int32" Value="4"/>
+																			<Property Name="FrequencyBand1" Type="Real32" Value="85"/>
+																			<Property Name="FrequencyBand2" Type="Real32" Value="81"/>
+																			<Property Name="GainBand1" Type="Real32" Value="10.5"/>
+																			<Property Name="OnOffBand2" Type="bool" Value="False"/>
+																			<Property Name="OnOffBand3" Type="bool" Value="False"/>
+																		</PropertyList>
+																	</Effect>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+								<Sound Name="Evil_Head_Attack_Bite_Layer" ID="{5E594957-42B4-4718-AFC2-9F3B1F41EB0A}" ShortID="99263704">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{199269B2-A299-4D21-858D-ACC8B967C77F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="False"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>80</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+										<Property Name="PriorityDistanceOffset" Type="int16">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ReflectionsVolume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Evil Head" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										</Reference>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Enemy_Actions" ID="{69CF2760-DF6F-425C-B685-7637E6F37F60}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BAS_Evil_Head_Bite_01" ID="{9A3EDD82-C7A6-4D5A-924B-98A407F00D05}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.2166916969147"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.806868269812462"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Creatures\BAS_Evil_Head_Bite_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1057116956"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="BAS_Evil_Head_Bite_01" ID="{9A3EDD82-C7A6-4D5A-924B-98A407F00D05}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Evil_Head_Attack_Charge_Blend" ID="{2BCAAA35-3289-4FDE-8449-A0F66EDB4BCB}" ShortID="369817758">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{494A2F6E-F658-44FD-B960-6EB2DB32F26B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="False"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Evil_Head_Attack_Charge_Rand" ID="{2DD9CBF6-8CB2-41CC-A0A9-DDED82AEE4DF}" ShortID="1042618362">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{17371D0D-7B11-461A-89C9-02463E5550E2}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="False"/>
+															<Property Name="Max" Type="Real64" Value="20"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+										<Property Name="OverridePriority" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{10FE52D2-1FCD-4013-BDA8-2D2CEE6D29D5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="False"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-152"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3FEED4D7-B315-43F9-8CA1-D9CC7759A8AA}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="False"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>80</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+										<Property Name="PriorityDistanceOffset" Type="int16">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ReflectionsVolume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Evil Head" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										</Reference>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Enemy_Actions" ID="{69CF2760-DF6F-425C-B685-7637E6F37F60}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Evil_Head_Attack_Charge" ID="{C70D5B0A-0B06-41EB-B065-1A3F739B0CF4}" ShortID="475601235">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-23</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Evil Head" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Monster_Attack_09" ID="{1FA75BA1-AF20-47F3-B76F-F410E7CC78A2}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.207105036834618"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.992177579223336"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Creature_Monster_Attack_09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1045936798"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Monster_Attack_09" ID="{1FA75BA1-AF20-47F3-B76F-F410E7CC78A2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Evil_Head_Attack_Charge_01" ID="{7F887B7A-4161-40B2-AB36-F2124C3298FA}" ShortID="56290970">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-500</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-23</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Monster_Attack_09" ID="{B16EA652-DDC8-479B-AE96-7D46B56DDD5C}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.356413319203761"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.491272373855888"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Creature_Monster_Attack_09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="849174506"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Monster_Attack_09" ID="{B16EA652-DDC8-479B-AE96-7D46B56DDD5C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Evil_Head_Attack_Charge_02" ID="{4875ABCD-4EAC-4513-90D3-7723D12C41F1}" ShortID="428268839">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>250</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-23</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Creature_Monster_Attack_09" ID="{D0B94B5C-8077-46AC-8EE5-B3C303F6739A}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.568334752243835"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.992177579223336"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Creature_Monster_Attack_09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="310170239"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Creature_Monster_Attack_09" ID="{D0B94B5C-8077-46AC-8EE5-B3C303F6739A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Evil_Head_Attack_Charge_Layer" ID="{B8BA54C4-0A66-4DBB-85C4-30655FF538CC}" ShortID="97145201">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AC4F7ED6-F03E-4AB8-A08A-F21588C0DF43}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="500"/>
+															<Property Name="Min" Type="Real64" Value="-250"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Priority" Type="int16">
+											<ValueList>
+												<Value>80</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+										<Property Name="PriorityDistanceOffset" Type="int16">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ReflectionsVolume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Evil Head" ID="{08035439-B761-4E7F-B163-6CADF6727F87}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										</Reference>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Enemy_Actions" ID="{69CF2760-DF6F-425C-B685-7637E6F37F60}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Whoosh,Sound Design,Blast,Energy,Crispy,Very Slow,Crackling Approach" ID="{DE9BEE67-0223-464F-9F2D-A37D4C8BA2A7}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.14315543261793"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.647707064740069"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.99723518719076"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.32408132108878"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Whoosh,Sound Design,Blast,Energy,Crispy,Very Slow,Crackling Approach.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="901061610"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Whoosh,Sound Design,Blast,Energy,Crispy,Very Slow,Crackling Approach" ID="{DE9BEE67-0223-464F-9F2D-A37D4C8BA2A7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

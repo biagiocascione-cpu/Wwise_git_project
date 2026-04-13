@@ -152,13 +152,13 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 						</Event>
 						<Event Name="Stinger_GetWeapon" ID="{E26772A2-5767-4DF7-A39A-01C2BA0BB020}">
 							<ChildrenList>
-								<Action Name="" ID="{E55A0B79-11A4-43A5-A1DE-113F2FBAE1A7}" ShortID="908615433">
+								<Action Name="" ID="{CD06E677-47E4-4824-856B-64B48F5CBE60}" ShortID="993185319">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Get Weapon" ID="{098DEDBE-0446-458A-899B-670F23C1E672}" WorkUnitID="{51DFFF8A-708E-4F93-BE7C-2D420F924ACC}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="NewWeapon_Seq" ID="{A5625C40-D70F-4E54-8A87-A98F3293338E}" WorkUnitID="{51DFFF8A-708E-4F93-BE7C-2D420F924ACC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
