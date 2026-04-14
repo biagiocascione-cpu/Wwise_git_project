@@ -5,13 +5,13 @@
 			<ChildrenList>
 				<Event Name="Quest_Complete" ID="{278DE966-6B7C-462A-9E4C-A610FD7806CB}">
 					<ChildrenList>
-						<Action Name="" ID="{040DCE7D-281F-4A14-B6F8-0EA1AA156572}" ShortID="881232040">
+						<Action Name="" ID="{27E7B07F-985A-4610-957B-D91ADBED1E5A}" ShortID="895335648">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
-								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Quest_Complete" ID="{76B7A787-D942-40DC-BDDA-3926568F0038}" WorkUnitID="{51DFFF8A-708E-4F93-BE7C-2D420F924ACC}"/>
+								<Reference Name="Target">
+									<ObjectRef Name="Quest_Complete01" ID="{0202C8CC-CB57-4771-B1EC-779B66D08F29}" WorkUnitID="{51DFFF8A-708E-4F93-BE7C-2D420F924ACC}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

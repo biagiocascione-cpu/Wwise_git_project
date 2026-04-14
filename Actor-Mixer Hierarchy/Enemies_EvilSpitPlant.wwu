@@ -71,6 +71,11 @@
 								</Property>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverridePriority" Type="bool" Value="True"/>
@@ -107,6 +112,11 @@
 									</ValueList>
 								</Property>
 								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
@@ -120,158 +130,436 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="EvilSpitPlant_Shoot_01" ID="{5FEF5960-F25C-4B0B-990E-35EF0DA30555}" ShortID="384418500">
+								<BlendContainer Name="Evil_SpitPlant_Shoot_Blend" ID="{56D94290-7019-4450-9407-A169CE839644}" ShortID="209102956">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{ED2B129B-8C2C-4CF2-AE97-6AA57B96ADF1}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Priority" Type="int16">
-											<ValueList>
-												<Value>60</Value>
-											</ValueList>
-										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Shoot_01" ID="{855F06A1-9484-4F18-947B-051812073AA0}">
+										<Sound Name="Evil_SpitPlant_Shoot" ID="{CA382EAF-C0F1-4347-BAF8-47C8A4841B17}" ShortID="790903869">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.177265577737447"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.68743194192378"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-180</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>80</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Shoot_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="38322136"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Shoot_01" ID="{855F06A1-9484-4F18-947B-051812073AA0}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="EvilSpitPlant_Shoot_02" ID="{145358DA-07C3-4949-964A-F6A7DFBB0148}" ShortID="166364780">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{F8EE8A23-6B73-405A-9865-C34D1D4DEE11}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Priority" Type="int16">
-											<ValueList>
-												<Value>60</Value>
-											</ValueList>
-										</Property>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Shoot_02" ID="{B6CDC579-6078-4329-858B-3E8FF95EA5DE}">
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Evil Spit Plants" ID="{BE5E26CC-8EEE-4B9D-ACAF-3EDD3BE864C8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemy_Actions" ID="{69CF2760-DF6F-425C-B685-7637E6F37F60}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Alliance-AssaultRifle_05-Single_Shot-04" ID="{900988AA-E239-4B11-9773-A82468E6584F}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0722190746166889"/>
+														<Property Name="FadeInShape" Type="int16" Value="9"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.288876298466755"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.03995467416243"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Alliance-AssaultRifle_05-Single_Shot-04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="886007835"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Alliance-AssaultRifle_05-Single_Shot-04" ID="{900988AA-E239-4B11-9773-A82468E6584F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Evil_SpitPlant_Shoot 01" ID="{33F20D53-8C78-42D3-8595-D47A7E5EB5C5}" ShortID="143403395">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0526509376890503"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.65192316999395"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>80</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Shoot_02.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="196871823"/>
-											</MediaIDList>
-										</AudioFileSource>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Evil Spit Plants" ID="{BE5E26CC-8EEE-4B9D-ACAF-3EDD3BE864C8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemy_Actions" ID="{69CF2760-DF6F-425C-B685-7637E6F37F60}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="burn_ice_001" ID="{474C4C77-1010-4577-9552-B7D0DD2A8934}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.485904307471335"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.36891819464924"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.689267534912354"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>burn_ice_001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="6608537"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="burn_ice_001" ID="{474C4C77-1010-4577-9552-B7D0DD2A8934}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Shoot_02" ID="{B6CDC579-6078-4329-858B-3E8FF95EA5DE}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="EvilSpitPlant_Shoot_03" ID="{A06DA9FE-30D9-4529-9BAD-5CE3CC4821FA}" ShortID="350821579">
+								</BlendContainer>
+								<BlendContainer Name="Evil_SpitPlant_Shoot_Blend_01" ID="{7C8AD372-6BCA-4D25-8550-2B65A763320E}" ShortID="596333240">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{A08B6FDF-C4B7-4F91-BA7D-236AE699AB72}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Priority" Type="int16">
 											<ValueList>
-												<Value>60</Value>
+												<Value>-250</Value>
 											</ValueList>
 										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Shoot_03" ID="{C4D8C00E-6DDE-4BE3-ADBC-84D37FD08619}">
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Shoot_03.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="108061160"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="Evil_SpitPlant_Shoot" ID="{9BD95264-E75F-45B8-A22E-D25C1748739F}" ShortID="425559537">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-180</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>80</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Evil Spit Plants" ID="{BE5E26CC-8EEE-4B9D-ACAF-3EDD3BE864C8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemy_Actions" ID="{69CF2760-DF6F-425C-B685-7637E6F37F60}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Alliance-AssaultRifle_05-Single_Shot-04" ID="{EB07BE11-F2EB-4B38-8019-79F9DFAED1FD}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0722190746166889"/>
+														<Property Name="FadeInShape" Type="int16" Value="9"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.288876298466755"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.03995467416243"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Alliance-AssaultRifle_05-Single_Shot-04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="886007835"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Alliance-AssaultRifle_05-Single_Shot-04" ID="{EB07BE11-F2EB-4B38-8019-79F9DFAED1FD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Evil_SpitPlant_Shoot 01" ID="{05B94821-C52A-42C9-A66F-18DA6EA3BA68}" ShortID="1065037462">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>80</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Evil Spit Plants" ID="{BE5E26CC-8EEE-4B9D-ACAF-3EDD3BE864C8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemy_Actions" ID="{69CF2760-DF6F-425C-B685-7637E6F37F60}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="burn_ice_001" ID="{B1DEF124-FF0E-441E-AF36-0C5E6EA52DFD}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.485904307471335"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.36891819464924"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.689267534912354"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>burn_ice_001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="6608537"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="burn_ice_001" ID="{B1DEF124-FF0E-441E-AF36-0C5E6EA52DFD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Shoot_03" ID="{C4D8C00E-6DDE-4BE3-ADBC-84D37FD08619}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</BlendContainer>
+								<BlendContainer Name="Evil_SpitPlant_Shoot_Blend_02" ID="{85D38A50-16B0-4A8A-AEB1-A31AA74E14D2}" ShortID="401265044">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Evil_SpitPlant_Shoot" ID="{2D307570-FC4E-40E1-BE3E-BC7C7BE0BFB8}" ShortID="751812127">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-180</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>80</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Evil Spit Plants" ID="{BE5E26CC-8EEE-4B9D-ACAF-3EDD3BE864C8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemy_Actions" ID="{69CF2760-DF6F-425C-B685-7637E6F37F60}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Alliance-AssaultRifle_05-Single_Shot-04" ID="{D5EC2A07-7A51-4264-A37C-CB3390EADE36}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0722190746166889"/>
+														<Property Name="FadeInShape" Type="int16" Value="9"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.288876298466755"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.03995467416243"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Alliance-AssaultRifle_05-Single_Shot-04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="886007835"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Alliance-AssaultRifle_05-Single_Shot-04" ID="{D5EC2A07-7A51-4264-A37C-CB3390EADE36}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Evil_SpitPlant_Shoot 01" ID="{306E94B2-5E55-4ED7-B7B4-2EB9D7648766}" ShortID="77656327">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>80</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Evil Spit Plants" ID="{BE5E26CC-8EEE-4B9D-ACAF-3EDD3BE864C8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemy_Actions" ID="{69CF2760-DF6F-425C-B685-7637E6F37F60}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="burn_ice_001" ID="{BFCBFFD9-A6AA-4781-9550-1333814EE067}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.485904307471335"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.36891819464924"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.689267534912354"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>burn_ice_001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="6608537"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="burn_ice_001" ID="{BFCBFFD9-A6AA-4781-9550-1333814EE067}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="EvilSpitPlant_Hurt" ID="{9EF85C94-8343-465A-B2F3-3276EDBD0F66}" ShortID="230851031">
+						<RandomSequenceContainer Name="EvilSpitPlant_Hurt_Random" ID="{9EF85C94-8343-465A-B2F3-3276EDBD0F66}" ShortID="230851031">
 							<PropertyList>
 								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 								<Property Name="Highpass" Type="int16">
@@ -287,6 +575,9 @@
 								</Property>
 								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-130</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{96F0E4E3-9241-4B7D-9DC0-CCC66CE10142}">
@@ -318,93 +609,64 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="BAS_Evil_SpitPlant_Hurt_01" ID="{1F75F6B6-9D3A-4931-9DDD-A79FA9EC8521}" ShortID="534873533">
+								<Sound Name="EvilSpitPlant_Hurt_01" ID="{18C72BE2-2E96-431C-A0BA-D5279173BBCF}" ShortID="827268385">
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>41</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>750</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FD0DDB39-9F8B-42E2-87F4-33CC2C3E01E1}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="500"/>
+															<Property Name="Min" Type="Real64" Value="-500"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+										<Reference Name="Conversion">
 											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Hurt_04" ID="{71739F9B-9298-4E76-8984-2A783C43B5BD}">
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Hurt_04.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="571611364"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Hurt_04" ID="{71739F9B-9298-4E76-8984-2A783C43B5BD}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="BAS_Evil_SpitPlant_Hurt_02" ID="{ADD546D7-75BE-4EED-946A-81DB468EC9DE}" ShortID="120610401">
-									<PropertyList>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Hurt_05" ID="{2C5034E9-93A0-47F7-AB4F-8E6017C56447}">
+										<AudioFileSource Name="troll_monster_hurt_pain_01" ID="{A5B51346-E795-4941-BE3C-D212EED7257A}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0136752684513007"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0595276391409558"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0747188475546307"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.804427555958863"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.231470348477026"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.210427589524569"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.847722552053652"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Hurt_05.wav</AudioFile>
+											<AudioFile>troll_monster_hurt_pain_01.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="18622617"/>
+												<MediaID ID="663846826"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Hurt_05" ID="{2C5034E9-93A0-47F7-AB4F-8E6017C56447}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="BAS_Evil_SpitPlant_Hurt_03" ID="{8577EBC9-1002-4CD8-B3E2-3ACB228BD2ED}" ShortID="53845223">
-									<PropertyList>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Hurt_06" ID="{222A6A5B-6B56-4740-A5AE-FA3EE53D2220}">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0325395871143376"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0271373569198751"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.809545485480944"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Hurt_06.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="79468423"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Hurt_06" ID="{222A6A5B-6B56-4740-A5AE-FA3EE53D2220}" Platform="Linked"/>
+										<ActiveSource Name="troll_monster_hurt_pain_01" ID="{A5B51346-E795-4941-BE3C-D212EED7257A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -634,36 +896,70 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="EvilSpitPlant_Shoot_LP_01" ID="{2F345D8B-A3D3-4928-9BF3-50A4EAA2ED61}" ShortID="958457734">
+								<Sound Name="Evil_SpitPlant_Shoot_Loop" ID="{E346F9D6-D33C-496B-A5B0-69934910F2BE}" ShortID="690161297">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>19</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-580</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8E2C1D55-E803-4DE3-8665-8E933EAEF982}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="250"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Shoot_LP_01" ID="{2060CD1E-1DDF-42F7-B773-4D8764B0FEE1}">
+										<AudioFileSource Name="CHEMICAL ACID Sizzle, Burn, Short 02" ID="{84D27ADC-0D48-4CEA-9370-30B71E95BC9A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.438591327740658"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.136174790898564"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.320553764668653"/>
+												<Property Name="LoopEnd" Type="Real64" Value="0.980380511254157"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.07135681314446"/>
+											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Shoot_LP_01.wav</AudioFile>
+											<AudioFile>CHEMICAL ACID Sizzle, Burn, Short 02.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="61321815"/>
+												<MediaID ID="977132992"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Shoot_LP_01" ID="{2060CD1E-1DDF-42F7-B773-4D8764B0FEE1}" Platform="Linked"/>
+										<ActiveSource Name="CHEMICAL ACID Sizzle, Burn, Short 02" ID="{84D27ADC-0D48-4CEA-9370-30B71E95BC9A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -750,7 +1046,7 @@
 								</ObjectList>
 							</ObjectLists>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="EvilSpitPlant_Charge" ID="{A09156CE-413B-44A8-A53D-0AF888B6AA3C}" ShortID="554093503">
+						<RandomSequenceContainer Name="EvilSpitPlant_Charge_Random" ID="{A09156CE-413B-44A8-A53D-0AF888B6AA3C}" ShortID="554093503">
 							<PropertyList>
 								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
@@ -789,87 +1085,323 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="BAS_Evil_SpitPlant_Charge_01" ID="{4E6C4217-76B0-4BCF-A7A8-0ECFD898BC0A}" ShortID="861250108">
+								<BlendContainer Name="Evil_SpitPlant_Charge_Blend" ID="{AFA9F5B0-3870-44E7-8C37-E69F0BAAE052}" ShortID="852608868">
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+										<Reference Name="Conversion">
 											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Charge_01" ID="{35268CF9-FC15-44D1-9A0C-AD9E52F24F43}">
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Charge_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="662500466"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Charge_01" ID="{35268CF9-FC15-44D1-9A0C-AD9E52F24F43}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="BAS_Evil_SpitPlant_Charge_02" ID="{80C55E8C-75E8-485F-843B-9513A2923F00}" ShortID="802749008">
-									<PropertyList>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Charge_02" ID="{7881778F-CC1B-4BB6-9FAB-7F7F01A55C21}">
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Charge_02.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="673472141"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Charge_02" ID="{7881778F-CC1B-4BB6-9FAB-7F7F01A55C21}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="BAS_Evil_SpitPlant_Charge_03" ID="{64D56EC9-6B21-4938-AD38-FC37C122ED9E}" ShortID="639397400">
-									<PropertyList>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Charge_03" ID="{584439DE-9A72-4878-92D7-915A66A70C85}">
+										<Sound Name="Evil_SpitPlant_Charge_01" ID="{B0E340B3-B8D2-4448-B201-E6ABF7BA98E9}" ShortID="1017605583">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.556421033726558"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>15</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>650</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{94D5A104-7758-42E7-B426-544C71526393}">
+																<PropertyList>
+																	<Property Name="Min" Type="Real64" Value="-350"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Charge_03.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1023617453"/>
-											</MediaIDList>
-										</AudioFileSource>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Evil Spit Plants" ID="{BE5E26CC-8EEE-4B9D-ACAF-3EDD3BE864C8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHSH_Deviant-Whoosh Flabby Slow 09_RSCPC_DW" ID="{68085097-53CF-496B-AE87-0B8E5AF70144}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.01690165201823"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.635563532511394"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.38437573814392"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHSH_Deviant-Whoosh Flabby Slow 09_RSCPC_DW.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="786277478"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHSH_Deviant-Whoosh Flabby Slow 09_RSCPC_DW" ID="{68085097-53CF-496B-AE87-0B8E5AF70144}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Evil_SpitPlant_Charge" ID="{6C31A159-7B74-444F-9161-CD14B3BBB332}" ShortID="164760702">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>150</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{199D8DBE-270B-4CD3-B164-1DE9255692C1}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="False"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Untitled_2 #03" ID="{C721C355-5931-4CAC-9CC8-44578E6770B0}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0943469003189442"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0943469003189443"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="1.39751343745039"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.71939511493195"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.46237693141967"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Untitled_2 #03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="405230073"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Untitled_2 #03" ID="{C721C355-5931-4CAC-9CC8-44578E6770B0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Charge_03" ID="{584439DE-9A72-4878-92D7-915A66A70C85}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</BlendContainer>
+								<BlendContainer Name="Evil_SpitPlant_Charge_Blend_01" ID="{6276AE26-8742-4517-A742-04E2F42ED334}" ShortID="234521830">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-250</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Evil_SpitPlant_Charge_01" ID="{C8D70498-9B73-4471-B57B-B7441B8BF398}" ShortID="543496160">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>15</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>650</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{45B39F3C-632A-4C0F-B44A-C0634B650BC4}">
+																<PropertyList>
+																	<Property Name="Min" Type="Real64" Value="-350"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Evil Spit Plants" ID="{BE5E26CC-8EEE-4B9D-ACAF-3EDD3BE864C8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WHSH_Deviant-Whoosh Flabby Slow 09_RSCPC_DW" ID="{57DB59D4-9A40-4B40-A7A2-A1A2264ECDF5}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.01690165201823"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.635563532511394"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.38437573814392"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WHSH_Deviant-Whoosh Flabby Slow 09_RSCPC_DW.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="786277478"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WHSH_Deviant-Whoosh Flabby Slow 09_RSCPC_DW" ID="{57DB59D4-9A40-4B40-A7A2-A1A2264ECDF5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Evil_SpitPlant_Charge" ID="{6268658E-3C31-4C72-B908-60365A1F15D9}" ShortID="134361359">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>150</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8B1EF574-FC71-4EB8-9987-59A1443C7E02}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="False"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Untitled_2 #03" ID="{122CF7DA-0164-4048-B749-E897BBF9EB88}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0943469003189442"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0943469003189443"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="1.39751343745039"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.71939511493195"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.46237693141967"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Untitled_2 #03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="405230073"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Untitled_2 #03" ID="{122CF7DA-0164-4048-B749-E897BBF9EB88}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
@@ -896,13 +1428,18 @@
 								</ObjectList>
 							</ObjectLists>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="EvilSpitPlant_Death_Headfall" ID="{FA0A8048-D0F4-4EF7-B942-0265D550899E}" ShortID="673921913">
+						<RandomSequenceContainer Name="EvilSpitPlant_Death_Headfall_Random" ID="{FA0A8048-D0F4-4EF7-B942-0265D550899E}" ShortID="673921913">
 							<PropertyList>
 								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
 								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -915,211 +1452,250 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="BAS_Evil_SpitPlant_Death_Headfall_01" ID="{636D0B7E-81BC-4878-8883-FC0B0527E424}" ShortID="1043282378">
+								<Sound Name="Evil_SpitPlant_Death_Headfall" ID="{18740A05-2833-4072-9B60-3475E225923E}" ShortID="8713834">
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-250</Value>
+											</ValueList>
+										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+										<Reference Name="Conversion">
 											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Death_Headfall_01" ID="{4ADDFBC6-2859-4667-BEEB-C4F9F06DAF6D}">
+										<AudioFileSource Name="GORESplt_Gore Splatter 01_JSE_GMP" ID="{B7598654-7E07-4FEE-BDBA-9DB32B9F8C43}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.83225967528131"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0767302926422306"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.57004309246424"/>
+											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Death_Headfall_01.wav</AudioFile>
+											<AudioFile>GORESplt_Gore Splatter 01_JSE_GMP.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="138086648"/>
+												<MediaID ID="46219452"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Death_Headfall_01" ID="{4ADDFBC6-2859-4667-BEEB-C4F9F06DAF6D}" Platform="Linked"/>
+										<ActiveSource Name="GORESplt_Gore Splatter 01_JSE_GMP" ID="{B7598654-7E07-4FEE-BDBA-9DB32B9F8C43}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="BAS_Evil_SpitPlant_Death_Headfall_02" ID="{9C53C01E-76D5-453F-A5F0-663EF1658942}" ShortID="576955232">
+								<Sound Name="Evil_SpitPlant_Death_Headfall_01" ID="{15A4C5B3-0745-4210-85CE-6CC768092265}" ShortID="437107587">
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-180</Value>
+											</ValueList>
+										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+										<Reference Name="Conversion">
 											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Death_Headfall_02" ID="{94151D0D-ED1E-4AB5-B9CA-82E3A78238CF}">
+										<AudioFileSource Name="GORESplt_Gore Splatter 01_JSE_GMP" ID="{2890AFEF-00CC-4C4D-877E-C94DDE890798}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.83225967528131"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.47757661657459"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.86264205976201"/>
+											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Death_Headfall_02.wav</AudioFile>
+											<AudioFile>GORESplt_Gore Splatter 01_JSE_GMP.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="412591648"/>
+												<MediaID ID="635922478"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Death_Headfall_02" ID="{94151D0D-ED1E-4AB5-B9CA-82E3A78238CF}" Platform="Linked"/>
+										<ActiveSource Name="GORESplt_Gore Splatter 01_JSE_GMP" ID="{2890AFEF-00CC-4C4D-877E-C94DDE890798}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="BAS_Evil_SpitPlant_Death_Headfall_03" ID="{02B6233B-64F5-464B-A604-3104D6CD7D41}" ShortID="87995786">
+								<Sound Name="Evil_SpitPlant_Death_Headfall_02" ID="{65A11A8D-B426-4358-8560-54BC3363D337}" ShortID="706472562">
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-180</Value>
+											</ValueList>
+										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+										<Reference Name="Conversion">
 											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Death_Headfall_03" ID="{F2DBDC2B-253C-469A-87D4-3884A4A16705}">
+										<AudioFileSource Name="GORESplt_Gore Splatter 01_JSE_GMP" ID="{3FF07716-19BB-4A73-8575-3C5F5C4FD635}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.431391206543871"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.8590128928782"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.77999534929373"/>
+											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Death_Headfall_03.wav</AudioFile>
+											<AudioFile>GORESplt_Gore Splatter 01_JSE_GMP.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="1004673027"/>
+												<MediaID ID="720984940"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Death_Headfall_03" ID="{F2DBDC2B-253C-469A-87D4-3884A4A16705}" Platform="Linked"/>
+										<ActiveSource Name="GORESplt_Gore Splatter 01_JSE_GMP" ID="{3FF07716-19BB-4A73-8575-3C5F5C4FD635}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Evil_SpitPlant_Death_Headfall_03" ID="{54603FBC-44BE-4196-B21A-19318EE3E759}" ShortID="273256807">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-180</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GORESplt_Gore Splatter 01_JSE_GMP" ID="{CA36F588-F801-43B2-83C4-0153163D204F}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.431391206543871"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="7.27261062658925"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.29557608583764"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>GORESplt_Gore Splatter 01_JSE_GMP.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="344455827"/>
+												<MediaID Platform="Mac" ID="31148815"/>
+												<MediaID Platform="Windows" ID="31148815"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GORESplt_Gore Splatter 01_JSE_GMP" ID="{CA36F588-F801-43B2-83C4-0153163D204F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Evil_SpitPlant_Death_Headfall_04" ID="{76B0C3A5-F7FA-44BA-A6E4-2E340B3BCD3B}" ShortID="363290303">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-180</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GORESplt_Gore Splatter 01_JSE_GMP" ID="{FADE7306-86E2-4DC9-A20B-B66B505D007D}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.29681129420706"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="9.80463392264261"/>
+												<Property Name="TrimEnd" Type="Real64" Value="11.491043507934"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>GORESplt_Gore Splatter 01_JSE_GMP.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="344455827"/>
+												<MediaID Platform="Android_High" ID="31148815"/>
+												<MediaID Platform="Android_Low" ID="31148815"/>
+												<MediaID Platform="iOS" ID="31148815"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GORESplt_Gore Splatter 01_JSE_GMP" ID="{FADE7306-86E2-4DC9-A20B-B66B505D007D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="EvilSpitPlant_Death" ID="{2FE129FF-2B20-4249-96D2-7A9F3C60BE8E}" ShortID="226176941">
+						<RandomSequenceContainer Name="EvilSpitPlant_Bullet_Impact_Random" ID="{29BF5E5B-D274-4092-B697-1EB097D49F35}" ShortID="455588138">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+								<Property Name="OverridePriority" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
-											<Modifier Name="" ID="{FBD26F76-D289-4499-8719-1E551969EED8}">
+											<Modifier Name="" ID="{1C3503F6-0D44-4D37-A61F-FA7DBCB6FDDE}">
 												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="False"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
-								</Reference>
-								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="BAS_Evil_SpitPlant_Death_04" ID="{C2BEA1FF-2F14-4DFA-A732-516BF0C445D4}" ShortID="16304982">
-									<PropertyList>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Death_04" ID="{20D23693-DEAA-41C9-B6D0-937810791346}">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.38228833938294"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.104462511343013"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.90921909029038"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Death_04.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="585485659"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Death_04" ID="{20D23693-DEAA-41C9-B6D0-937810791346}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="BAS_Evil_SpitPlant_Death_05" ID="{638E43CE-CBB5-45B5-A87F-7AD4E10BEEEC}" ShortID="802202033">
-									<PropertyList>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Death_05" ID="{817A9205-813E-4DFF-B6F8-7B589933034B}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0279060798548094"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.30510647307925"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0427893224440411"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.49948669086509"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Death_05.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="263730271"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Death_05" ID="{817A9205-813E-4DFF-B6F8-7B589933034B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="BAS_Evil_SpitPlant_Death_06" ID="{95CFAEAF-4619-4C35-8FAA-1DB605011E20}" ShortID="443192150">
-									<PropertyList>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_Death_06" ID="{5DEC42BD-83F6-486C-AD6A-ECB599306D6E}">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0360919540229885"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.77211494252874"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_Death_06.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="426400611"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_Death_06" ID="{5DEC42BD-83F6-486C-AD6A-ECB599306D6E}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="EvilSpitPlant_Bullet_Impact" ID="{29BF5E5B-D274-4092-B697-1EB097D49F35}" ShortID="455588138">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-								<Property Name="OverridePriority" Type="bool" Value="True"/>
 								<Property Name="Priority" Type="int16">
 									<ValueList>
 										<Value>90</Value>
@@ -1128,7 +1704,7 @@
 								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-17</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1144,105 +1720,445 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="EvilSpitPlant_ImpactPlayer_03" ID="{2DF9EE8C-0734-495B-AC40-4350F2591D54}" ShortID="601529933">
+								<BlendContainer Name="Evil_SpitPlant_Bullect_Impact_Blend" ID="{1253A3DC-FC93-4F52-83A7-4371D940D2F5}" ShortID="212728033">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Priority" Type="int16">
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>90</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Player" ID="{FFCB5E13-D9D6-4610-AC15-8EE7E84352F9}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_ImpactPlayer_03" ID="{C2FCF399-B595-4029-8049-59065111B535}">
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_ImpactPlayer_03.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="539203250"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="Evil_SpitPlant_Bullect_01" ID="{B61FB04D-442B-45BF-AD2F-41D56A030C27}" ShortID="464986823">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>90</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Evil Spit Plants" ID="{BE5E26CC-8EEE-4B9D-ACAF-3EDD3BE864C8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MAGElem_Water Spell Splash Attack Medium 2_RogueWaves_DruidMagic" ID="{938AD4D3-25B3-47B8-9010-AB26DE26723F}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00145066810059014"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.291587299751446"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.50441353224811"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.17923602765688"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>MAGElem_Water Spell Splash Attack Medium 2_RogueWaves_DruidMagic.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="327979433"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MAGElem_Water Spell Splash Attack Medium 2_RogueWaves_DruidMagic" ID="{938AD4D3-25B3-47B8-9010-AB26DE26723F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Evil_SpitPlant_Bullect" ID="{7DE98386-856C-444F-A4A4-5A05B9BEEB63}" ShortID="42747243">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>90</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Evil Spit Plants" ID="{BE5E26CC-8EEE-4B9D-ACAF-3EDD3BE864C8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bullet_impact_ice_06" ID="{2AAD4FB3-651B-4A2F-A612-6315D7484FBF}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0864934150533185"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0609707679884049"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.523214248300375"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>bullet_impact_ice_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="933488179"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bullet_impact_ice_06" ID="{2AAD4FB3-651B-4A2F-A612-6315D7484FBF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_ImpactPlayer_03" ID="{C2FCF399-B595-4029-8049-59065111B535}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="EvilSpitPlant_ImpactPlayer_01" ID="{3B97463A-5092-4994-A561-3001CBC63F4F}" ShortID="70570644">
+								</BlendContainer>
+								<BlendContainer Name="Evil_SpitPlant_Bullect_Impact_Blend_01" ID="{944E9E05-B4A7-4ACF-AF00-55937167DB7A}" ShortID="96235671">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Priority" Type="int16">
+										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>90</Value>
+												<Value>-400</Value>
 											</ValueList>
 										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Player" ID="{FFCB5E13-D9D6-4610-AC15-8EE7E84352F9}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_ImpactPlayer_01" ID="{842FD5EF-AD5C-4DF3-BE27-6579B35603CE}">
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_ImpactPlayer_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="26692395"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="Evil_SpitPlant_Bullect_01" ID="{87F8BD8D-0182-4E31-ABE3-A15FDF3C6EBE}" ShortID="989816893">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>90</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Evil Spit Plants" ID="{BE5E26CC-8EEE-4B9D-ACAF-3EDD3BE864C8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MAGElem_Water Spell Splash Attack Medium 2_RogueWaves_DruidMagic" ID="{BE3D69CD-12CA-48BB-8129-0AF8A2EBF9B1}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00145066810059014"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.291587299751446"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.50441353224811"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.17923602765688"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>MAGElem_Water Spell Splash Attack Medium 2_RogueWaves_DruidMagic.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="327979433"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MAGElem_Water Spell Splash Attack Medium 2_RogueWaves_DruidMagic" ID="{BE3D69CD-12CA-48BB-8129-0AF8A2EBF9B1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Evil_SpitPlant_Bullect" ID="{48FEF03E-73D0-43D9-ADC1-CCEFF2B2DC83}" ShortID="514017319">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>90</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Evil Spit Plants" ID="{BE5E26CC-8EEE-4B9D-ACAF-3EDD3BE864C8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bullet_impact_ice_06" ID="{CD0DA6A7-F530-409A-9D51-77B5EFB35B2C}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0864934150533185"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0609707679884049"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.523214248300375"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>bullet_impact_ice_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="933488179"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bullet_impact_ice_06" ID="{CD0DA6A7-F530-409A-9D51-77B5EFB35B2C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_ImpactPlayer_01" ID="{842FD5EF-AD5C-4DF3-BE27-6579B35603CE}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="EvilSpitPlant_ImpactPlayer_02" ID="{5D60FEDD-1620-4F0C-9E5A-B7E1D45ECA5E}" ShortID="1027184220">
+								</BlendContainer>
+								<BlendContainer Name="Evil_SpitPlant_Bullect_Impact_Blend_02" ID="{B34FA5FC-A207-4F82-922F-99BB046FB6FA}" ShortID="60101953">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Priority" Type="int16">
+										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>90</Value>
+												<Value>-200</Value>
 											</ValueList>
 										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Player" ID="{FFCB5E13-D9D6-4610-AC15-8EE7E84352F9}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BAS_Evil_SpitPlant_ImpactPlayer_02" ID="{90FD1219-0EC9-4439-A433-56AFD2C7EBE4}">
-											<Language>SFX</Language>
-											<AudioFile>Creatures\BAS_Evil_SpitPlant_ImpactPlayer_02.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="808800733"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="Evil_SpitPlant_Bullect_01" ID="{D27305AC-BD49-4958-B190-673C8011C64F}" ShortID="211301781">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>90</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Evil Spit Plants" ID="{BE5E26CC-8EEE-4B9D-ACAF-3EDD3BE864C8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MAGElem_Water Spell Splash Attack Medium 2_RogueWaves_DruidMagic" ID="{FA5FF7DE-6E65-4BAB-9F7E-A2C50FAD2F20}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00145066810059014"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.291587299751446"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.50441353224811"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.19400525843383"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>MAGElem_Water Spell Splash Attack Medium 2_RogueWaves_DruidMagic.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="887352338"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MAGElem_Water Spell Splash Attack Medium 2_RogueWaves_DruidMagic" ID="{FA5FF7DE-6E65-4BAB-9F7E-A2C50FAD2F20}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Evil_SpitPlant_Bullect" ID="{0FEF88AF-0C65-4EF5-A58C-5C879BCEE2E9}" ShortID="392144341">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>90</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Evil Spit Plants" ID="{BE5E26CC-8EEE-4B9D-ACAF-3EDD3BE864C8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bullet_impact_ice_06" ID="{5522EB4B-2E91-46CB-985F-9C617EC1B17C}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0864934150533185"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0609707679884049"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.523214248300375"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>bullet_impact_ice_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="933488179"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bullet_impact_ice_06" ID="{5522EB4B-2E91-46CB-985F-9C617EC1B17C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Evil_SpitPlant_ImpactPlayer_02" ID="{90FD1219-0EC9-4439-A433-56AFD2C7EBE4}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</BlendContainer>
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="EvilSpitPlant_Bullet_NoImpact" ID="{74F7E9F2-0844-4D0B-A10C-A6715D6BA961}" ShortID="498720333">
@@ -1301,6 +2217,200 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Wwise Silence" ID="{19976300-858D-43DD-929E-0C5F4188C34F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="EvilSpitPlant_Death_Random" ID="{2FE129FF-2B20-4249-96D2-7A9F3C60BE8E}" ShortID="226176941">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>650</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{FBD26F76-D289-4499-8719-1E551969EED8}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="False"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Priority" Type="int16">
+									<ValueList>
+										<Value>60</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+								<Property Name="ReflectionsVolume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Evil Spit Plants" ID="{BE5E26CC-8EEE-4B9D-ACAF-3EDD3BE864C8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+								</Reference>
+								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+								</Reference>
+								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Evil_SpitPlant_Death_02" ID="{35DBF021-B9DF-46C2-AC87-8A99FB4E6B8C}" ShortID="525228437">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>22</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-350</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Monster_Pain_Death_121" ID="{0E23F63B-128E-460E-BD8B-1543625FA88E}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.724588056820542"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Monster_Pain_Death_121.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="600049445"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Monster_Pain_Death_121" ID="{0E23F63B-128E-460E-BD8B-1543625FA88E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Evil_SpitPlant_Death_01" ID="{E6D0616A-BCD3-4F6F-BC46-67C8E366745C}" ShortID="488166269">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-250</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Monster9_Death10" ID="{86C6318B-8800-48D2-8463-F1464CEAAD8A}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.357546536602191"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Monster9_Death10.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1016926655"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Monster9_Death10" ID="{86C6318B-8800-48D2-8463-F1464CEAAD8A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Evil_SpitPlant_Death" ID="{DA2484CA-8941-4062-95EC-735B95796B54}" ShortID="642524813">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>18</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-650</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Creature_Alien_Death_01" ID="{7FF53771-0C46-46EB-AA56-BEBF6E369000}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.680993770485494"/>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.84501804740868"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Creature_Alien_Death_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="745110365"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Creature_Alien_Death_01" ID="{7FF53771-0C46-46EB-AA56-BEBF6E369000}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

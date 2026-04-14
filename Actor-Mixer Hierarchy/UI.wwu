@@ -466,68 +466,6 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Get Weapon" ID="{098DEDBE-0446-458A-899B-670F23C1E672}" ShortID="1060656300">
-									<PropertyList>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Highpass" Type="int16">
-											<ValueList>
-												<Value>8</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>15</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{51EEE871-44B2-4DCD-A0BC-8E852A514971}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Priority" Type="int16">
-											<ValueList>
-												<Value>80</Value>
-											</ValueList>
-										</Property>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="UI_Quest" ID="{D365C4F6-C056-4829-8198-81B9F3A8EC0C}" WorkUnitID="{0A89C0A4-0258-4FE9-97D5-2DFBD103277C}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="UI" ID="{4C883836-7B64-40A3-B28C-B1F1D8AEE67D}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_pickUpWeapon_001" ID="{F8D2F3A4-C330-418D-B9DE-72BA30C78B0F}">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.996164091688633"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0524296890362438"/>
-												<Property Name="TrimEnd" Type="Real64" Value="3.23157537877939"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Character\Weapons\BAS_pickUpWeapon_001.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="31470392"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_pickUpWeapon_001" ID="{F8D2F3A4-C330-418D-B9DE-72BA30C78B0F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<RandomSequenceContainer Name="Collection Complete" ID="{767183B0-DA01-4AFC-9844-9AB9822692AE}" ShortID="875586601">
 									<PropertyList>
 										<Property Name="CenterPercentage" Type="int32">
@@ -570,15 +508,21 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="BAS_Quest_CompleteCollection_02" ID="{6A7926A3-D4DA-4934-B165-4BAB893EEF55}" ShortID="1045609384">
+										<Sound Name="Collection_Complete" ID="{4868E93D-CF28-404F-8B93-80AD8700978C}" ShortID="401051756">
 											<PropertyList>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
-															<Modifier Name="" ID="{D4A552A0-2D07-41E4-BD33-048A29EBBE94}">
+															<Modifier Name="" ID="{E95459D3-D070-483E-A0E8-97F5A13951D1}">
 																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
+																	<Property Name="Max" Type="Real64" Value="150"/>
+																	<Property Name="Min" Type="Real64" Value="-150"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
@@ -589,6 +533,7 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 														<Value>80</Value>
 													</ValueList>
 												</Property>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -600,23 +545,30 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Quest_CompleteCollection_02" ID="{635C1330-AADF-40AF-825E-D2DAF68BD010}">
+												<AudioFileSource Name="collect_item_14" ID="{718922B1-DA4E-409D-9F1D-149DB924D622}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.00256479904632153"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1.1251796316204"/>
-														<Property Name="FadeOutShape" Type="int16" Value="4"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.169276737057221"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.58299626138879"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Interface\BAS_Quest_CompleteCollection_02.wav</AudioFile>
+													<AudioFile>collect_item_14.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="945967359"/>
+														<MediaID ID="699036850"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{D2624D7B-5C59-4170-9DF4-D90209D78224}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="2.22044604925031E-16"/>
+														<Property Name="PanY" Type="Real64" Value="100"/>
+													</PropertyList>
+												</Panner>
+											</PositioningInfo>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Quest_CompleteCollection_02" ID="{635C1330-AADF-40AF-825E-D2DAF68BD010}" Platform="Linked"/>
+												<ActiveSource Name="collect_item_14" ID="{718922B1-DA4E-409D-9F1D-149DB924D622}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -624,180 +576,184 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										<Panner Name="" ID="{5A39C519-CF34-40E4-B15B-50ABBBCEDD28}"/>
 									</PositioningInfo>
 								</RandomSequenceContainer>
-								<Sound Name="Quest_Complete" ID="{76B7A787-D942-40DC-BDDA-3926568F0038}" ShortID="167565799">
+								<Sound Name="Quest_Complete01" ID="{0202C8CC-CB57-4771-B1EC-779B66D08F29}" ShortID="81294981">
 									<PropertyList>
-										<Property Name="CenterPercentage" Type="int32">
-											<ValueList>
-												<Value>100</Value>
-											</ValueList>
-										</Property>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="OverrideEffect" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{2BEA335B-BD3F-49CC-AE3F-FB4F7DDA12AA}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Priority" Type="int16">
-											<ValueList>
-												<Value>80</Value>
-											</ValueList>
-										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-11</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="UI_Quest" ID="{D365C4F6-C056-4829-8198-81B9F3A8EC0C}" WorkUnitID="{0A89C0A4-0258-4FE9-97D5-2DFBD103277C}"/>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="UI" ID="{4C883836-7B64-40A3-B28C-B1F1D8AEE67D}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BAS_Quest_CompleteCollection_01" ID="{04571D48-FC1E-4DBE-AC6E-6B188CF5B507}">
+										<AudioFileSource Name="collect_item_hurry_out_of_time_01" ID="{6E10C68D-E344-44B0-8268-3ACDA3CDD114}">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.608010323660714"/>
-												<Property Name="LoopEnd" Type="Real64" Value="0.810680431547619"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0298061876585989"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.4063328218006"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>Interface\BAS_Quest_CompleteCollection_01.wav</AudioFile>
+											<AudioFile>collect_item_hurry_out_of_time_01.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="27824897"/>
+												<MediaID ID="875273434"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<PositioningInfo>
-										<Panner Name="" ID="{71956947-C708-40D4-B0C2-EE5FCFAC7E97}"/>
-									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="collect_item_hurry_out_of_time_01" ID="{6E10C68D-E344-44B0-8268-3ACDA3CDD114}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="NewWeapon_Seq" ID="{A5625C40-D70F-4E54-8A87-A98F3293338E}" ShortID="910112244">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2.5"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="New_Weapon_01" ID="{B72DE397-C777-46B2-85F1-5AC6A5A7B8FD}" ShortID="206946842">
+											<PropertyList>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>80</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="UI_Quest" ID="{D365C4F6-C056-4829-8198-81B9F3A8EC0C}" WorkUnitID="{0A89C0A4-0258-4FE9-97D5-2DFBD103277C}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="UI" ID="{4C883836-7B64-40A3-B28C-B1F1D8AEE67D}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sci-fi_device_item_power_up_flash_01" ID="{6409635A-C22F-4333-830B-47445A8DA75D}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>sci-fi_device_item_power_up_flash_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="846031109"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{6B908612-F18A-402D-9A6A-B7B63F8150E6}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="2.22044604925031E-16"/>
+														<Property Name="PanY" Type="Real64" Value="100"/>
+													</PropertyList>
+												</Panner>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="sci-fi_device_item_power_up_flash_01" ID="{6409635A-C22F-4333-830B-47445A8DA75D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="New_Weapon" ID="{AD42F7B7-9B3A-4F90-B3F8-2E89D6C8EF1D}" ShortID="399183348">
+											<PropertyList>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>1800</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Priority" Type="int16">
+													<ValueList>
+														<Value>80</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="UI_Quest" ID="{D365C4F6-C056-4829-8198-81B9F3A8EC0C}" WorkUnitID="{0A89C0A4-0258-4FE9-97D5-2DFBD103277C}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="UI" ID="{4C883836-7B64-40A3-B28C-B1F1D8AEE67D}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Discovery_01-03_Organ-A_WET" ID="{379FB29A-AFB5-412C-B000-20A7B6301D58}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="8.96"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Discovery_01-03_Organ-A_WET.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="603574518"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{1C55693D-F76D-44AB-A841-FA1EC43A8233}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="2.22044604925031E-16"/>
+														<Property Name="PanY" Type="Real64" Value="100"/>
+													</PropertyList>
+												</Panner>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="Discovery_01-03_Organ-A_WET" ID="{379FB29A-AFB5-412C-B000-20A7B6301D58}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 									<ObjectLists>
-										<ObjectList Name="Effects">
+										<ObjectList Name="Playlist">
 											<Reference>
-												<Local>
-													<EffectSlot Name="" ID="{E3244046-3F15-4981-A2F2-AD23B524D568}" ShortID="539289359">
-														<ReferenceList>
-															<Reference Name="Effect">
-																<Custom CreatedFrom="{269E5ED2-6170-4983-839E-6C9E18789974}">
-																	<Effect Name="WAG_Questing_PitchShift (Custom)" ID="{0AE132F2-B97F-447E-AE5C-3760A4A084A4}" ShortID="785024900" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
-																		<ObjectLists>
-																			<ObjectList Name="RTPC">
-																				<Reference>
-																					<Local>
-																						<RTPC Name="" ID="{05284F51-4601-4261-B7C6-688A6012B9D0}" ShortID="959898379">
-																							<PropertyList>
-																								<Property Name="PropertyName" Type="string" Value="Pitch"/>
-																							</PropertyList>
-																							<ReferenceList>
-																								<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
-																									<ObjectRef Name="Quest_Progress" ID="{B7826E2B-2C59-4806-B282-D37CF93F2E48}" WorkUnitID="{CD9AA7D0-E89B-4663-8B1D-2234BDDCDFB1}"/>
-																								</Reference>
-																								<Reference Name="Curve">
-																									<Custom>
-																										<Curve Name="" ID="{91511EB2-5DA0-4690-8C65-2D358A04B0BE}">
-																											<PropertyList>
-																												<Property Name="Flags" Type="int32" Value="1"/>
-																											</PropertyList>
-																											<PointList>
-																												<Point>
-																													<XPos>0</XPos>
-																													<YPos>-500</YPos>
-																													<Flags>5</Flags>
-																													<SegmentShape>Constant</SegmentShape>
-																												</Point>
-																												<Point>
-																													<XPos>10</XPos>
-																													<YPos>-400</YPos>
-																													<Flags>0</Flags>
-																													<SegmentShape>Constant</SegmentShape>
-																												</Point>
-																												<Point>
-																													<XPos>20</XPos>
-																													<YPos>-300</YPos>
-																													<Flags>0</Flags>
-																													<SegmentShape>Constant</SegmentShape>
-																												</Point>
-																												<Point>
-																													<XPos>30</XPos>
-																													<YPos>-200</YPos>
-																													<Flags>0</Flags>
-																													<SegmentShape>Constant</SegmentShape>
-																												</Point>
-																												<Point>
-																													<XPos>40</XPos>
-																													<YPos>-100</YPos>
-																													<Flags>0</Flags>
-																													<SegmentShape>Constant</SegmentShape>
-																												</Point>
-																												<Point>
-																													<XPos>50</XPos>
-																													<YPos>0</YPos>
-																													<Flags>0</Flags>
-																													<SegmentShape>Constant</SegmentShape>
-																												</Point>
-																												<Point>
-																													<XPos>60</XPos>
-																													<YPos>100</YPos>
-																													<Flags>0</Flags>
-																													<SegmentShape>Constant</SegmentShape>
-																												</Point>
-																												<Point>
-																													<XPos>70</XPos>
-																													<YPos>200</YPos>
-																													<Flags>0</Flags>
-																													<SegmentShape>Constant</SegmentShape>
-																												</Point>
-																												<Point>
-																													<XPos>80</XPos>
-																													<YPos>300</YPos>
-																													<Flags>0</Flags>
-																													<SegmentShape>Constant</SegmentShape>
-																												</Point>
-																												<Point>
-																													<XPos>90</XPos>
-																													<YPos>400</YPos>
-																													<Flags>0</Flags>
-																													<SegmentShape>Constant</SegmentShape>
-																												</Point>
-																												<Point>
-																													<XPos>100</XPos>
-																													<YPos>500</YPos>
-																													<Flags>37</Flags>
-																												</Point>
-																											</PointList>
-																										</Curve>
-																									</Custom>
-																								</Reference>
-																							</ReferenceList>
-																						</RTPC>
-																					</Local>
-																				</Reference>
-																			</ObjectList>
-																		</ObjectLists>
-																	</Effect>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</EffectSlot>
-												</Local>
+												<ObjectRef Name="New_Weapon" ID="{AD42F7B7-9B3A-4F90-B3F8-2E89D6C8EF1D}" WorkUnitID="{51DFFF8A-708E-4F93-BE7C-2D420F924ACC}"/>
+											</Reference>
+											<Reference>
+												<ObjectRef Name="New_Weapon_01" ID="{B72DE397-C777-46B2-85F1-5AC6A5A7B8FD}" WorkUnitID="{51DFFF8A-708E-4F93-BE7C-2D420F924ACC}"/>
 											</Reference>
 										</ObjectList>
 									</ObjectLists>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Quest_CompleteCollection_01" ID="{04571D48-FC1E-4DBE-AC6E-6B188CF5B507}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<PositioningInfo>
 								<Panner Name="" ID="{851CDE86-E2AC-4D01-99E8-C519C553EAEF}">

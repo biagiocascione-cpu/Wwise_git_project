@@ -7,13 +7,13 @@
 					<ChildrenList>
 						<Event Name="Enemy_EvilCrawler_Death" ID="{361ACB08-CF41-4C11-AA87-3CA4142AAC7E}">
 							<ChildrenList>
-								<Action Name="" ID="{542FA2A6-4E3A-4EF8-B680-F075CE2A13A0}" ShortID="18615614">
+								<Action Name="" ID="{61E722FA-6129-4EF5-9CCC-DE5FD6F73740}" ShortID="966547729">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="EvilCrawler_Die" ID="{B650E8E2-E280-47EA-8716-CCA75FDAB2D1}" WorkUnitID="{940E3ADE-780E-44E6-AA19-4B038D6F7B5B}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Evil_Crawler_Die_Blend" ID="{D518519D-A8C7-4E68-B0B8-CE7263D316D8}" WorkUnitID="{940E3ADE-780E-44E6-AA19-4B038D6F7B5B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -82,13 +82,13 @@
 					<ChildrenList>
 						<Event Name="Enemy_EvilHead_Charge" ID="{9EAEB9E0-3BAF-4D65-98A5-6DA75FAA8548}">
 							<ChildrenList>
-								<Action Name="" ID="{4329CC4D-8348-4F77-9FED-6D803A9553FC}" ShortID="985396700">
+								<Action Name="" ID="{950E3F56-4AA1-4EF9-B653-0BDA162CE688}" ShortID="236264861">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="EvilHead_Attack_Charge" ID="{2DD9CBF6-8CB2-41CC-A0A9-DDED82AEE4DF}" WorkUnitID="{A9BC4D19-3EEF-4EA0-98A3-36A71A510AB8}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Evil_Head_Attack_Charge_Blend" ID="{2BCAAA35-3289-4FDE-8449-A0F66EDB4BCB}" WorkUnitID="{A9BC4D19-3EEF-4EA0-98A3-36A71A510AB8}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -102,7 +102,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="EvilHead_Death" ID="{BFB63ED3-88A3-4598-B130-38A6EC3F4B91}" WorkUnitID="{A9BC4D19-3EEF-4EA0-98A3-36A71A510AB8}"/>
+											<ObjectRef Name="Evil_Head_Death_Blend" ID="{BFB63ED3-88A3-4598-B130-38A6EC3F4B91}" WorkUnitID="{A9BC4D19-3EEF-4EA0-98A3-36A71A510AB8}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -124,13 +124,13 @@
 						</Event>
 						<Event Name="Enemy_EvilHead_Movement" ID="{82A4B395-FF37-459D-A690-8D4D38D669D7}">
 							<ChildrenList>
-								<Action Name="" ID="{BAD355D2-1E48-4EA9-AB84-003C58A1116C}" ShortID="45111680">
+								<Action Name="" ID="{196893DB-1853-4CF8-BEB6-3EBE19B9E78F}" ShortID="535115831">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="EvilHead_Attack_Charge" ID="{2DD9CBF6-8CB2-41CC-A0A9-DDED82AEE4DF}" WorkUnitID="{A9BC4D19-3EEF-4EA0-98A3-36A71A510AB8}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Evil_Head_Attack_Charge_Blend" ID="{2BCAAA35-3289-4FDE-8449-A0F66EDB4BCB}" WorkUnitID="{A9BC4D19-3EEF-4EA0-98A3-36A71A510AB8}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -159,7 +159,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="EvilHead_Hurt" ID="{30ACA7DC-6F2D-4229-A37B-C011A09ECFE4}" WorkUnitID="{A9BC4D19-3EEF-4EA0-98A3-36A71A510AB8}"/>
+											<ObjectRef Name="Evil_Head_Hurt_Random" ID="{30ACA7DC-6F2D-4229-A37B-C011A09ECFE4}" WorkUnitID="{A9BC4D19-3EEF-4EA0-98A3-36A71A510AB8}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -167,13 +167,13 @@
 						</Event>
 						<Event Name="Enemy_EvilHead_Bite" ID="{8581C194-4BA1-4866-8172-BDF1395B15A8}">
 							<ChildrenList>
-								<Action Name="" ID="{941E4325-1E4A-4249-A23E-D7C3B0FD2559}" ShortID="888625830">
+								<Action Name="" ID="{EFF813FE-5302-4932-A8C0-85D22FD0F7CE}" ShortID="834069669">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="EvilHead_Attack_Bite" ID="{D57EF59F-28AA-4626-ABDD-7D41490878E6}" WorkUnitID="{A9BC4D19-3EEF-4EA0-98A3-36A71A510AB8}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Evil_Head_Attack_Bite_Blend" ID="{DC4C33DE-D7D4-4758-90AC-F98D13A8536C}" WorkUnitID="{A9BC4D19-3EEF-4EA0-98A3-36A71A510AB8}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -220,17 +220,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="EvilSpitPlant_Death" ID="{2FE129FF-2B20-4249-96D2-7A9F3C60BE8E}" WorkUnitID="{D0444BF3-A57A-4524-8729-7119CED64E37}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{CF1A6C70-EF5B-4EB8-9BF7-A480A2A0DC7C}" ShortID="817295520">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="EvilSpitPlant_Hurt" ID="{9EF85C94-8343-465A-B2F3-3276EDBD0F66}" WorkUnitID="{D0444BF3-A57A-4524-8729-7119CED64E37}"/>
+											<ObjectRef Name="EvilSpitPlant_Death_Random" ID="{2FE129FF-2B20-4249-96D2-7A9F3C60BE8E}" WorkUnitID="{D0444BF3-A57A-4524-8729-7119CED64E37}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -259,7 +249,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="EvilSpitPlant_Hurt" ID="{9EF85C94-8343-465A-B2F3-3276EDBD0F66}" WorkUnitID="{D0444BF3-A57A-4524-8729-7119CED64E37}"/>
+											<ObjectRef Name="EvilSpitPlant_Hurt_Random" ID="{9EF85C94-8343-465A-B2F3-3276EDBD0F66}" WorkUnitID="{D0444BF3-A57A-4524-8729-7119CED64E37}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -289,7 +279,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="EvilSpitPlant_Charge" ID="{A09156CE-413B-44A8-A53D-0AF888B6AA3C}" WorkUnitID="{D0444BF3-A57A-4524-8729-7119CED64E37}"/>
+											<ObjectRef Name="EvilSpitPlant_Charge_Random" ID="{A09156CE-413B-44A8-A53D-0AF888B6AA3C}" WorkUnitID="{D0444BF3-A57A-4524-8729-7119CED64E37}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -318,7 +308,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="EvilSpitPlant_Death_Headfall" ID="{FA0A8048-D0F4-4EF7-B942-0265D550899E}" WorkUnitID="{D0444BF3-A57A-4524-8729-7119CED64E37}"/>
+											<ObjectRef Name="EvilSpitPlant_Death_Headfall_Random" ID="{FA0A8048-D0F4-4EF7-B942-0265D550899E}" WorkUnitID="{D0444BF3-A57A-4524-8729-7119CED64E37}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -332,7 +322,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="EvilSpitPlant_Bullet_Impact" ID="{29BF5E5B-D274-4092-B697-1EB097D49F35}" WorkUnitID="{D0444BF3-A57A-4524-8729-7119CED64E37}"/>
+											<ObjectRef Name="EvilSpitPlant_Bullet_Impact_Random" ID="{29BF5E5B-D274-4092-B697-1EB097D49F35}" WorkUnitID="{D0444BF3-A57A-4524-8729-7119CED64E37}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

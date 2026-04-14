@@ -48,6 +48,7 @@
 						<Value Platform="Android_High">20</Value>
 					</ValueList>
 				</Property>
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjIxMzQxIiBtYXNrPSJaTVVBNTQyNCIgZW5jPSIwIj48bGlj ZW5zZSBpZD0iMSIgbmFtZT0iV3dpc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwz LDQsMTAsMTMsMTQsMzciIGV4cGlyZXM9IjIwMjYtMDktMDEiICAvPjxsaWNlbnNl IGlkPSIyMiIgbmFtZT0iTGV2ZWwgQSBMaWNlbnNlIiB0eXBlPSIzIiBwbGF0Zm9y bXM9IjIsMyw0LDEwLDEzLDE0LDM3IiBleHBpcmVzPSIyMDI2LTA5LTAxIiAgLz48 bGljZW5zZSBpZD0iMjEiIG5hbWU9Ik1haW50ZW5hbmNlIiB0eXBlPSIzIiBwbGF0 Zm9ybXM9IjIsMyw0LDEwLDEzLDE0LDM3IiBleHBpcmVzPSIyMDI2LTA5LTAxIiAg Lz48bGljZW5zZSBpZD0iMjUiIG5hbWU9IkFsbCBXd2lzZSBQbHVnLUlucyIgdHlw ZT0iMyIgIGV4cGlyZXM9IjIwMjYtMDktMDEiICAvPjwvcHJvamVjdD4=|j//R9AK VuR5Nb7JCScNSDNevk8vJVw94mfYe/meVw5mCfgR8U7UvH85MivJlwaQUJntzhlS 9Y9EXn/2M4dGc9rsgZc595xBNNhRQdvFc1Xo2Ugdb2mKEzGVGaDb4OPnTt+KPJJ9 dyirGsDFQTTzSlydkZ5o/VmJ9lLuTilZE035yTxt18fUVArHyfpnAuA3HiZK027p XoFG3Rcu/wLfhFJjJBUqAVZO/UWT0tWQ0CLkLRhNjI3lVbyIn/WYQsEnozN4nxi2 /2GjoctiXk91n3bIslhfDI+TqTGnGuFVFG5P1Fh1q0QQh/TFkjUj+heSww7Z/i3T 0Q05FQRt85PQ8Kg== "/>
 				<Property Name="SoundBankAllowExceedingSB" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
@@ -214,11 +215,6 @@ XoFG3Rcu/wLfhFJjJBUqAVZO/UWT0tWQ0CLkLRhNjI3lVbyIn/WYQsEnozN4nxi2
 						<Property Name="OverrideWavLoop" Type="bool">
 							<ValueList>
 								<Value>False</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:FileIDForAudioSource" Type="string">
-							<ValueList>
-								<Value></Value>
 							</ValueList>
 						</Property>
 						<Property Name="TrimBegin" Type="Real64">
@@ -705,76 +701,6 @@ XoFG3Rcu/wLfhFJjJBUqAVZO/UWT0tWQ0CLkLRhNjI3lVbyIn/WYQsEnozN4nxi2
 						<Property Name="ReflectionsVolume" Type="Real64">
 							<ValueList>
 								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:ActiveChannels" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:FileID" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:FileName" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:HandleStartTime" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:HandleStopTime" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:LibraryID" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:LibraryLocation" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:PlaybackSpeed" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:ProcessList" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:RenderedFileBitRate" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:RenderedFilePath" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:RenderedFileSampleRate" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:SelectionStartTime" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:SelectionStopTime" Type="string">
-							<ValueList>
-								<Value></Value>
 							</ValueList>
 						</Property>
 						<Property Name="SpeakerPanning" Type="int16">
