@@ -19,10 +19,6 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 							<ObjectRef Name="Music_Regions" ID="{1378381B-6304-43C8-A350-2C0C481351B1}" WorkUnitID="{7EEF7DFB-FB01-49A6-ADE2-D0FF894FF235}"/>
 							<Position X="0" Y="0"/>
 						</Module>
-						<Module>
-							<ObjectRef Name="Ambient_Fire_Campfire" ID="{BC8AEB95-BCF4-4E93-BAC7-BF28B5BB8E29}" WorkUnitID="{321260F5-F24C-4A74-891E-22D7C91AE38B}"/>
-							<Position X="1" Y="0"/>
-						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>

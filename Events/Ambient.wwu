@@ -17,12 +17,12 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 					<ChildrenList>
 						<Event Name="Ambient_River" ID="{B30B52AB-46CF-4A54-9DC8-A90CDD5398E2}">
 							<ChildrenList>
-								<Action Name="" ID="{4A1D9FB0-5DF7-4A22-9D8F-1AF71F023345}" ShortID="944286662">
+								<Action Name="" ID="{982A3C9C-E312-4B2E-BDA5-95AE6066ACD9}" ShortID="55141153">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+										<Reference Name="Target">
 											<ObjectRef Name="Ambient_Water_River" ID="{42B20E05-96B9-4733-812D-AC61D9B056C5}" WorkUnitID="{321260F5-F24C-4A74-891E-22D7C91AE38B}"/>
 										</Reference>
 									</ReferenceList>
@@ -116,13 +116,13 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 						</Event>
 						<Event Name="Ambient_Region_Dungeon" ID="{0DA0B07A-4FFA-4946-8E31-D92FE4963F4C}">
 							<ChildrenList>
-								<Action Name="" ID="{0E75B543-28D8-4965-BBD8-B1C65ABD690B}" ShortID="196666549">
+								<Action Name="" ID="{F50CEFFE-AEC9-4AA0-B88D-EAEF718CFDE0}" ShortID="1013966924">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambient_Region_Dungeon" ID="{A15AC6D6-36D5-432F-B8DC-890CA72A474E}" WorkUnitID="{560ECF91-5921-46AB-8E60-4A2FD3652076}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambient_Dungeon" ID="{9B9D928D-EDA1-4C08-B5B6-DEBCD715DBD6}" WorkUnitID="{560ECF91-5921-46AB-8E60-4A2FD3652076}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -144,13 +144,13 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 						</Event>
 						<Event Name="Ambient_Region_Cave" ID="{C54FB893-8B84-4A04-AE12-7512C79000CF}">
 							<ChildrenList>
-								<Action Name="" ID="{98653C86-35CE-4186-95FD-FA85BAA5A430}" ShortID="965455105">
+								<Action Name="" ID="{03313E6C-B059-49DB-8068-A3D3A6E7D739}" ShortID="541484059">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambient_Region_Cave" ID="{B195D0DF-51D7-443B-9BFB-199F471E3080}" WorkUnitID="{560ECF91-5921-46AB-8E60-4A2FD3652076}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambient_Cave" ID="{DCD6EEA3-99A1-40C8-A5E7-487207114541}" WorkUnitID="{560ECF91-5921-46AB-8E60-4A2FD3652076}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -284,12 +284,12 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 								</Folder>
 								<Event Name="Ambient_Lava" ID="{1FD14D4E-ADA6-45D5-80BC-0EECF0F71DD9}">
 									<ChildrenList>
-										<Action Name="" ID="{97FE1B84-A589-4345-AD50-9AE75D6AC723}" ShortID="743113301">
+										<Action Name="" ID="{75A44189-9B38-4D0E-9613-1C88C78A17F5}" ShortID="558060470">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+												<Reference Name="Target">
 													<ObjectRef Name="Ambient_Lava" ID="{D8C9FBB3-3535-4064-9EA7-5264BD9F8EA2}" WorkUnitID="{321260F5-F24C-4A74-891E-22D7C91AE38B}"/>
 												</Reference>
 											</ReferenceList>
@@ -332,14 +332,13 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 					<ChildrenList>
 						<Event Name="Ambient_Campfire_Play" ID="{4B7C14D3-4763-4B2C-9EAB-142865C3261F}">
 							<ChildrenList>
-								<Action Name="" ID="{73D21DA3-AB8E-4FB1-B9C0-59C49FD0514B}" ShortID="492980211">
+								<Action Name="" ID="{FADB357F-7B6A-42D1-AE17-6EC4FB92F59E}" ShortID="956595120">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambient_Fire_Campfire" ID="{BC8AEB95-BCF4-4E93-BAC7-BF28B5BB8E29}" WorkUnitID="{321260F5-F24C-4A74-891E-22D7C91AE38B}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Campfire" ID="{E4BCE4A1-5A8C-4A28-AC44-74766931A525}" WorkUnitID="{321260F5-F24C-4A74-891E-22D7C91AE38B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -347,13 +346,13 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 						</Event>
 						<Event Name="Ambient_Campfire_Stop" ID="{45C3257D-2EAB-49B6-B593-1A3290D7C5A0}">
 							<ChildrenList>
-								<Action Name="" ID="{E4F4534F-D95A-4DEB-A78B-BC54B69E4D4C}" ShortID="94423456">
+								<Action Name="" ID="{F826C39F-C7A2-41A9-BE30-B207910AD29E}" ShortID="662597935">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambient_Fire_Campfire" ID="{BC8AEB95-BCF4-4E93-BAC7-BF28B5BB8E29}" WorkUnitID="{321260F5-F24C-4A74-891E-22D7C91AE38B}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Campfire" ID="{E4BCE4A1-5A8C-4A28-AC44-74766931A525}" WorkUnitID="{321260F5-F24C-4A74-891E-22D7C91AE38B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -361,13 +360,13 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 						</Event>
 						<Event Name="Ambient_Crystal_Hum" ID="{25B3E3DE-DAEE-4718-A2A2-8B9343F935AE}">
 							<ChildrenList>
-								<Action Name="" ID="{3D90B8A6-18B9-4014-8AC4-AD941D817BD4}" ShortID="5234007">
+								<Action Name="" ID="{CC904A3D-314B-42E3-A29C-959F7AFFC684}" ShortID="736419195">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambient_Crystal_Ringing" ID="{37AAFE7D-2034-4E27-B369-E12E6FBC779B}" WorkUnitID="{321260F5-F24C-4A74-891E-22D7C91AE38B}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambient_cristal_Hum" ID="{A8EB57E6-865D-4E40-8852-8B1F4CEBDAF3}" WorkUnitID="{321260F5-F24C-4A74-891E-22D7C91AE38B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

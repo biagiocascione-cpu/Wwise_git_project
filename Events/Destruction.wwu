@@ -53,13 +53,13 @@
 						</Event>
 						<Event Name="Destruction_Rock_Destroy" ID="{2DE6AABD-0288-445F-A9B7-67E4BF11C653}">
 							<ChildrenList>
-								<Action Name="" ID="{2210BEC4-C331-45FF-A0F4-8417E5B67E2F}" ShortID="305456840">
+								<Action Name="" ID="{3EE6D900-5A5D-4C6D-9749-44A221DBC6FE}" ShortID="255107873">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Destruction_Rock" ID="{6EEEBF01-8A2A-462D-B9CC-737EB10557B4}" WorkUnitID="{F915F10F-FFF9-40D9-8FA4-4990AD58D98A}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Destruction" ID="{3713FE5A-4CD1-4E31-97E1-F5CEC5805398}" WorkUnitID="{F915F10F-FFF9-40D9-8FA4-4990AD58D98A}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -55,6 +55,16 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{8C840436-1D06-4210-B2DF-6CF2D3E6CD31}" ShortID="737312190">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Surface_Material_Impact" ID="{D893EB9B-BB1B-4015-9D27-27982B9CB4E5}" WorkUnitID="{84C05677-5F03-43C0-81C3-BA52CE7089EA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Player_WeaponSwing" ID="{D6576080-A42D-4FBF-8B25-56C419BC2D7E}">

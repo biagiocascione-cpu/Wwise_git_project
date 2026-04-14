@@ -3258,170 +3258,40 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Ambient_Woodlands_Day_Long" ID="{527CAD0B-8236-4613-85ED-211613E272A3}" ShortID="207861881">
-											<Comment>Audiokinetic Inc. All rights reserved.
-Audio content provided by Bay Area Sound, Inc.
-With the help of Damian Kastbauer for Lost Chocolate Lab.
-(c) 2012 Bay Area Sound, Inc.
-www.basound.com
-
-The Audio Content contained in this file is the property of Bay Area Sound, Inc.
-Your sole right with regard to this Audio Content is to listen to the Audio 
-Content as part of this Sample Project.  This Audio Content cannot be used
-or modified for a commercial purpose nor for public demonstration.</Comment>
+										<Sound Name="Ambient_Woodlands_Day" ID="{9C4D7618-807C-48BE-92C0-9AEE1F11AF98}" ShortID="548481059">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value Platform="Android_Low">False</Value>
-														<Value Platform="iOS">False</Value>
-														<Value Platform="Android_High">False</Value>
-													</ValueList>
-												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="IsNonCachable" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsStreamingEnabled" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="PreFetchLength" Type="int16">
-													<ValueList>
-														<Value>1000</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{300C9831-DC3E-4362-BABC-6A5DBD3EDB24}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_amb_forest_day_background_loop_01" ID="{2CB5C8F0-68AC-4908-B045-27605DD7C606}">
-													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="1000"/>
-														<Property Name="FadeInDuration" Type="Real64" Value="1.74047780721064"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="2.03055744174574"/>
-														<Property Name="LoopBegin" Type="Real64" Value="4.64127415256169"/>
-														<Property Name="LoopEnd" Type="Real64" Value="153.742206303606"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="2.4656768935484"/>
-														<Property Name="TrimEnd" Type="Real64" Value="156.352923014422"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Ambient\Ambient_Background\BAS_amb_forest_day_background_loop_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="760983670"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Position Name="" ID="{25A5898C-EB77-4673-9697-6539445A5F91}"/>
-											</PositioningInfo>
-											<ActiveSourceList>
-												<ActiveSource Name="BAS_amb_forest_day_background_loop_01" ID="{2CB5C8F0-68AC-4908-B045-27605DD7C606}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Ambient_Woodlands_Day_Short" ID="{08027427-D804-4378-8FF6-53533980D45D}" ShortID="506437289">
-											<Comment>Audiokinetic Inc. All rights reserved.
-Audio content provided by Bay Area Sound, Inc.
-With the help of Damian Kastbauer for Lost Chocolate Lab.
-(c) 2012 Bay Area Sound, Inc.
-www.basound.com
-
-The Audio Content contained in this file is the property of Bay Area Sound, Inc.
-Your sole right with regard to this Audio Content is to listen to the Audio 
-Content as part of this Sample Project.  This Audio Content cannot be used
-or modified for a commercial purpose nor for public demonstration.</Comment>
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value Platform="Mac">False</Value>
-														<Value Platform="Windows">False</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="IsNonCachable" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsStreamingEnabled" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="PreFetchLength" Type="int16">
-													<ValueList>
-														<Value>1000</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_amb_forest_day_background_loop_01" ID="{9F8518EF-C814-4409-93FA-02262220A54F}">
+												<AudioFileSource Name="Ambient_Woodlands_Day" ID="{6255C073-9282-4099-B1FD-E457236A87CA}">
 													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="1000"/>
-														<Property Name="FadeInDuration" Type="Real64" Value="1.30535835540798"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="2.32063707628085"/>
-														<Property Name="LoopBegin" Type="Real64" Value="5.94663250796967"/>
-														<Property Name="LoopEnd" Type="Real64" Value="47.7180998810249"/>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="2937.5"/>
+														<Property Name="LoopBegin" Type="Real64" Value="13.0089285714286"/>
+														<Property Name="LoopEnd" Type="Real64" Value="75.7455357142857"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="4.20615470075904"/>
-														<Property Name="TrimEnd" Type="Real64" Value="50.9089758609111"/>
+														<Property Name="TrimBegin" Type="Real64" Value="8.8125"/>
+														<Property Name="TrimEnd" Type="Real64" Value="80.1517857142857"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Ambient\Ambient_Background\BAS_amb_forest_day_background_loop_01.wav</AudioFile>
+													<AudioFile>Ambient_Woodlands_Day.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="154369548"/>
+														<MediaID ID="1072184143"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
-											<PositioningInfo>
-												<Position Name="" ID="{E3C10949-2B7A-4129-BB3F-D35EAE5DAEA0}"/>
-											</PositioningInfo>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_amb_forest_day_background_loop_01" ID="{9F8518EF-C814-4409-93FA-02262220A54F}" Platform="Linked"/>
+												<ActiveSource Name="Ambient_Woodlands_Day" ID="{6255C073-9282-4099-B1FD-E457236A87CA}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -3483,184 +3353,39 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Ambient_Woodlands_Night_Short" ID="{F915D6C5-3F26-47FA-AB9D-D72545C03839}" ShortID="662226921">
-											<Comment>Audiokinetic Inc. All rights reserved.
-Audio content provided by Bay Area Sound, Inc.
-With the help of Damian Kastbauer for Lost Chocolate Lab.
-(c) 2012 Bay Area Sound, Inc.
-www.basound.com
-
-The Audio Content contained in this file is the property of Bay Area Sound, Inc.
-Your sole right with regard to this Audio Content is to listen to the Audio 
-Content as part of this Sample Project.  This Audio Content cannot be used
-or modified for a commercial purpose nor for public demonstration.</Comment>
+										<Sound Name="Ambient_Woodlands_Night" ID="{B8A48B34-58E1-48CB-9606-DAF7D92AEA82}" ShortID="723253028">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value Platform="Mac">False</Value>
-														<Value Platform="Windows">False</Value>
-													</ValueList>
-												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="IsNonCachable" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsStreamingEnabled" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="PreFetchLength" Type="int16">
-													<ValueList>
-														<Value>1000</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="amb_forest_night_background_loop_02" ID="{22D79950-71F7-414B-8877-BDC50D81D283}">
-													<Comment>Audiokinetic Inc. All rights reserved.
-Audio content provided by Bay Area Sound, Inc.
-With the help of Damian Kastbauer for Lost Chocolate Lab.
-(c) 2012 Bay Area Sound, Inc.
-www.basound.com
-
-The Audio Content contained in this file is the property of Bay Area Sound, Inc.
-Your sole right with regard to this Audio Content is to listen to the Audio 
-Content as part of this Sample Project.  This Audio Content cannot be used
-or modified for a commercial purpose nor for public demonstration.</Comment>
+												<AudioFileSource Name="Ambient_Woodlands_Night" ID="{8BAA8735-D442-47C1-A4B8-D923691D78E5}">
 													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
-														<Property Name="LoopBegin" Type="Real64" Value="0.65439699501848"/>
-														<Property Name="LoopEnd" Type="Real64" Value="22.9766056028711"/>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="5312.5"/>
+														<Property Name="LoopBegin" Type="Real64" Value="9.10714285714286"/>
+														<Property Name="LoopEnd" Type="Real64" Value="106.339285714286"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.41071428571429"/>
+														<Property Name="TrimEnd" Type="Real64" Value="117.857142857143"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Ambient\Ambient_Background\amb_forest_night_background_loop_02.wav</AudioFile>
+													<AudioFile>Ambient_Woodlands_Night.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="59370237"/>
+														<MediaID ID="315814653"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
-											<PositioningInfo>
-												<Position Name="" ID="{6D94B29E-3EDD-4CCC-9BE5-D6D5FA817898}"/>
-											</PositioningInfo>
 											<ActiveSourceList>
-												<ActiveSource Name="amb_forest_night_background_loop_02" ID="{22D79950-71F7-414B-8877-BDC50D81D283}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Ambient_Woodlands_Night_Long" ID="{522157C8-5B8C-44A4-8333-514C7931F908}" ShortID="127907100">
-											<Comment>Audiokinetic Inc. All rights reserved.
-Audio content provided by Bay Area Sound, Inc.
-With the help of Damian Kastbauer for Lost Chocolate Lab.
-(c) 2012 Bay Area Sound, Inc.
-www.basound.com
-
-The Audio Content contained in this file is the property of Bay Area Sound, Inc.
-Your sole right with regard to this Audio Content is to listen to the Audio 
-Content as part of this Sample Project.  This Audio Content cannot be used
-or modified for a commercial purpose nor for public demonstration.</Comment>
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value Platform="Android_Low">False</Value>
-														<Value Platform="iOS">False</Value>
-														<Value Platform="Android_High">False</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="IsNonCachable" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsStreamingEnabled" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="PreFetchLength" Type="int16">
-													<ValueList>
-														<Value>1000</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{5F23580F-5ED1-4563-8679-A788114DA5C4}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_forest_night_background_loop_04" ID="{665ECFB8-8D53-4593-8023-7EDE6F8DE742}">
-													<Comment>Audiokinetic Inc. All rights reserved.
-Audio content provided by Bay Area Sound, Inc.
-With the help of Damian Kastbauer for Lost Chocolate Lab.
-(c) 2012 Bay Area Sound, Inc.
-www.basound.com
-
-The Audio Content contained in this file is the property of Bay Area Sound, Inc.
-Your sole right with regard to this Audio Content is to listen to the Audio 
-Content as part of this Sample Project.  This Audio Content cannot be used
-or modified for a commercial purpose nor for public demonstration.</Comment>
-													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.262455943007124"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.306198600174977"/>
-														<Property Name="LoopBegin" Type="Real64" Value="0.634268528933883"/>
-														<Property Name="LoopEnd" Type="Real64" Value="21.1277034120735"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Ambient\Ambient_Background\amb_forest_night_background_loop_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="888712339"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Position Name="" ID="{28FFD412-3C77-428D-9E1E-E0E3AE1304D2}"/>
-											</PositioningInfo>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_forest_night_background_loop_04" ID="{665ECFB8-8D53-4593-8023-7EDE6F8DE742}" Platform="Linked"/>
+												<ActiveSource Name="Ambient_Woodlands_Night" ID="{8BAA8735-D442-47C1-A4B8-D923691D78E5}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -3843,193 +3568,54 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Ambient_Forest_Day_Long" ID="{DBB5D1EC-A76E-457B-B4A9-86FAAC2B239D}" ShortID="25497446">
-											<Comment>Audiokinetic Inc. All rights reserved.
-Audio content provided by Bay Area Sound, Inc.
-With the help of Damian Kastbauer for Lost Chocolate Lab.
-(c) 2012 Bay Area Sound, Inc.
-www.basound.com
-
-The Audio Content contained in this file is the property of Bay Area Sound, Inc.
-Your sole right with regard to this Audio Content is to listen to the Audio 
-Content as part of this Sample Project.  This Audio Content cannot be used
-or modified for a commercial purpose nor for public demonstration.</Comment>
+										<Sound Name="Ambient_Pineforest_Day" ID="{FF6CA736-4BB7-4FF3-B8EC-512BD3AB57CE}" ShortID="307441922">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value Platform="Android_Low">False</Value>
-														<Value Platform="iOS">False</Value>
-														<Value Platform="Android_High">False</Value>
-													</ValueList>
-												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="IsNonCachable" Type="bool">
+												<Property Name="Priority" Type="int16">
 													<ValueList>
-														<Value>True</Value>
+														<Value>70</Value>
 													</ValueList>
 												</Property>
-												<Property Name="IsStreamingEnabled" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{B01D3382-9ADD-40D4-B131-0A6052E62FEB}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="PreFetchLength" Type="int16">
-													<ValueList>
-														<Value>1000</Value>
-													</ValueList>
-												</Property>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{556FDD81-9612-4118-B38C-85D29767DE92}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
 													<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
 												</Reference>
 												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
+													<ObjectRef Name="Ambient_General" ID="{25FBFFBC-B59A-4AF5-B85E-EF584BE8B7CA}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
 												</Reference>
 												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
 													<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="treesVillage_001" ID="{0071C49B-FFB7-467B-B66C-1B35FF5E52DF}">
+												<AudioFileSource Name="Ambient_Pineforest_Day" ID="{A84E8E8D-A1DA-4E60-9463-8471342D9C12}">
 													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="3000"/>
-														<Property Name="FadeInDuration" Type="Real64" Value="1.43729994988513"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1.69094111751191"/>
-														<Property Name="LoopBegin" Type="Real64" Value="18.8832853536321"/>
-														<Property Name="LoopEnd" Type="Real64" Value="74.8241444499025"/>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="3515.625"/>
+														<Property Name="LoopBegin" Type="Real64" Value="11.0491071428571"/>
+														<Property Name="LoopEnd" Type="Real64" Value="73.9285714285714"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="6.3410291906697"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.01785714285714"/>
+														<Property Name="TrimEnd" Type="Real64" Value="79.5535714285714"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Ambient\Ambient_Background\treesVillage_001.wav</AudioFile>
+													<AudioFile>Ambient_Pineforest_Day.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="146541076"/>
-														<MediaID Platform="Mac" ID="200534813"/>
-														<MediaID Platform="Windows" ID="200534813"/>
+														<MediaID ID="112925982"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<PositioningInfo>
-												<Position Name="" ID="{CDFF2375-9B22-4B9F-BCB3-45FC5157B6F6}"/>
+												<Panner Name="" ID="{DA29E587-8ED9-4BB5-9FE5-7AC42ED3B99F}"/>
+												<Position Name="" ID="{251174B0-EF8C-45A9-AAA5-DBBDB00D2A37}"/>
 											</PositioningInfo>
 											<ActiveSourceList>
-												<ActiveSource Name="treesVillage_001" ID="{0071C49B-FFB7-467B-B66C-1B35FF5E52DF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Ambient_Forest_Day_Short" ID="{E4A9F23C-7CA9-4B43-8A40-F2AD479646B0}" ShortID="333123573">
-											<Comment>Audiokinetic Inc. All rights reserved.
-Audio content provided by Bay Area Sound, Inc.
-With the help of Damian Kastbauer for Lost Chocolate Lab.
-(c) 2012 Bay Area Sound, Inc.
-www.basound.com
-
-The Audio Content contained in this file is the property of Bay Area Sound, Inc.
-Your sole right with regard to this Audio Content is to listen to the Audio 
-Content as part of this Sample Project.  This Audio Content cannot be used
-or modified for a commercial purpose nor for public demonstration.</Comment>
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value Platform="Mac">False</Value>
-														<Value Platform="Windows">False</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="IsNonCachable" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsStreamingEnabled" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="PreFetchLength" Type="int16">
-													<ValueList>
-														<Value>1000</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{9AB2FF94-1081-4E5A-AE82-2F13706D09A2}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="treesVillage_001" ID="{FFFDE09E-1406-4FFC-9424-A866B4866C8D}">
-													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="1000"/>
-														<Property Name="FadeInDuration" Type="Real64" Value="1.43729994988513"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1.69094111751191"/>
-														<Property Name="LoopBegin" Type="Real64" Value="20.7087028907257"/>
-														<Property Name="LoopEnd" Type="Real64" Value="45.8136975134572"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="6.3410291906697"/>
-														<Property Name="TrimEnd" Type="Real64" Value="47.9327836854031"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Ambient\Ambient_Background\treesVillage_001.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="369256951"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Position Name="" ID="{837696CE-C0B6-4E0A-A3B4-AC3DBBA20D64}"/>
-											</PositioningInfo>
-											<ActiveSourceList>
-												<ActiveSource Name="treesVillage_001" ID="{FFFDE09E-1406-4FFC-9424-A866B4866C8D}" Platform="Linked"/>
+												<ActiveSource Name="Ambient_Pineforest_Day" ID="{A84E8E8D-A1DA-4E60-9463-8471342D9C12}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -4077,35 +3663,22 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Ambient_Pineforest_Night_Long" ID="{A0DECFB3-D096-4383-9D2C-252D2AD46CE1}" ShortID="369137131">
+										<Sound Name="Ambient_Pineforest_Night" ID="{BC462320-95FD-41E5-873A-9CFF83D39177}" ShortID="836190462">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value Platform="Android_Low">False</Value>
-														<Value Platform="iOS">False</Value>
-														<Value Platform="Android_High">False</Value>
-													</ValueList>
-												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="IsNonCachable" Type="bool">
+												<Property Name="MakeUpGain" Type="Real64">
 													<ValueList>
-														<Value>True</Value>
+														<Value>-11</Value>
 													</ValueList>
 												</Property>
-												<Property Name="IsStreamingEnabled" Type="bool">
+												<Property Name="Priority" Type="int16">
 													<ValueList>
-														<Value>True</Value>
+														<Value>70</Value>
 													</ValueList>
 												</Property>
-												<Property Name="PreFetchLength" Type="int16">
-													<ValueList>
-														<Value>1000</Value>
-													</ValueList>
-												</Property>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
@@ -4114,101 +3687,35 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 													<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
 												</Reference>
 												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
+													<ObjectRef Name="Ambient_General" ID="{25FBFFBC-B59A-4AF5-B85E-EF584BE8B7CA}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
 												</Reference>
 												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
 													<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_amb_pineforest_night_background_loop_01" ID="{6EB9B972-2DE7-4C7D-B442-C70FDC4477C9}">
+												<AudioFileSource Name="Ambient_Pineforest_Night" ID="{2100E7F4-EB8C-44A3-9842-A0AA2643AD42}">
 													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="1500"/>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.694464285714286"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.848789682539689"/>
-														<Property Name="LoopBegin" Type="Real64" Value="2.54636904761905"/>
-														<Property Name="LoopEnd" Type="Real64" Value="76.1595833333333"/>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="6380.208"/>
+														<Property Name="LoopBegin" Type="Real64" Value="3.0625"/>
+														<Property Name="LoopEnd" Type="Real64" Value="84.21875"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.53125"/>
+														<Property Name="TrimEnd" Type="Real64" Value="87.71875"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Ambient\Ambient_Background\BAS_amb_pineforest_night_background_loop_01.wav</AudioFile>
+													<AudioFile>Ambient_Pineforest_Night.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="667561842"/>
+														<MediaID ID="221314806"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<PositioningInfo>
-												<Position Name="" ID="{3D62867D-2FCC-463B-BE61-9FDF5033E481}"/>
+												<Panner Name="" ID="{DF0A285C-CD29-4A25-ABF8-D82F5F29D934}"/>
+												<Position Name="" ID="{266612AD-5450-4AAC-959E-183340821E37}"/>
 											</PositioningInfo>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_amb_pineforest_night_background_loop_01" ID="{6EB9B972-2DE7-4C7D-B442-C70FDC4477C9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Ambient_Pineforest_Night_Short" ID="{DD48B260-8540-4E2A-AA08-F1C56A24CDF5}" ShortID="699852891">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value Platform="Mac">False</Value>
-														<Value Platform="Windows">False</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="IsNonCachable" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsStreamingEnabled" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="PreFetchLength" Type="int16">
-													<ValueList>
-														<Value>1000</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_amb_pineforest_night_background_loop_01" ID="{2F3C961C-BECB-4246-8C17-D6124472990F}">
-													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="1000"/>
-														<Property Name="FadeInDuration" Type="Real64" Value="1.21823960419024"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1.2899007573779"/>
-														<Property Name="LoopBegin" Type="Real64" Value="2.45834432401845"/>
-														<Property Name="LoopEnd" Type="Real64" Value="27.8761885900003"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="29.1660893473782"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Ambient\Ambient_Background\BAS_amb_pineforest_night_background_loop_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="4132728"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Position Name="" ID="{63A5FCF8-3067-4CFB-9E15-8FE7C7A8AF0E}"/>
-											</PositioningInfo>
-											<ActiveSourceList>
-												<ActiveSource Name="BAS_amb_pineforest_night_background_loop_01" ID="{2F3C961C-BECB-4246-8C17-D6124472990F}" Platform="Linked"/>
+												<ActiveSource Name="Ambient_Pineforest_Night" ID="{2100E7F4-EB8C-44A3-9842-A0AA2643AD42}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -4396,163 +3903,40 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Ambient_Village_Day_Long" ID="{2FFEE122-EEF6-4F51-939E-B4238C1259A2}" ShortID="395227827">
+										<Sound Name="Ambient_Village_Day" ID="{C4F7726D-9464-41F8-A7FE-289FAB1924EA}" ShortID="665328189">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value Platform="Android_Low">False</Value>
-														<Value Platform="iOS">False</Value>
-														<Value Platform="Android_High">False</Value>
-													</ValueList>
-												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="IsNonCachable" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsStreamingEnabled" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{E70E15E6-51CB-4D81-9B97-FBD10DC6D55D}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="PreFetchLength" Type="int16">
-													<ValueList>
-														<Value>1000</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{E16561A4-AA21-406C-91B4-D1CFF151BD04}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_amb_village_day_background_loop_01" ID="{04C907BF-278E-4071-AE7B-CC6726293353}">
-													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="2000"/>
-														<Property Name="FadeInDuration" Type="Real64" Value="1.94015031484867"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1.64166565102582"/>
-														<Property Name="LoopBegin" Type="Real64" Value="13.4303409514396"/>
-														<Property Name="LoopEnd" Type="Real64" Value="151.929869022313"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.746211659557179"/>
-														<Property Name="TrimEnd" Type="Real64" Value="159.207489191822"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Ambient\Ambient_Background\BAS_amb_village_day_background_loop_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="436811808"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Position Name="" ID="{AD27C5EB-B795-47D1-A45E-AB157E62708C}"/>
-											</PositioningInfo>
-											<ActiveSourceList>
-												<ActiveSource Name="BAS_amb_village_day_background_loop_01" ID="{04C907BF-278E-4071-AE7B-CC6726293353}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Ambient_Village_Day_Short" ID="{2D77319A-23E1-49B6-806C-72F13DE55060}" ShortID="375546766">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value Platform="Mac">False</Value>
-														<Value Platform="Windows">False</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="IsNonCachable" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsStreamingEnabled" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="PreFetchLength" Type="int16">
-													<ValueList>
-														<Value>1000</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_amb_village_day_background_loop_01" ID="{6D075EAE-E85D-4702-8F1A-0FC78672CCDE}">
+												<AudioFileSource Name="Ambient_Village_Day" ID="{B6F32CAE-97F6-4C45-9AAB-7288F6ABAEA4}">
 													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="1000"/>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.975950839783053"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1.64166565102582"/>
-														<Property Name="LoopBegin" Type="Real64" Value="2.98484663822872"/>
-														<Property Name="LoopEnd" Type="Real64" Value="35.8181596587446"/>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="1494.792"/>
+														<Property Name="LoopBegin" Type="Real64" Value="8.05357142857143"/>
+														<Property Name="LoopEnd" Type="Real64" Value="58.0223214285714"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.746211659557179"/>
-														<Property Name="TrimEnd" Type="Real64" Value="37.6090676416818"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.67410714285714"/>
+														<Property Name="TrimEnd" Type="Real64" Value="60.5848214285714"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Ambient\Ambient_Background\BAS_amb_village_day_background_loop_01.wav</AudioFile>
+													<AudioFile>Ambient_Village_Day.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="144964242"/>
+														<MediaID ID="466433346"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
-											<PositioningInfo>
-												<Position Name="" ID="{E7894886-88BC-470B-91CD-594ACE08AB1D}"/>
-											</PositioningInfo>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_amb_village_day_background_loop_01" ID="{6D075EAE-E85D-4702-8F1A-0FC78672CCDE}" Platform="Linked"/>
+												<ActiveSource Name="Ambient_Village_Day" ID="{B6F32CAE-97F6-4C45-9AAB-7288F6ABAEA4}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -4614,151 +3998,39 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Ambient_Village_Night_Long" ID="{9D2C6402-0192-4FF7-8512-C0799A52F643}" ShortID="249077910">
+										<Sound Name="Ambient_Village_Night" ID="{7229951E-018E-49A4-9D04-88332E7BA393}" ShortID="793144035">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value Platform="Android_Low">False</Value>
-														<Value Platform="iOS">False</Value>
-														<Value Platform="Android_High">False</Value>
-													</ValueList>
-												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="IsNonCachable" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsStreamingEnabled" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="PreFetchLength" Type="int16">
-													<ValueList>
-														<Value>1000</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{4FE4EF29-1962-45C2-8635-9A4F86DDA185}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_amb_village_night_background_loop_01" ID="{E57A9010-C5FE-42AC-99B8-07AD3B259D2C}">
-													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="2000"/>
-														<Property Name="FadeInDuration" Type="Real64" Value="1.57063795596979"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1.7015244523006"/>
-														<Property Name="LoopBegin" Type="Real64" Value="18.1932229899834"/>
-														<Property Name="LoopEnd" Type="Real64" Value="116.750754727088"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="14.2666281000589"/>
-														<Property Name="TrimEnd" Type="Real64" Value="121.724441587659"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Ambient\Ambient_Background\BAS_amb_village_night_background_loop_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="208266426"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Position Name="" ID="{CBFB4ECB-2971-4FF6-A722-6A406112D858}"/>
-											</PositioningInfo>
-											<ActiveSourceList>
-												<ActiveSource Name="BAS_amb_village_night_background_loop_01" ID="{E57A9010-C5FE-42AC-99B8-07AD3B259D2C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Ambient_Village_Night_Short" ID="{78DCBDEA-2F6F-4807-A904-49F4AE49EA38}" ShortID="1060573847">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value Platform="Mac">False</Value>
-														<Value Platform="Windows">False</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="IsNonCachable" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="IsStreamingEnabled" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="PreFetchLength" Type="int16">
-													<ValueList>
-														<Value>1000</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_amb_village_night_background_loop_01" ID="{02191D2B-AD72-4EC1-A0E3-5D4352D4CF07}">
+												<AudioFileSource Name="Ambient_Village_Night" ID="{D67E4AAE-314C-4ACD-9422-B29F7AA55ED2}">
 													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="1000"/>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.97243641880884"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.97243641880884"/>
-														<Property Name="LoopBegin" Type="Real64" Value="2.29996527007642"/>
-														<Property Name="LoopEnd" Type="Real64" Value="30.6317471924785"/>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="1921.875"/>
+														<Property Name="LoopBegin" Type="Real64" Value="10.9821428571429"/>
+														<Property Name="LoopEnd" Type="Real64" Value="68.2723214285714"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="31.9688472683406"/>
+														<Property Name="TrimBegin" Type="Real64" Value="9.15178571428571"/>
+														<Property Name="TrimEnd" Type="Real64" Value="71.2008928571429"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Ambient\Ambient_Background\BAS_amb_village_night_background_loop_01.wav</AudioFile>
+													<AudioFile>Ambient_Village_Night.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="759379745"/>
+														<MediaID ID="75538788"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
-											<PositioningInfo>
-												<Position Name="" ID="{CD06A403-0B83-4C97-B73C-95335E4BFCC7}"/>
-											</PositioningInfo>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_amb_village_night_background_loop_01" ID="{02191D2B-AD72-4EC1-A0E3-5D4352D4CF07}" Platform="Linked"/>
+												<ActiveSource Name="Ambient_Village_Night" ID="{D67E4AAE-314C-4ACD-9422-B29F7AA55ED2}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -4856,401 +4128,88 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 								</BlendTrack>
 							</BlendTrackList>
 						</BlendContainer>
-						<RandomSequenceContainer Name="Ambient_Region_Dungeon" ID="{A15AC6D6-36D5-432F-B8DC-890CA72A474E}" ShortID="366839767">
+						<Sound Name="Ambient_Cave" ID="{DCD6EEA3-99A1-40C8-A5E7-487207114541}" ShortID="736150448">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-19</Value>
-									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{FA407077-413B-476E-80C9-C195236DBF3B}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="False"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-								</Reference>
-								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-								</Reference>
-								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-								</Reference>
-								<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Ambient_Dungeon_Day_Long" ID="{68B28FF6-5D24-4AFA-95DB-013D1429DA9A}" ShortID="39952624">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value Platform="Android_Low">False</Value>
-												<Value Platform="iOS">False</Value>
-												<Value Platform="Android_High">False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="IsNonCachable" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="PreFetchLength" Type="int16">
-											<ValueList>
-												<Value>1000</Value>
-											</ValueList>
-										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-										<Property Name="Volume" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{40F6991B-87D6-48DF-9D1E-8E63DA5BDA57}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_amb_dungeon_day_background_loop_01" ID="{A6B288F9-B911-4A1F-AECE-30B55DC2ED12}">
-											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="166"/>
-												<Property Name="FadeInDuration" Type="Real64" Value="2.04301641192735"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="1.9153278861819"/>
-												<Property Name="LoopBegin" Type="Real64" Value="1.91532788618189"/>
-												<Property Name="LoopEnd" Type="Real64" Value="137.265165176369"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Ambient\Ambient_Background\BAS_amb_dungeon_day_background_loop_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="191644477"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{2EA11BD8-BBAA-4482-9B81-97E17CFDDD83}"/>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_amb_dungeon_day_background_loop_01" ID="{A6B288F9-B911-4A1F-AECE-30B55DC2ED12}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Ambient_Dungeon_Day_Short" ID="{B15BFB47-404A-43D7-8C9E-BFCBADDFC8BA}" ShortID="354193460">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value Platform="Mac">False</Value>
-												<Value Platform="Windows">False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="IsNonCachable" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="PreFetchLength" Type="int16">
-											<ValueList>
-												<Value>1000</Value>
-											</ValueList>
-										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-										<Property Name="Volume" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{0A6474C3-257F-4B97-89AF-29377679BA1F}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_amb_dungeon_day_background_loop_01" ID="{80AF176E-D282-4286-B820-18A70537DAF9}">
-											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="125"/>
-												<Property Name="FadeInDuration" Type="Real64" Value="1.53226230894552"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="1.53226230894552"/>
-												<Property Name="LoopBegin" Type="Real64" Value="2.93683609214557"/>
-												<Property Name="LoopEnd" Type="Real64" Value="33.0713281680741"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="1.14919673170914"/>
-												<Property Name="TrimEnd" Type="Real64" Value="34.7312790027651"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Ambient\Ambient_Background\BAS_amb_dungeon_day_background_loop_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="652010598"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{E4BCE534-3148-4591-84C0-22AF68800D54}"/>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_amb_dungeon_day_background_loop_01" ID="{80AF176E-D282-4286-B820-18A70537DAF9}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<PositioningInfo>
-								<Position Name="" ID="{6C87CAB4-1DA0-45A4-A48C-1CEFD52B2945}"/>
-							</PositioningInfo>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Ambient_Region_Cave" ID="{B195D0DF-51D7-443B-9BFB-199F471E3080}" ShortID="963609865">
-							<PropertyList>
-								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-								<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>28</Value>
+										<Value>60</Value>
 									</ValueList>
 								</Property>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
-								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>-8</Value>
 									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{7923ED2D-7E8E-43CC-B3C6-2FD4F5204E62}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="False"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
-								<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 								</Reference>
-								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Ambient_General" ID="{25FBFFBC-B59A-4AF5-B85E-EF584BE8B7CA}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-								</Reference>
-								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="amb_cave_background_LP" ID="{377C0ECF-A45B-45B0-B723-8A8ABBB272B5}" ShortID="748425774">
+								<AudioFileSource Name="Ambient_Cave" ID="{3BEFA54E-9833-43E1-ABC1-A4BC921CE1EB}">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value Platform="Android_Low">False</Value>
-												<Value Platform="iOS">False</Value>
-												<Value Platform="Android_High">False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="IsNonCachable" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="PreFetchLength" Type="int16">
-											<ValueList>
-												<Value>1000</Value>
-											</ValueList>
-										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-										<Property Name="Volume" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{3282E687-5A50-4378-9856-2BBA1475A376}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="11437.5"/>
+										<Property Name="LoopBegin" Type="Real64" Value="12.7991071428571"/>
+										<Property Name="LoopEnd" Type="Real64" Value="109.745535714286"/>
+										<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.44642857142857"/>
+										<Property Name="TrimEnd" Type="Real64" Value="116.825892857143"/>
 									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_amb_cave_background_LP" ID="{D86895AE-9C19-422A-9FD4-55226DEDAA15}">
-											<Language>SFX</Language>
-											<AudioFile>Ambient\Ambient_Background\BAS_amb_cave_background_LP.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="857167900"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{98C647B6-00E9-4AB3-BE14-72791C807294}"/>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_amb_cave_background_LP" ID="{D86895AE-9C19-422A-9FD4-55226DEDAA15}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="amb_cave_background_LP_short" ID="{43F3AF5D-D9AB-406D-BA5F-1614731BC424}" ShortID="1057781287">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value Platform="Mac">False</Value>
-												<Value Platform="Windows">False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="IsNonCachable" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="PreFetchLength" Type="int16">
-											<ValueList>
-												<Value>1000</Value>
-											</ValueList>
-										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-										<Property Name="Volume" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{A78B1160-D95C-441C-9F18-F5431A4B0B4C}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-										</Reference>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambient_Detailed" ID="{152FF780-C536-4E80-93AD-1D41778924FD}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_amb_cave_background_LP" ID="{E9C55718-2D19-43AD-BB77-F973B0B2A16C}">
-											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
-												<Property Name="FadeInDuration" Type="Real64" Value="1.37526004464286"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="1.71907505580357"/>
-												<Property Name="LoopBegin" Type="Real64" Value="1.4402329601378"/>
-												<Property Name="LoopEnd" Type="Real64" Value="28.2787846679688"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="30.2557209821429"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Ambient\Ambient_Background\BAS_amb_cave_background_LP.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="393693165"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{AF504613-63B3-4733-93F9-DFD88956D9D8}"/>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_amb_cave_background_LP" ID="{E9C55718-2D19-43AD-BB77-F973B0B2A16C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+									<Language>SFX</Language>
+									<AudioFile>Ambient_Cave.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="553705262"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
-							<PositioningInfo>
-								<Panner Name="" ID="{7333ADAB-75E9-4F29-8472-7D3419B68C8A}"/>
-								<Position Name="" ID="{C322F731-2CEB-4A71-A68B-BA591D947B0B}"/>
-							</PositioningInfo>
-						</RandomSequenceContainer>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambient_Cave" ID="{3BEFA54E-9833-43E1-ABC1-A4BC921CE1EB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambient_Dungeon" ID="{9B9D928D-EDA1-4C08-B5B6-DEBCD715DBD6}" ShortID="639012418">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambient_Dungeon" ID="{A5F7F21F-C2F2-49A9-B1E6-76886195CEB5}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="5078.125"/>
+										<Property Name="LoopBegin" Type="Real64" Value="5.22321428571429"/>
+										<Property Name="LoopEnd" Type="Real64" Value="118.102678571429"/>
+										<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Ambient_Dungeon.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="799453897"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambient_Dungeon" ID="{A5F7F21F-C2F2-49A9-B1E6-76886195CEB5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<PositioningInfo>
 						<Panner Name="" ID="{48FA8EAF-8D28-411C-B2D9-4F9BA1F7EC68}"/>

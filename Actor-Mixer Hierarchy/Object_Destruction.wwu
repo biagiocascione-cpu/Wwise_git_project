@@ -55,240 +55,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Destruction_Rock" ID="{6EEEBF01-8A2A-462D-B9CC-737EB10557B4}" ShortID="689315030">
-							<PropertyList>
-								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-								<Property Name="Highpass" Type="int16">
-									<ValueList>
-										<Value Platform="Android_Low">0</Value>
-										<Value Platform="iOS">0</Value>
-										<Value Platform="Android_High">0</Value>
-									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{E9A7DB7E-4C43-4C45-BF27-91E0CED589C5}">
-												<PropertyList>
-													<Property Name="Max" Type="Real64" Value="30"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-										<ModifierInfo Platform="Android_Low">
-											<Modifier Name="" ID="{D7061603-72D0-4335-A848-0259205EE639}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="False"/>
-													<Property Name="Min" Type="Real64" Value="-10"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-										<ModifierInfo Platform="Android_High">
-											<Modifier Name="" ID="{4F3F7D6A-FD0C-4597-9AD0-5DC5CE31F3EC}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="False"/>
-													<Property Name="Min" Type="Real64" Value="-10"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Lowpass" Type="int16">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{EFB4D630-F9FD-4BC6-BE7C-568A8029BCCE}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="False"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{5D1B9CB0-9F24-45A8-9715-3057F64ABB39}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="False"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{A69AC642-5144-4A7F-91E8-0EFF7F3D0871}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="False"/>
-													<Property Name="Max" Type="Real64" Value="141"/>
-													<Property Name="Min" Type="Real64" Value="-160"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-								</Reference>
-								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-								</Reference>
-								<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Destroy_Rock_03" ID="{6DD17D03-C8A0-4A8E-A03E-FE85999D162B}" ShortID="836292673">
-									<PropertyList>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Lowpass" Type="int16">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{916006FB-5D2E-44C5-BED8-054BFB28EA6C}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{EDD12C9E-AD36-41D4-BDA5-01C2C274CB89}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Destroy_Rock_03" ID="{E8F5C45A-54C1-4D90-A409-FB9D25EF355C}">
-											<Language>SFX</Language>
-											<AudioFile>Objects\BAS_Destroy_Rock_03.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="571603281"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Destroy_Rock_03" ID="{E8F5C45A-54C1-4D90-A409-FB9D25EF355C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Destroy_Rock_02" ID="{93F94DEF-2377-4652-A5F2-D265DCB082FD}" ShortID="994791029">
-									<PropertyList>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Lowpass" Type="int16">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{F31922EB-B1B3-4CFC-972B-4F74FE3643CA}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{4F45FA5D-80F7-4E30-8A94-FF89B848C4C8}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Destroy_Rock_02" ID="{74BA848E-ADA3-4BC1-A263-EEC0DF5BB4D4}">
-											<Language>SFX</Language>
-											<AudioFile>Objects\BAS_Destroy_Rock_02.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="621816641"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Destroy_Rock_02" ID="{74BA848E-ADA3-4BC1-A263-EEC0DF5BB4D4}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Destroy_Rock_01" ID="{44D0F1D0-78CE-4C50-9AA5-DA054A0E87A5}" ShortID="124016668">
-									<PropertyList>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Lowpass" Type="int16">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{23B43D79-0C1B-4569-9B9E-F2C88BEC88E5}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{AE0F118F-FD5F-4A6A-9128-40B391DFF3D3}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="BAS_Destroy_Rock_01" ID="{EC57C442-9F94-4F29-9AC5-4E08C6830E23}">
-											<Language>SFX</Language>
-											<AudioFile>Objects\BAS_Destroy_Rock_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="987804829"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="BAS_Destroy_Rock_01" ID="{EC57C442-9F94-4F29-9AC5-4E08C6830E23}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
 						<SwitchContainer Name="Destruction_VolcanicBoulder" ID="{36233D86-ED4D-45B7-83CD-59118E397157}" ShortID="390491411">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -1085,601 +851,1635 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="Destroy_Crate" ID="{2A8F5E0D-670B-472C-A437-08AAEB59207B}" ShortID="362135089">
+								<RandomSequenceContainer Name="Destruction_Crate" ID="{006881ED-E989-4CFB-A786-2E640F9F149D}" ShortID="740740346">
 									<PropertyList>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Lowpass" Type="int16">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{2F93B797-976A-4023-8DFD-07A98D064227}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{959B45A0-BAB6-4AF5-9230-E709670C6546}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Crate_Destroy_04" ID="{21D16276-BA7D-4F3B-A418-313C9BBBDB37}" ShortID="1004166106">
+										<Sound Name="Distruction_Crate" ID="{EC975667-195D-48F3-9C53-0B5D101FE19D}" ShortID="186432832">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{49FA04D6-E6B7-4CA0-A26D-AF7F8DD839AC}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Priority" Type="int16">
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
 													<ValueList>
-														<Value>60</Value>
+														<Value>100</Value>
 													</ValueList>
 												</Property>
-												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Attenuation">
+													<Custom>
+														<Attenuation Name="Attenuation (Custom)" ID="{A17AAB33-E2AF-42D8-B8CE-7A684562E198}" ShortID="692146069">
+															<PropertyList>
+																<Property Name="RadiusMax" Type="Real64" Value="30"/>
+															</PropertyList>
+															<CurveUsageInfoList>
+																<VolumeDryUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="VolumeDry" ID="{5DA1FF47-F74A-4B62-801C-F675EB05EEDB}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="3"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>30</XPos>
+																					<YPos>-200</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</VolumeDryUsage>
+																<VolumeWetGameUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetGameUsage>
+																<VolumeWetUserUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetUserUsage>
+																<LowPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</LowPassFilterUsage>
+																<HighPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</HighPassFilterUsage>
+																<SpreadUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</SpreadUsage>
+																<FocusUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</FocusUsage>
+																<ObstructionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionVolumeUsage>
+																<ObstructionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionLPFUsage>
+																<ObstructionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionHPFUsage>
+																<OcclusionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionVolumeUsage>
+																<OcclusionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionLPFUsage>
+																<OcclusionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionHPFUsage>
+																<DiffractionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionVolumeUsage>
+																<DiffractionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionLPFUsage>
+																<DiffractionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionHPFUsage>
+																<TransmissionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionVolumeUsage>
+																<TransmissionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionLPFUsage>
+																<TransmissionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionHPFUsage>
+															</CurveUsageInfoList>
+														</Attenuation>
+													</Custom>
 												</Reference>
 												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+													<ObjectRef Name="Destruction_Detailed" ID="{440F6FFE-53B5-4985-B7BD-9C64874C5B4A}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
 												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+													<ObjectRef Name="Objects" ID="{D79560AE-2FD4-41AC-BC2B-35A6A855AAEF}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="SFX" ID="{843224AE-1025-4537-A167-D40130802372}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Crate_Destroy_04" ID="{A5D94823-A8C8-4413-BFD2-0DA44D2EA87A}">
+												<AudioFileSource Name="Distruction_Barrel" ID="{12DACF40-E5C2-418E-A18F-577FDDF19FA0}">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.245212057622504"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.09167853901996"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0264970538705538"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0971558641920307"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.3741307035738"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.46644071667871"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Objects\BAS_Crate_Destroy_04.wav</AudioFile>
+													<AudioFile>Distruction_Barrel.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="336420779"/>
+														<MediaID ID="974476905"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Crate_Destroy_04" ID="{A5D94823-A8C8-4413-BFD2-0DA44D2EA87A}" Platform="Linked"/>
+												<ActiveSource Name="Distruction_Barrel" ID="{12DACF40-E5C2-418E-A18F-577FDDF19FA0}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Crate_Destroy_01" ID="{BDBD607A-8182-4613-B09A-E8C5B0078410}" ShortID="328593496">
+										<Sound Name="Distruction_Crate_01" ID="{08BCC51A-6100-4411-884F-2EB2AD56BF03}" ShortID="1071239266">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{0F1CC853-D60B-461B-982E-81F4BE7402F8}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Priority" Type="int16">
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
 													<ValueList>
-														<Value>60</Value>
+														<Value>100</Value>
 													</ValueList>
 												</Property>
-												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Attenuation">
+													<Custom>
+														<Attenuation Name="Attenuation (Custom)" ID="{0DD6FDC5-F210-4957-946D-CF5F301177FF}" ShortID="572305550">
+															<PropertyList>
+																<Property Name="RadiusMax" Type="Real64" Value="30"/>
+															</PropertyList>
+															<CurveUsageInfoList>
+																<VolumeDryUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="VolumeDry" ID="{A71D9C16-C86D-4667-9940-A549E711E746}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="3"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>30</XPos>
+																					<YPos>-200</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</VolumeDryUsage>
+																<VolumeWetGameUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetGameUsage>
+																<VolumeWetUserUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetUserUsage>
+																<LowPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</LowPassFilterUsage>
+																<HighPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</HighPassFilterUsage>
+																<SpreadUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</SpreadUsage>
+																<FocusUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</FocusUsage>
+																<ObstructionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionVolumeUsage>
+																<ObstructionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionLPFUsage>
+																<ObstructionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionHPFUsage>
+																<OcclusionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionVolumeUsage>
+																<OcclusionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionLPFUsage>
+																<OcclusionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionHPFUsage>
+																<DiffractionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionVolumeUsage>
+																<DiffractionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionLPFUsage>
+																<DiffractionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionHPFUsage>
+																<TransmissionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionVolumeUsage>
+																<TransmissionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionLPFUsage>
+																<TransmissionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionHPFUsage>
+															</CurveUsageInfoList>
+														</Attenuation>
+													</Custom>
 												</Reference>
 												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+													<ObjectRef Name="Destruction_Detailed" ID="{440F6FFE-53B5-4985-B7BD-9C64874C5B4A}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
 												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+													<ObjectRef Name="Objects" ID="{D79560AE-2FD4-41AC-BC2B-35A6A855AAEF}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="SFX" ID="{843224AE-1025-4537-A167-D40130802372}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Crate_Destroy_01" ID="{BDFB8FA2-47AE-41FA-BD51-6A6091FCF44D}">
-													<Language>SFX</Language>
-													<AudioFile>Objects\BAS_Crate_Destroy_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="285744333"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BAS_Crate_Destroy_01" ID="{BDFB8FA2-47AE-41FA-BD51-6A6091FCF44D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Crate_Destroy_02" ID="{4BCE194C-A045-4351-8768-2BFEAD1F410F}" ShortID="592141666">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{19D98531-A2E6-4879-A97F-4C091F44641D}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Priority" Type="int16">
-													<ValueList>
-														<Value>60</Value>
-													</ValueList>
-												</Property>
-												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_Crate_Destroy_02" ID="{2838CB7B-0F7C-4603-8D0F-79596BC143ED}">
+												<AudioFileSource Name="Distruction_Barrel" ID="{3EC0623D-A33E-4EAA-8422-FFD34EAF19B9}">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.0968330308529946"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.24134565940714"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0264970538705538"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0971558641920307"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.81296255305803"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.23368479724523"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Objects\BAS_Crate_Destroy_02.wav</AudioFile>
+													<AudioFile>Distruction_Barrel.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="998009996"/>
+														<MediaID ID="1046261010"/>
+														<MediaID Platform="Android_High" ID="667740635"/>
+														<MediaID Platform="iOS" ID="667740635"/>
+														<MediaID Platform="Mac" ID="772037465"/>
+														<MediaID Platform="Windows" ID="772037465"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Crate_Destroy_02" ID="{2838CB7B-0F7C-4603-8D0F-79596BC143ED}" Platform="Linked"/>
+												<ActiveSource Name="Distruction_Barrel" ID="{3EC0623D-A33E-4EAA-8422-FFD34EAF19B9}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Crate_Destroy_03" ID="{3FA7C3E5-0BFB-4100-A1F6-1814F05E7546}" ShortID="648840260">
+										<Sound Name="Distruction_Crate_02" ID="{8E88888F-CCE4-44E4-AC23-E0B60A866C31}" ShortID="386655415">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{0A488466-B923-49F0-B974-0FC7EF8F23AC}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Priority" Type="int16">
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
 													<ValueList>
-														<Value>60</Value>
+														<Value>100</Value>
 													</ValueList>
 												</Property>
-												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Attenuation">
+													<Custom>
+														<Attenuation Name="Attenuation (Custom)" ID="{1B0F1A74-6ADC-402E-ABAD-4987E9BEFBB0}" ShortID="152506541">
+															<PropertyList>
+																<Property Name="RadiusMax" Type="Real64" Value="30"/>
+															</PropertyList>
+															<CurveUsageInfoList>
+																<VolumeDryUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="VolumeDry" ID="{D2B182E6-05CF-48A0-8072-916205556D70}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="3"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>30</XPos>
+																					<YPos>-200</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</VolumeDryUsage>
+																<VolumeWetGameUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetGameUsage>
+																<VolumeWetUserUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetUserUsage>
+																<LowPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</LowPassFilterUsage>
+																<HighPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</HighPassFilterUsage>
+																<SpreadUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</SpreadUsage>
+																<FocusUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</FocusUsage>
+																<ObstructionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionVolumeUsage>
+																<ObstructionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionLPFUsage>
+																<ObstructionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionHPFUsage>
+																<OcclusionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionVolumeUsage>
+																<OcclusionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionLPFUsage>
+																<OcclusionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionHPFUsage>
+																<DiffractionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionVolumeUsage>
+																<DiffractionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionLPFUsage>
+																<DiffractionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionHPFUsage>
+																<TransmissionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionVolumeUsage>
+																<TransmissionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionLPFUsage>
+																<TransmissionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionHPFUsage>
+															</CurveUsageInfoList>
+														</Attenuation>
+													</Custom>
 												</Reference>
 												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+													<ObjectRef Name="Destruction_Detailed" ID="{440F6FFE-53B5-4985-B7BD-9C64874C5B4A}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
 												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+													<ObjectRef Name="Objects" ID="{D79560AE-2FD4-41AC-BC2B-35A6A855AAEF}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="SFX" ID="{843224AE-1025-4537-A167-D40130802372}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Crate_Destroy_03" ID="{2B1786E8-7FD3-4FDF-A42F-C9B162541021}">
+												<AudioFileSource Name="Distruction_Barrel" ID="{E193BDB6-301C-4940-B1E0-9BF7D98C3CEF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0264970538705538"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0971558641920307"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="8.15711702647075"/>
+														<Property Name="TrimEnd" Type="Real64" Value="9.69266237498034"/>
+													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Objects\BAS_Crate_Destroy_03.wav</AudioFile>
+													<AudioFile>Distruction_Barrel.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="326650516"/>
+														<MediaID ID="544078907"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Crate_Destroy_03" ID="{2B1786E8-7FD3-4FDF-A42F-C9B162541021}" Platform="Linked"/>
+												<ActiveSource Name="Distruction_Barrel" ID="{E193BDB6-301C-4940-B1E0-9BF7D98C3CEF}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Crate_Destroy_05" ID="{C7ED3C4C-5E0A-4747-AACC-3B34A5896516}" ShortID="272839198">
+										<Sound Name="Distruction_Crate_03" ID="{BAC93C94-256A-45B3-BD56-855693731C97}" ShortID="531776617">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{AD577FE1-3B9F-4570-B665-897E7BD3A027}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Priority" Type="int16">
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
 													<ValueList>
-														<Value>60</Value>
+														<Value>100</Value>
 													</ValueList>
 												</Property>
-												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Attenuation">
+													<Custom>
+														<Attenuation Name="Attenuation (Custom)" ID="{767270B8-F5A5-47A6-B50B-A89DB8637ACC}" ShortID="680357107">
+															<PropertyList>
+																<Property Name="RadiusMax" Type="Real64" Value="30"/>
+															</PropertyList>
+															<CurveUsageInfoList>
+																<VolumeDryUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="VolumeDry" ID="{77E7CB23-1069-4D30-982A-F73CB3C61327}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="3"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>30</XPos>
+																					<YPos>-200</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</VolumeDryUsage>
+																<VolumeWetGameUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetGameUsage>
+																<VolumeWetUserUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetUserUsage>
+																<LowPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</LowPassFilterUsage>
+																<HighPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</HighPassFilterUsage>
+																<SpreadUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</SpreadUsage>
+																<FocusUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</FocusUsage>
+																<ObstructionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionVolumeUsage>
+																<ObstructionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionLPFUsage>
+																<ObstructionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionHPFUsage>
+																<OcclusionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionVolumeUsage>
+																<OcclusionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionLPFUsage>
+																<OcclusionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionHPFUsage>
+																<DiffractionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionVolumeUsage>
+																<DiffractionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionLPFUsage>
+																<DiffractionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionHPFUsage>
+																<TransmissionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionVolumeUsage>
+																<TransmissionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionLPFUsage>
+																<TransmissionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionHPFUsage>
+															</CurveUsageInfoList>
+														</Attenuation>
+													</Custom>
 												</Reference>
 												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+													<ObjectRef Name="Destruction_Detailed" ID="{440F6FFE-53B5-4985-B7BD-9C64874C5B4A}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
 												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+													<ObjectRef Name="Objects" ID="{D79560AE-2FD4-41AC-BC2B-35A6A855AAEF}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="SFX" ID="{843224AE-1025-4537-A167-D40130802372}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Crate_Destroy_05" ID="{10F20970-0711-40C1-B200-502274CE3A02}">
+												<AudioFileSource Name="Distruction_Barrel" ID="{A90C2520-8674-4E7F-B8D9-E8C75162C525}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0264970538705538"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0971558641920307"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="9.82127568836479"/>
+														<Property Name="TrimEnd" Type="Real64" Value="11.6826147648342"/>
+													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Objects\BAS_Crate_Destroy_05.wav</AudioFile>
+													<AudioFile>Distruction_Barrel.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="207450325"/>
+														<MediaID ID="667740635"/>
+														<MediaID Platform="Android_High" ID="772037465"/>
+														<MediaID Platform="iOS" ID="772037465"/>
+														<MediaID Platform="Mac" ID="1046261010"/>
+														<MediaID Platform="Windows" ID="1046261010"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Crate_Destroy_05" ID="{10F20970-0711-40C1-B200-502274CE3A02}" Platform="Linked"/>
+												<ActiveSource Name="Distruction_Barrel" ID="{A90C2520-8674-4E7F-B8D9-E8C75162C525}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Crate_Destroy_06" ID="{FA99DEF4-D6E7-4434-82E5-E314EC08B426}" ShortID="518331528">
+										<Sound Name="Distruction_Crate_04" ID="{503001C6-25DE-49E5-872C-A2D4F643AD88}" ShortID="941999091">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{AD0209ED-93B7-4B6F-8D51-1562223C084B}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Priority" Type="int16">
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
 													<ValueList>
-														<Value>60</Value>
+														<Value>100</Value>
 													</ValueList>
 												</Property>
-												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												<Reference Name="Attenuation">
+													<Custom>
+														<Attenuation Name="Attenuation (Custom)" ID="{61440A1C-00E1-42D8-818F-68E736F6C138}" ShortID="983448436">
+															<PropertyList>
+																<Property Name="RadiusMax" Type="Real64" Value="30"/>
+															</PropertyList>
+															<CurveUsageInfoList>
+																<VolumeDryUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="VolumeDry" ID="{06432802-5028-4236-9D3F-9073BD918CF5}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="3"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>30</XPos>
+																					<YPos>-200</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</VolumeDryUsage>
+																<VolumeWetGameUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetGameUsage>
+																<VolumeWetUserUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetUserUsage>
+																<LowPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</LowPassFilterUsage>
+																<HighPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</HighPassFilterUsage>
+																<SpreadUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</SpreadUsage>
+																<FocusUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</FocusUsage>
+																<ObstructionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionVolumeUsage>
+																<ObstructionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionLPFUsage>
+																<ObstructionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionHPFUsage>
+																<OcclusionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionVolumeUsage>
+																<OcclusionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionLPFUsage>
+																<OcclusionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionHPFUsage>
+																<DiffractionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionVolumeUsage>
+																<DiffractionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionLPFUsage>
+																<DiffractionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionHPFUsage>
+																<TransmissionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionVolumeUsage>
+																<TransmissionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionLPFUsage>
+																<TransmissionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionHPFUsage>
+															</CurveUsageInfoList>
+														</Attenuation>
+													</Custom>
 												</Reference>
 												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Enemy_General" ID="{97368181-2ADF-4138-8632-6EFF44BD620B}" WorkUnitID="{02FCCE0E-5BB9-49B0-A966-079B9D6AEB4A}"/>
+													<ObjectRef Name="Destruction_Detailed" ID="{440F6FFE-53B5-4985-B7BD-9C64874C5B4A}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 												</Reference>
 												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Enemies" ID="{6BE51F74-D7DA-47CD-B65F-53AB3F2F9189}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+													<ObjectRef Name="Objects" ID="{D79560AE-2FD4-41AC-BC2B-35A6A855AAEF}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="SFX" ID="{843224AE-1025-4537-A167-D40130802372}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="BAS_Crate_Destroy_06" ID="{BAB2FC9E-A866-43F5-AD22-0900578039E0}">
+												<AudioFileSource Name="Distruction_Barrel" ID="{04E3C0EE-2C4B-4D6F-9666-2C37A5C3FFE4}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0264970538705538"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0971558641920307"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="11.8592842859914"/>
+														<Property Name="TrimEnd" Type="Real64" Value="13.814655002393"/>
+													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>Objects\BAS_Crate_Destroy_06.wav</AudioFile>
+													<AudioFile>Distruction_Barrel.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="758852917"/>
+														<MediaID ID="772037465"/>
+														<MediaID Platform="Android_High" ID="1046261010"/>
+														<MediaID Platform="iOS" ID="1046261010"/>
+														<MediaID Platform="Mac" ID="667740635"/>
+														<MediaID Platform="Windows" ID="667740635"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="BAS_Crate_Destroy_06" ID="{BAB2FC9E-A866-43F5-AD22-0900578039E0}" Platform="Linked"/>
+												<ActiveSource Name="Distruction_Barrel" ID="{04E3C0EE-2C4B-4D6F-9666-2C37A5C3FFE4}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Destroy_Barrel" ID="{6C06D6AB-9F54-488E-B6B3-D51590D55704}" ShortID="339678295">
-									<PropertyList>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Lowpass" Type="int16">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{3E249633-6FED-41E3-856D-66062DF81F75}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{A25150E1-C4F5-42CA-BCCB-91463D72E0D6}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
-										</Reference>
-										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Destroy_Wood_02" ID="{525175CE-3F42-4302-AFC4-0DDB17B2DAD5}" ShortID="733188707">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{966028DB-2E06-40C1-908C-D3EAD9E71C66}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Destruction_General" ID="{1867E027-20B6-4F68-9B00-410BF3CD1CDD}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_Destroy_Wood_02" ID="{216B26C9-3659-4795-B54F-F9EE9E3B1372}">
-													<Language>SFX</Language>
-													<AudioFile>Objects\BAS_Destroy_Wood_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="728853193"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BAS_Destroy_Wood_02" ID="{216B26C9-3659-4795-B54F-F9EE9E3B1372}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Destroy_Wood_03" ID="{0DFF6A28-D738-4697-B62D-CEA5D553C2EE}" ShortID="207653843">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{DE31133E-D671-4EAB-B5F8-24C4E058345C}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Destruction_General" ID="{1867E027-20B6-4F68-9B00-410BF3CD1CDD}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_Destroy_Wood_03" ID="{25C97802-A70F-431A-9651-75D94E00C2B7}">
-													<Language>SFX</Language>
-													<AudioFile>Objects\BAS_Destroy_Wood_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="701770857"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BAS_Destroy_Wood_03" ID="{25C97802-A70F-431A-9651-75D94E00C2B7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Destroy_Wood_01" ID="{9D1D0A7F-5553-42AF-ACC5-1C54D365B919}" ShortID="499173483">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{5B1B4380-E6F0-4AAF-9F9A-A4DD63CA2E77}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="False"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-												</Reference>
-												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Destruction_General" ID="{1867E027-20B6-4F68-9B00-410BF3CD1CDD}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
-												</Reference>
-												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-													<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BAS_Destroy_Wood_01" ID="{EF5294E7-1068-43C8-9162-C0F54084B93C}">
-													<Language>SFX</Language>
-													<AudioFile>Objects\BAS_Destroy_Wood_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="616098569"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="BAS_Destroy_Wood_01" ID="{EF5294E7-1068-43C8-9162-C0F54084B93C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<Sound Name="Destroy_Wood" ID="{08926703-11C4-4BED-9834-7660ECD429C6}" ShortID="754899388">
+								<RandomSequenceContainer Name="Destruction_Wood" ID="{2961B571-93BE-42FD-BCAC-9600A7AD16FF}" ShortID="410306181">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-										<Property Name="Pitch" Type="int32">
+										<Property Name="CenterPercentage" Type="int32">
 											<ValueList>
-												<Value>-710</Value>
+												<Value>100</Value>
 											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{EA00BC33-0044-4A40-90B7-6C950BF00039}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="False"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
 										</Property>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Ambience_Emitters_Small_3_15" ID="{FD100DA7-5358-4B68-B6BD-EBC9F2E8F335}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{9D6A5A84-C977-4840-95D9-394F4892BA12}" ShortID="411666648">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="30"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{54CBE5D6-03F0-45FD-8295-417852F73E7A}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>30</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
 										</Reference>
 										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{80BE8EEB-3F19-43CD-9BCB-5157D976053A}"/>
+											<ObjectRef Name="Destruction_Detailed" ID="{440F6FFE-53B5-4985-B7BD-9C64874C5B4A}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
 										</Reference>
 										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="World" ID="{3B761651-1A4B-45CF-95EC-782823B15565}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+											<ObjectRef Name="Objects" ID="{D79560AE-2FD4-41AC-BC2B-35A6A855AAEF}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="SFX" ID="{843224AE-1025-4537-A167-D40130802372}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="WAG_CrashWood" ID="{5F7139E7-9E15-4005-8CB4-8EDE2DF7BE52}">
+										<Sound Name="Distruction_Wood" ID="{747074AD-2009-4F57-9F5A-D0329E730A8D}" ShortID="560825573">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.59598214285714"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.354910714285714"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.11160714285714"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Other\WAG_CrashWood.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="662234789"/>
-											</MediaIDList>
-										</AudioFileSource>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<Custom>
+														<Attenuation Name="Attenuation (Custom)" ID="{82B1EC62-A275-4FEC-A028-3F458B1379B3}" ShortID="571528198">
+															<PropertyList>
+																<Property Name="RadiusMax" Type="Real64" Value="30"/>
+															</PropertyList>
+															<CurveUsageInfoList>
+																<VolumeDryUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="VolumeDry" ID="{23F2EEDF-5D79-40A1-81DE-9BF01C76C19A}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="3"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>30</XPos>
+																					<YPos>-200</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</VolumeDryUsage>
+																<VolumeWetGameUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetGameUsage>
+																<VolumeWetUserUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetUserUsage>
+																<LowPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</LowPassFilterUsage>
+																<HighPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</HighPassFilterUsage>
+																<SpreadUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</SpreadUsage>
+																<FocusUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</FocusUsage>
+																<ObstructionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionVolumeUsage>
+																<ObstructionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionLPFUsage>
+																<ObstructionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionHPFUsage>
+																<OcclusionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionVolumeUsage>
+																<OcclusionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionLPFUsage>
+																<OcclusionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionHPFUsage>
+																<DiffractionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionVolumeUsage>
+																<DiffractionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionLPFUsage>
+																<DiffractionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionHPFUsage>
+																<TransmissionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionVolumeUsage>
+																<TransmissionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionLPFUsage>
+																<TransmissionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionHPFUsage>
+															</CurveUsageInfoList>
+														</Attenuation>
+													</Custom>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Destruction_Detailed" ID="{440F6FFE-53B5-4985-B7BD-9C64874C5B4A}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Objects" ID="{D79560AE-2FD4-41AC-BC2B-35A6A855AAEF}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="SFX" ID="{843224AE-1025-4537-A167-D40130802372}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Distruction_Crate" ID="{B0C98D35-8A08-4EBF-9B75-F2BC2A80BB87}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0240882307914125"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0867176308490851"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.23002269447888"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Distruction_Crate.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="123252017"/>
+														<MediaID Platform="Android_Low" ID="68636252"/>
+														<MediaID Platform="Mac" ID="285343468"/>
+														<MediaID Platform="Windows" ID="285343468"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Distruction_Crate" ID="{B0C98D35-8A08-4EBF-9B75-F2BC2A80BB87}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Distruction_Wood_01" ID="{B5F137DD-8B24-4BA3-A509-85C0ABDE5BB8}" ShortID="722223258">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<Custom>
+														<Attenuation Name="Attenuation (Custom)" ID="{B33E001F-2846-4222-A489-B8B34DCC925F}" ShortID="309108676">
+															<PropertyList>
+																<Property Name="RadiusMax" Type="Real64" Value="30"/>
+															</PropertyList>
+															<CurveUsageInfoList>
+																<VolumeDryUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="VolumeDry" ID="{0D52F592-FFFF-4E96-883B-9A98E26D5102}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="3"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>30</XPos>
+																					<YPos>-200</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</VolumeDryUsage>
+																<VolumeWetGameUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetGameUsage>
+																<VolumeWetUserUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetUserUsage>
+																<LowPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</LowPassFilterUsage>
+																<HighPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</HighPassFilterUsage>
+																<SpreadUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</SpreadUsage>
+																<FocusUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</FocusUsage>
+																<ObstructionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionVolumeUsage>
+																<ObstructionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionLPFUsage>
+																<ObstructionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionHPFUsage>
+																<OcclusionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionVolumeUsage>
+																<OcclusionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionLPFUsage>
+																<OcclusionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionHPFUsage>
+																<DiffractionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionVolumeUsage>
+																<DiffractionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionLPFUsage>
+																<DiffractionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionHPFUsage>
+																<TransmissionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionVolumeUsage>
+																<TransmissionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionLPFUsage>
+																<TransmissionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionHPFUsage>
+															</CurveUsageInfoList>
+														</Attenuation>
+													</Custom>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Destruction_Detailed" ID="{440F6FFE-53B5-4985-B7BD-9C64874C5B4A}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Objects" ID="{D79560AE-2FD4-41AC-BC2B-35A6A855AAEF}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="SFX" ID="{843224AE-1025-4537-A167-D40130802372}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Distruction_Crate" ID="{8E8350A1-9418-4600-B2A5-BE16F6012A56}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0240882307914125"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0867176308490851"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.39966555162173"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.51573698019316"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Distruction_Crate.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="123252017"/>
+														<MediaID Platform="Android_High" ID="285343468"/>
+														<MediaID Platform="iOS" ID="68636252"/>
+														<MediaID Platform="Mac" ID="68636252"/>
+														<MediaID Platform="Windows" ID="68636252"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Distruction_Crate" ID="{8E8350A1-9418-4600-B2A5-BE16F6012A56}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Distruction_Wood_02" ID="{258E0771-74D0-44B4-807D-B8FB01DD9759}" ShortID="779560826">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<Custom>
+														<Attenuation Name="Attenuation (Custom)" ID="{768B160B-8596-4150-AFB8-BD2B6A44ADBE}" ShortID="575741530">
+															<PropertyList>
+																<Property Name="RadiusMax" Type="Real64" Value="30"/>
+															</PropertyList>
+															<CurveUsageInfoList>
+																<VolumeDryUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="VolumeDry" ID="{78529C32-5613-4F88-AA1A-E464CEADA45A}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="3"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>30</XPos>
+																					<YPos>-200</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</VolumeDryUsage>
+																<VolumeWetGameUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetGameUsage>
+																<VolumeWetUserUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetUserUsage>
+																<LowPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</LowPassFilterUsage>
+																<HighPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</HighPassFilterUsage>
+																<SpreadUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</SpreadUsage>
+																<FocusUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</FocusUsage>
+																<ObstructionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionVolumeUsage>
+																<ObstructionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionLPFUsage>
+																<ObstructionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionHPFUsage>
+																<OcclusionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionVolumeUsage>
+																<OcclusionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionLPFUsage>
+																<OcclusionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionHPFUsage>
+																<DiffractionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionVolumeUsage>
+																<DiffractionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionLPFUsage>
+																<DiffractionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionHPFUsage>
+																<TransmissionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionVolumeUsage>
+																<TransmissionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionLPFUsage>
+																<TransmissionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionHPFUsage>
+															</CurveUsageInfoList>
+														</Attenuation>
+													</Custom>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Destruction_Detailed" ID="{440F6FFE-53B5-4985-B7BD-9C64874C5B4A}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Objects" ID="{D79560AE-2FD4-41AC-BC2B-35A6A855AAEF}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="SFX" ID="{843224AE-1025-4537-A167-D40130802372}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Distruction_Crate" ID="{B88376CC-016D-4CEC-938E-6421A7C63D91}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0240882307914125"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0867176308490851"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.83393451198225"/>
+														<Property Name="TrimEnd" Type="Real64" Value="8.30145126590745"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Distruction_Crate.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="123252017"/>
+														<MediaID Platform="Android_High" ID="68636252"/>
+														<MediaID Platform="Android_Low" ID="285343468"/>
+														<MediaID Platform="iOS" ID="285343468"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Distruction_Crate" ID="{B88376CC-016D-4CEC-938E-6421A7C63D91}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="WAG_CrashWood" ID="{5F7139E7-9E15-4005-8CB4-8EDE2DF7BE52}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Destruction_Barrel" ID="{5982BC1F-038C-465C-8570-77DFC73D035A}" ShortID="390856253">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{9A50C9E2-6721-45DB-BE1B-C5F39B544D2E}" ShortID="82325169">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="30"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{01F625F4-3442-4853-9395-676978A27179}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>30</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Destruction_Detailed" ID="{440F6FFE-53B5-4985-B7BD-9C64874C5B4A}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Objects" ID="{D79560AE-2FD4-41AC-BC2B-35A6A855AAEF}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="SFX" ID="{843224AE-1025-4537-A167-D40130802372}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Distruction_Barrel" ID="{97692AD0-B230-43A7-BE57-696F0FE86C0D}" ShortID="737927253">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<Custom>
+														<Attenuation Name="Attenuation (Custom)" ID="{277013EB-69B6-410D-B0C7-C51E22EC3591}" ShortID="106556739">
+															<PropertyList>
+																<Property Name="RadiusMax" Type="Real64" Value="30"/>
+															</PropertyList>
+															<CurveUsageInfoList>
+																<VolumeDryUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="VolumeDry" ID="{1416ABCE-7442-4F0C-A00A-94E4F4FB7A8A}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="3"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>30</XPos>
+																					<YPos>-200</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</VolumeDryUsage>
+																<VolumeWetGameUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetGameUsage>
+																<VolumeWetUserUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetUserUsage>
+																<LowPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</LowPassFilterUsage>
+																<HighPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</HighPassFilterUsage>
+																<SpreadUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</SpreadUsage>
+																<FocusUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</FocusUsage>
+																<ObstructionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionVolumeUsage>
+																<ObstructionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionLPFUsage>
+																<ObstructionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionHPFUsage>
+																<OcclusionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionVolumeUsage>
+																<OcclusionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionLPFUsage>
+																<OcclusionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionHPFUsage>
+																<DiffractionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionVolumeUsage>
+																<DiffractionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionLPFUsage>
+																<DiffractionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionHPFUsage>
+																<TransmissionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionVolumeUsage>
+																<TransmissionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionLPFUsage>
+																<TransmissionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionHPFUsage>
+															</CurveUsageInfoList>
+														</Attenuation>
+													</Custom>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Destruction_Detailed" ID="{440F6FFE-53B5-4985-B7BD-9C64874C5B4A}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Objects" ID="{D79560AE-2FD4-41AC-BC2B-35A6A855AAEF}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="SFX" ID="{843224AE-1025-4537-A167-D40130802372}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Distruction_Wood" ID="{85EB5CE8-033A-4722-A7B4-699A890A03D7}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0232766019431265"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.271560356003144"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.85203497920108"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.11712365234484"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Distruction_Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="965465388"/>
+														<MediaID Platform="Android_High" ID="800555616"/>
+														<MediaID Platform="iOS" ID="800555616"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Distruction_Wood" ID="{85EB5CE8-033A-4722-A7B4-699A890A03D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Distruction_Barrel_01" ID="{1FDDAF1D-4DC9-4F13-9E12-17AD3E083618}" ShortID="585581456">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<Custom>
+														<Attenuation Name="Attenuation (Custom)" ID="{0A5A2860-55BE-41F1-88A7-7D268F903BB2}" ShortID="634883889">
+															<PropertyList>
+																<Property Name="RadiusMax" Type="Real64" Value="30"/>
+															</PropertyList>
+															<CurveUsageInfoList>
+																<VolumeDryUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="VolumeDry" ID="{E54E83D4-81CA-4A94-8D0E-EA02DCD7B1FD}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="3"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>30</XPos>
+																					<YPos>-200</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</VolumeDryUsage>
+																<VolumeWetGameUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetGameUsage>
+																<VolumeWetUserUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetUserUsage>
+																<LowPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</LowPassFilterUsage>
+																<HighPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</HighPassFilterUsage>
+																<SpreadUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</SpreadUsage>
+																<FocusUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</FocusUsage>
+																<ObstructionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionVolumeUsage>
+																<ObstructionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionLPFUsage>
+																<ObstructionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</ObstructionHPFUsage>
+																<OcclusionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionVolumeUsage>
+																<OcclusionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionLPFUsage>
+																<OcclusionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</OcclusionHPFUsage>
+																<DiffractionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionVolumeUsage>
+																<DiffractionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionLPFUsage>
+																<DiffractionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</DiffractionHPFUsage>
+																<TransmissionVolumeUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionVolumeUsage>
+																<TransmissionLPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionLPFUsage>
+																<TransmissionHPFUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																</TransmissionHPFUsage>
+															</CurveUsageInfoList>
+														</Attenuation>
+													</Custom>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Destruction_Detailed" ID="{440F6FFE-53B5-4985-B7BD-9C64874C5B4A}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Objects" ID="{D79560AE-2FD4-41AC-BC2B-35A6A855AAEF}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="SFX" ID="{843224AE-1025-4537-A167-D40130802372}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Distruction_Wood" ID="{6E10371A-0BB7-44D9-85D0-DA4BCCF02711}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0232766019431265"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.271560356003144"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.17346355062966"/>
+														<Property Name="TrimEnd" Type="Real64" Value="10.5931064077725"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Distruction_Wood.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="965465388"/>
+														<MediaID Platform="Android_Low" ID="800555616"/>
+														<MediaID Platform="Mac" ID="800555616"/>
+														<MediaID Platform="Windows" ID="800555616"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Distruction_Wood" ID="{6E10371A-0BB7-44D9-85D0-DA4BCCF02711}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="Destroy_Wood" ID="{08926703-11C4-4BED-9834-7660ECD429C6}"/>
+										<ItemRef Name="Destruction_Barrel" ID="{5982BC1F-038C-465C-8570-77DFC73D035A}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Destroy_Crate" ID="{2A8F5E0D-670B-472C-A437-08AAEB59207B}"/>
+										<ItemRef Name="Destruction_Wood" ID="{2961B571-93BE-42FD-BCAC-9600A7AD16FF}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Destroy_Barrel" ID="{6C06D6AB-9F54-488E-B6B3-D51590D55704}"/>
+										<ItemRef Name="Destruction_Crate" ID="{006881ED-E989-4CFB-A786-2E640F9F149D}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
 										<SwitchRef Name="Wood" ID="{10963421-747E-4376-AEEB-CF4E4CB365C3}"/>
 										<ItemList>
-											<ItemRef Name="Destroy_Wood" ID="{08926703-11C4-4BED-9834-7660ECD429C6}"/>
+											<ItemRef Name="Destruction_Wood" ID="{2961B571-93BE-42FD-BCAC-9600A7AD16FF}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Crate" ID="{F932A5A4-D82A-49E3-8CF8-70E8D2716B9E}"/>
 										<ItemList>
-											<ItemRef Name="Destroy_Crate" ID="{2A8F5E0D-670B-472C-A437-08AAEB59207B}"/>
+											<ItemRef Name="Destruction_Crate" ID="{006881ED-E989-4CFB-A786-2E640F9F149D}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Barrel" ID="{8D50D6AE-C02E-4BBC-B9DD-C412749F83D3}"/>
 										<ItemList>
-											<ItemRef Name="Destroy_Barrel" ID="{6C06D6AB-9F54-488E-B6B3-D51590D55704}"/>
+											<ItemRef Name="Destruction_Barrel" ID="{5982BC1F-038C-465C-8570-77DFC73D035A}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
@@ -1941,6 +2741,394 @@
 								<ActiveSource Name="Tone Generator" ID="{C2EA1673-B76B-47A0-BB8C-0E22C9B3107A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<BlendContainer Name="Destruction" ID="{3713FE5A-4CD1-4E31-97E1-F5CEC5805398}" ShortID="979107908">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Destruction_Rock" ID="{6EEEBF01-8A2A-462D-B9CC-737EB10557B4}" ShortID="689315030">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value Platform="Android_Low">0</Value>
+												<Value Platform="iOS">0</Value>
+												<Value Platform="Android_High">0</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E9A7DB7E-4C43-4C45-BF27-91E0CED589C5}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+												<ModifierInfo Platform="Android_Low">
+													<Modifier Name="" ID="{D7061603-72D0-4335-A848-0259205EE639}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="False"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+												<ModifierInfo Platform="Android_High">
+													<Modifier Name="" ID="{4F3F7D6A-FD0C-4597-9AD0-5DC5CE31F3EC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="False"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{EFB4D630-F9FD-4BC6-BE7C-568A8029BCCE}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="False"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5D1B9CB0-9F24-45A8-9715-3057F64ABB39}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="False"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A69AC642-5144-4A7F-91E8-0EFF7F3D0871}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="False"/>
+															<Property Name="Max" Type="Real64" Value="141"/>
+															<Property Name="Min" Type="Real64" Value="-160"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Ambience_Emitters_Huge_5_80" ID="{21C9C3CB-17DA-4D39-AD87-46CEB24597F3}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+										</Reference>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Destruction_General" ID="{1867E027-20B6-4F68-9B00-410BF3CD1CDD}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Objects" ID="{D79560AE-2FD4-41AC-BC2B-35A6A855AAEF}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="SFX" ID="{843224AE-1025-4537-A167-D40130802372}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Distroy_Rock" ID="{0A664EC7-FAE0-4F68-A79B-66B9A40262D6}" ShortID="1019362937">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Distroy_Rock" ID="{18E2F968-4F5C-4857-91C5-4CB6C89EADBD}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.375"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.377473523107978"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.28125"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Distroy_Rock.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="705471490"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Distroy_Rock" ID="{18E2F968-4F5C-4857-91C5-4CB6C89EADBD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Distroy_Rock_01" ID="{C3B8B5C6-52FF-49EA-A994-13821CF098E8}" ShortID="966002623">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Distroy_Rock" ID="{18702E6A-ED31-4669-B38E-35208201E5D8}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.375"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.56497352310798"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.06497352310798"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Distroy_Rock.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="705184385"/>
+														<MediaID Platform="iOS" ID="444453010"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Distroy_Rock" ID="{18702E6A-ED31-4669-B38E-35208201E5D8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Distroy_Rock_02" ID="{91AFDA17-0348-4A4B-BD64-A5B9BEBF97AD}" ShortID="678375737">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Distroy_Rock" ID="{AB23EBB9-9E36-4E66-9D3A-13483650BF54}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.375"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.75247352310798"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.90872352310798"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Distroy_Rock.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="42647102"/>
+														<MediaID Platform="Android_High" ID="444453010"/>
+														<MediaID Platform="Mac" ID="444453010"/>
+														<MediaID Platform="Windows" ID="444453010"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Distroy_Rock" ID="{AB23EBB9-9E36-4E66-9D3A-13483650BF54}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Distroy_Rock_03" ID="{59B93911-4A90-4F0B-A1B1-3DE52F966430}" ShortID="158023179">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Distroy_Rock" ID="{D3774D10-204F-48BC-B9E3-BCF96A809CB1}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.375"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.22122352310798"/>
+														<Property Name="TrimEnd" Type="Real64" Value="8.68997352310798"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Distroy_Rock.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="444453010"/>
+														<MediaID Platform="Android_High" ID="42647102"/>
+														<MediaID Platform="iOS" ID="705184385"/>
+														<MediaID Platform="Mac" ID="42647102"/>
+														<MediaID Platform="Windows" ID="42647102"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Distroy_Rock" ID="{D3774D10-204F-48BC-B9E3-BCF96A809CB1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Destruction_Debris" ID="{E8D106B1-1ABE-46F9-B753-D9D8C624D5DC}" ShortID="624542505">
+									<PropertyList>
+										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Distroy_Debris_Layer" ID="{866A92FA-865C-4D14-B662-AEC115D48F71}" ShortID="202946636">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Ambience_Emitters_Huge_5_80" ID="{21C9C3CB-17DA-4D39-AD87-46CEB24597F3}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Destruction_General" ID="{1867E027-20B6-4F68-9B00-410BF3CD1CDD}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Objects" ID="{D79560AE-2FD4-41AC-BC2B-35A6A855AAEF}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="SFX" ID="{843224AE-1025-4537-A167-D40130802372}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Distroy_Debris_Layer" ID="{FAB5D4CD-7602-469E-B082-C2603CBF6FFA}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.3125"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.3125"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.03125"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.53125"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Distroy_Debris_Layer.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="890163979"/>
+														<MediaID Platform="Android_Low" ID="133307307"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Distroy_Debris_Layer" ID="{FAB5D4CD-7602-469E-B082-C2603CBF6FFA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Distroy_Debris_Layer_01" ID="{72488B04-6AD8-48E6-BBFF-E924A204BF58}" ShortID="675464601">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Ambience_Emitters_Huge_5_80" ID="{21C9C3CB-17DA-4D39-AD87-46CEB24597F3}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
+												</Reference>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Destruction_General" ID="{1867E027-20B6-4F68-9B00-410BF3CD1CDD}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Objects" ID="{D79560AE-2FD4-41AC-BC2B-35A6A855AAEF}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Reflect_AuxBus" ID="{4F8873C9-4D57-4F48-87AC-5F9B4E93C178}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="SFX" ID="{843224AE-1025-4537-A167-D40130802372}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Distroy_Debris_Layer" ID="{2F14D12B-A638-4D8A-9ED6-2ED289CD9964}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.3125"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.3125"/>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.46875"/>
+														<Property Name="TrimEnd" Type="Real64" Value="12.75"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Distroy_Debris_Layer.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="890163979"/>
+														<MediaID Platform="Android_High" ID="133307307"/>
+														<MediaID Platform="iOS" ID="133307307"/>
+														<MediaID Platform="Mac" ID="133307307"/>
+														<MediaID Platform="Windows" ID="133307307"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Distroy_Debris_Layer" ID="{2F14D12B-A638-4D8A-9ED6-2ED289CD9964}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

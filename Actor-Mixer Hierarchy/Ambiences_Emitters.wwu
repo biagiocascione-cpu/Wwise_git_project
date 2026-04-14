@@ -151,6 +151,45 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{7E23DBE8-49D3-495C-AFF7-387FBA80953A}" ShortID="260330673">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Distance_to_Camera" ID="{CEC3FD56-5B7C-44AF-B635-5C3A0C36825E}" WorkUnitID="{1A4C6C87-58B7-4B1D-8EDC-AA637925E657}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{8BCBA529-C95A-4882-9D3C-3E23B1ECE7B3}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="BAS_amb_torch" ID="{9CC799DA-4595-481D-93B0-28CF15D74C5D}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -324,7 +363,7 @@
 							<ChildrenList>
 								<AudioFileSource Name="Water_RiverLoop" ID="{2A3EF3E1-89C3-4C4E-BA7D-9147296E1866}">
 									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1000"/>
 										<Property Name="FadeInDuration" Type="Real64" Value="0.860592755214051"/>
 										<Property Name="FadeOutDuration" Type="Real64" Value="0.597145993413831"/>
 										<Property Name="LoopBegin" Type="Real64" Value="1.21185510428101"/>
@@ -343,6 +382,21 @@
 										<MediaID Platform="Android_Low" ID="285115110"/>
 									</MediaIDList>
 								</AudioFileSource>
+								<AudioFileSource Name="Ambient_Water_River" ID="{1F2D56BD-5A8E-4A65-88C2-A7F1270F6589}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+										<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="10.9285714285714"/>
+										<Property Name="TrimEnd" Type="Real64" Value="128.892857142857"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Ambient_Water_River.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="904089498"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="Metadata">
@@ -352,7 +406,7 @@
 								</ObjectList>
 							</ObjectLists>
 							<ActiveSourceList>
-								<ActiveSource Name="Water_RiverLoop" ID="{2A3EF3E1-89C3-4C4E-BA7D-9147296E1866}" Platform="Linked"/>
+								<ActiveSource Name="Ambient_Water_River" ID="{1F2D56BD-5A8E-4A65-88C2-A7F1270F6589}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Ambient_Lava" ID="{D8C9FBB3-3535-4064-9EA7-5264BD9F8EA2}" ShortID="502397681">
@@ -401,9 +455,7 @@
 							<ChildrenList>
 								<AudioFileSource Name="BAS_dungeonLava_001" ID="{0A1F89FB-1184-45A0-ABE8-838E5FD5BC7E}">
 									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.351740257024874"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.672894404743236"/>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1632.653"/>
 										<Property Name="LoopBegin" Type="Real64" Value="0.841118005929046"/>
 										<Property Name="LoopEnd" Type="Real64" Value="12.4791325970564"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
@@ -414,6 +466,21 @@
 									<AudioFile>Ambient\Ambient_Emitters\BAS_dungeonLava_001.wav</AudioFile>
 									<MediaIDList>
 										<MediaID ID="621670486"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="Ambient_Lava" ID="{0981D221-9939-4D8D-AB83-E869F9BD6876}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="1.76785714285714"/>
+										<Property Name="LoopEnd" Type="Real64" Value="39.1875"/>
+										<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Ambient_Lava.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="95110181"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -506,92 +573,7 @@
 								</ObjectList>
 							</ObjectLists>
 							<ActiveSourceList>
-								<ActiveSource Name="BAS_dungeonLava_001" ID="{0A1F89FB-1184-45A0-ABE8-838E5FD5BC7E}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Ambient_Fire_Campfire" ID="{BC8AEB95-BCF4-4E93-BAC7-BF28B5BB8E29}" ShortID="1049052568">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="Color" Type="int16" Value="15"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-								<Property Name="Highpass" Type="int16">
-									<ValueList>
-										<Value>26</Value>
-									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{2DB15C12-DAC5-4AEC-8326-A0FC70B443CB}">
-												<PropertyList>
-													<Property Name="Max" Type="Real64" Value="20"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Lowpass" Type="int16">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{70D662FB-537F-47D6-B694-F3C1DAFDBDDE}">
-												<PropertyList>
-													<Property Name="Max" Type="Real64" Value="30"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-								<Property Name="OverrideMetadata" Type="bool" Value="True"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{90E35082-C4D7-485B-9F01-0E3370B7575E}">
-												<PropertyList>
-													<Property Name="Min" Type="Real64" Value="-600"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Priority" Type="int16">
-									<ValueList>
-										<Value>30</Value>
-									</ValueList>
-								</Property>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-21</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Ambience_Emitters_Medium_5_30" ID="{FB84EEA1-6931-415E-97D5-76AFF5A075B8}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-								</Reference>
-								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Ambient_General" ID="{25FBFFBC-B59A-4AF5-B85E-EF584BE8B7CA}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-								</Reference>
-								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="BAS_amb_torch" ID="{0892445B-58F2-4843-8C71-9298222C6340}">
-									<Language>SFX</Language>
-									<AudioFile>Ambient\Ambient_Emitters\BAS_amb_torch.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="981622377"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="BAS_amb_torch" ID="{0892445B-58F2-4843-8C71-9298222C6340}" Platform="Linked"/>
+								<ActiveSource Name="Ambient_Lava" ID="{0981D221-9939-4D8D-AB83-E869F9BD6876}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<BlendContainer Name="Ambient_Water_Waterfall" ID="{5B09A965-1A3D-483D-B2F0-C4DD74C1418C}" ShortID="708984362">
@@ -1632,183 +1614,6 @@
 								</BlendTrack>
 							</BlendTrackList>
 						</BlendContainer>
-						<Sound Name="Ambient_Crystal_Ringing" ID="{37AAFE7D-2034-4E27-B369-E12E6FBC779B}" ShortID="649781102">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-								<Property Name="CenterPercentage" Type="int32">
-									<ValueList>
-										<Value>100</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Color" Type="int16" Value="15"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
-								<Property Name="Highpass" Type="int16">
-									<ValueList>
-										<Value>55</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Lowpass" Type="int16">
-									<ValueList>
-										<Value>37</Value>
-									</ValueList>
-								</Property>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>2</Value>
-									</ValueList>
-								</Property>
-								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{26F79347-5D85-4986-B4DE-AC9B21D8CECA}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="False"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
-								<Property Name="PriorityDistanceOffset" Type="int16">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Ambience_Emitters_Large_5_50" ID="{B5ABA2BA-8AB4-48BA-9D54-19B9F0CA3208}" WorkUnitID="{E0237DA4-C386-4BC4-A1FC-687BC09FB5DC}"/>
-								</Reference>
-								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Ambient_General" ID="{25FBFFBC-B59A-4AF5-B85E-EF584BE8B7CA}" WorkUnitID="{FA9BF710-08A9-49D1-B809-553C31C179E2}"/>
-								</Reference>
-								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Ambient" ID="{E70EE446-5A9F-4382-8B46-9AF3C72F9FC3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="WAG_Crystal_Ringing" ID="{0686E751-2761-45AE-AD7A-543C1E31ABAB}">
-									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
-										<Property Name="FadeInDuration" Type="Real64" Value="1.25601750547046"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.811816192560174"/>
-										<Property Name="LoopBegin" Type="Real64" Value="1.86870897155361"/>
-										<Property Name="LoopEnd" Type="Real64" Value="12.437636761488"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.444201312910284"/>
-										<Property Name="TrimEnd" Type="Real64" Value="13.3719912472648"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Ambient\Ambient_Emitters\WAG_Crystal_Ringing.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="93186345"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{9D4786B9-649E-4F66-8843-7791FCEC1819}" ShortID="590810840">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
-														<ObjectRef Name="Distance_to_Camera" ID="{CEC3FD56-5B7C-44AF-B635-5C3A0C36825E}" WorkUnitID="{1A4C6C87-58B7-4B1D-8EDC-AA637925E657}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{8027088D-96FA-42AD-AF77-BCF21D161C13}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>20.4947</XPos>
-																		<YPos>61</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>61</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{CCB6A112-9B3E-4EA3-86BB-89554798FCFE}" ShortID="362770421">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Pitch"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
-														<ObjectRef Name="Distance_to_Camera" ID="{CEC3FD56-5B7C-44AF-B635-5C3A0C36825E}" WorkUnitID="{1A4C6C87-58B7-4B1D-8EDC-AA637925E657}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{67027C74-F50F-4B99-B04C-DFE4A7A315FF}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>-333</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-							<ActiveSourceList>
-								<ActiveSource Name="WAG_Crystal_Ringing" ID="{0686E751-2761-45AE-AD7A-543C1E31ABAB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<RandomSequenceContainer Name="Ambient_Water_Waterdrops" ID="{C8C3EBEE-7546-49BF-BF3A-8136018B8A5B}" ShortID="632064748">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -2595,6 +2400,132 @@
 								</Sound>
 							</ChildrenList>
 						</BlendContainer>
+						<Sound Name="Campfire" ID="{E4BCE4A1-5A8C-4A28-AC44-74766931A525}" ShortID="56729661">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>18</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>14</Value>
+									</ValueList>
+								</Property>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Campfire" ID="{F82E9924-2664-448D-A296-4B54E398D507}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1151.042"/>
+										<Property Name="LoopBegin" Type="Real64" Value="1.33482142857143"/>
+										<Property Name="LoopEnd" Type="Real64" Value="24.8973214285714"/>
+										<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Campfire.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="352451162"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{84773FF7-51B0-438A-B92D-2F199E29F409}" ShortID="814275017">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Distance_to_Camera" ID="{CEC3FD56-5B7C-44AF-B635-5C3A0C36825E}" WorkUnitID="{1A4C6C87-58B7-4B1D-8EDC-AA637925E657}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{72C29492-ED38-468B-849E-044D6B0DA62D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Campfire" ID="{F82E9924-2664-448D-A296-4B54E398D507}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambient_cristal_Hum" ID="{A8EB57E6-865D-4E40-8852-8B1F4CEBDAF3}" ShortID="290512293">
+							<PropertyList>
+								<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Objects_General" ID="{8A0F318D-CCEE-41F0-86BC-9492B09099BC}" WorkUnitID="{9EB947C2-28EF-4A8A-8D30-521CC61B45DA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambient_cristal_Hum" ID="{125D75F2-56D2-403A-B84D-8771C153318C}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.321428571428571"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.374999999999998"/>
+										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+										<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.57142857142857"/>
+										<Property Name="TrimEnd" Type="Real64" Value="18.9107142857143"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Ambient_cristal_Hum.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="608198520"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambient_cristal_Hum" ID="{125D75F2-56D2-403A-B84D-8771C153318C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="DLC" ID="{E82AE4BB-9453-464F-8927-2AAF528E6DEA}" ShortID="228720779">
