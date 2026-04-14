@@ -7,13 +7,13 @@
 					<ChildrenList>
 						<Event Name="Door_TempleDoor_Open_Play" ID="{7E82BB2D-5CB4-4BDF-AF67-8BB906A0E729}">
 							<ChildrenList>
-								<Action Name="" ID="{4AD44F69-2BAF-48FD-BEBA-467A7D4DE5F5}" ShortID="627185908">
+								<Action Name="" ID="{B486660E-7F93-4146-A987-FD0A7AAE7E0F}" ShortID="918063702">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="TempleDoor_Open" ID="{FF20C191-78CE-4C8A-A8A8-4D8E453DFF18}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Door_Temple" ID="{0E1120A6-FA63-44B6-877A-1992D4C73075}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -21,13 +21,13 @@
 						</Event>
 						<Event Name="Object_ActivateKey_Success" ID="{26455C14-A2D3-4E82-9EAA-D0429D7C60D4}">
 							<ChildrenList>
-								<Action Name="" ID="{199564EB-F542-4BA4-A0DC-7E5CEAB43526}" ShortID="870225221">
+								<Action Name="" ID="{36C2393E-4DF9-4BD3-A966-125E37D3FE8F}" ShortID="376032877">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="DLC_ActivateKey_Success" ID="{AB611BD1-70F9-4574-B098-640B5E8B8B82}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="DLC_ActivateKey_Success" ID="{2B1C6E87-FCD5-463A-87AE-2339AFFD6627}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -35,13 +35,13 @@
 						</Event>
 						<Event Name="Object_ActivateKey_Failed" ID="{9C0865EA-D2B5-41F4-9C0D-8479A86F808D}">
 							<ChildrenList>
-								<Action Name="" ID="{61D54991-BB12-4ACE-9FCD-1B602231E23F}" ShortID="46926974">
+								<Action Name="" ID="{CB32202F-7617-4EFE-B895-5F846A7F0DF2}" ShortID="516871262">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="DLC_ActivateKey_Failed" ID="{9D9B9FBE-BC39-4EAC-BFC4-5210205E2F51}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="DLC_ActivateKey_Failed" ID="{EC0F5ADD-7285-400B-86D9-23B19712E3B4}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -49,13 +49,13 @@
 						</Event>
 						<Event Name="Object_Coin_Drop" ID="{C68C81D1-9D17-4C7F-8356-964F200DDE92}">
 							<ChildrenList>
-								<Action Name="" ID="{58F38A6D-43E6-43F7-946E-B15868E58672}" ShortID="257131555">
+								<Action Name="" ID="{5AEAE147-AB56-4579-A240-0E4D8CF2343D}" ShortID="835157094">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Coin" ID="{A9A6D4AC-E8C7-49B1-8EC9-BEAE8EFB8D17}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Coin" ID="{70F5527D-0DC0-4CB9-892E-4F9E92142579}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -63,13 +63,13 @@
 						</Event>
 						<Event Name="Door_TempleDoor_Open_Stop" ID="{92070154-8029-4CAE-816F-579CB6F4999C}">
 							<ChildrenList>
-								<Action Name="" ID="{2E614B52-536D-416B-BCEF-7E2A46805309}" ShortID="501928978">
+								<Action Name="" ID="{F3A9BA4B-6631-425F-8CA3-80059A27F705}" ShortID="1033995223">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="TempleDoor_Open" ID="{FF20C191-78CE-4C8A-A8A8-4D8E453DFF18}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Door_Temple" ID="{0E1120A6-FA63-44B6-877A-1992D4C73075}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -77,24 +77,23 @@
 						</Event>
 						<Event Name="Door_DLCdoor_Open_Stop" ID="{9ECAE2DE-A602-41D0-9804-A68F69366076}">
 							<ChildrenList>
-								<Action Name="" ID="{62C0DEA1-3241-4440-9C37-8D8588823622}" ShortID="743854782">
+								<Action Name="" ID="{E2D04C9F-F2BD-4747-8093-7F2BE81B4ECC}" ShortID="147771473">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="CoinRoom_End" ID="{2FA8D2D1-6C67-4388-BE4F-5DC31F7CC076}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Door_01" ID="{B0B3293B-ECB2-4D26-B6CC-8C7C9D27D813}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{E5C5A80F-B296-41A1-AF24-600E89F399D2}" ShortID="805420395">
+								<Action Name="" ID="{C5B17BBC-1C97-48A7-BA3F-FF5A7D82512D}" ShortID="187152958">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="CoinRoom_Open" ID="{0658A60E-6DB1-4408-960A-A212DC57095A}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Door - 02" ID="{87F2881B-74AF-4755-9307-2062C120A72E}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -102,13 +101,13 @@
 						</Event>
 						<Event Name="Door_DLCdoor_Open_Play" ID="{936CD5EF-9820-4A21-B810-D0492C1490C3}">
 							<ChildrenList>
-								<Action Name="" ID="{95CE3B79-0725-48E3-9A49-C2E5EA8B056D}" ShortID="882965566">
+								<Action Name="" ID="{CF55906C-105C-4381-AD8B-A08D8CF05AC2}" ShortID="157017730">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="CoinRoom_Open" ID="{0658A60E-6DB1-4408-960A-A212DC57095A}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Door - 02" ID="{87F2881B-74AF-4755-9307-2062C120A72E}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -116,24 +115,23 @@
 						</Event>
 						<Event Name="Object_Rune_Charge_Stop" ID="{ACA095B5-7387-4C6B-AC03-D2462587900A}">
 							<ChildrenList>
-								<Action Name="" ID="{0E63D106-D642-44DA-AD6C-5F1172DF90D8}" ShortID="896719532">
+								<Action Name="" ID="{75BA1119-37B2-4020-BC3C-F5C99CCE8CEB}" ShortID="1068011817">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rune_Charge" ID="{BB9BA235-FA3B-40DD-94CC-D4BD9921E2FE}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{80E4AB0D-3C6F-4BA3-B5FC-0AD35C3F18F4}" ShortID="503029744">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+										<Reference Name="Target">
 											<ObjectRef Name="Rune_Charge_End" ID="{1CE07C4C-5E16-4671-9D12-E120DEB854B9}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{24FA7EC1-F3A7-474F-8244-65721BC09167}" ShortID="593495542">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.3"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Rune_Charge_LP" ID="{27368D1F-7672-4A00-A1EA-E5FE649BF80D}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -141,13 +139,13 @@
 						</Event>
 						<Event Name="Object_Rune_Charge_Play" ID="{CA13E948-FC8A-4C86-A933-FEB51278A585}">
 							<ChildrenList>
-								<Action Name="" ID="{D0F3737D-0720-4B0B-A7A1-1CD49DC958FD}" ShortID="480702358">
+								<Action Name="" ID="{6DCBF931-9C7B-4ECB-82E5-41C270483350}" ShortID="250420014">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Rune_Charge_LP" ID="{27368D1F-7672-4A00-A1EA-E5FE649BF80D}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="Rune_Charge" ID="{BB9BA235-FA3B-40DD-94CC-D4BD9921E2FE}" WorkUnitID="{02D504D5-2684-468F-AD20-E61B1D140EE0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
