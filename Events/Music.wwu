@@ -128,13 +128,13 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 						</Event>
 						<Event Name="Music_Region" ID="{7ADFE735-CFF7-4FB6-AD0E-95505AC5D57D}">
 							<ChildrenList>
-								<Action Name="" ID="{ECC54EC4-D30F-439B-A426-DF8C43990636}" ShortID="1006199476">
+								<Action Name="" ID="{2962D7EC-0483-493A-B3B8-1B425F7D5F13}" ShortID="92558142">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Music_Regions" ID="{1378381B-6304-43C8-A350-2C0C481351B1}" WorkUnitID="{7EEF7DFB-FB01-49A6-ADE2-D0FF894FF235}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="MUSIC" ID="{47DACC38-5A7F-4337-A62B-15FC6AD9E9AA}" WorkUnitID="{2C674732-2391-4CC9-9F33-4AB0A33A6303}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
