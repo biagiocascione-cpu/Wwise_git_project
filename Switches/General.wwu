@@ -102,6 +102,40 @@
 						<Switch Name="Crystal" ID="{AE4E1874-67EB-4B87-BD4D-0DE6F2D31E84}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="ENEMY" ID="{CB467A73-D6E3-40BD-9649-5713D049295F}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="YES" ID="{421B3B5D-B564-4B9C-B934-88B2FB1C594E}"/>
+						<Switch Name="NO" ID="{EB862F34-CA35-424F-955C-EDFA97E21774}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="CombatLevel" ID="{2DD27F5A-CA67-4C7C-A1F3-DE7A2BEB7B99}"/>
+						<Curve Name="" ID="{B05F135E-053E-4D04-A98D-2E2D3EC10BA5}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>2</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.99893</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>10</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
