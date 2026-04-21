@@ -2409,6 +2409,9 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										</Property>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{3CF80BE7-B366-4CC3-9A0C-A5329B82A65E}">
@@ -2726,6 +2729,11 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
@@ -3129,7 +3137,7 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>4</Value>
+																		<Value>-3</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -3447,7 +3455,7 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-9</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -4160,7 +4168,7 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-1.5</Value>
+												<Value>-5.5</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -4511,8 +4519,8 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="1.7625745366203"/>
-																<Property Name="TrimEnd" Type="Real64" Value="2.66905467289009"/>
+																<Property Name="TrimBegin" Type="Real64" Value="14.9202661788864"/>
+																<Property Name="TrimEnd" Type="Real64" Value="17.0408018931721"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Weapon_Swing_1.wav</AudioFile>
@@ -4570,7 +4578,7 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 																<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 																<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="7.59151785714286"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.21180359312115"/>
 																<Property Name="TrimEnd" Type="Real64" Value="9.07589285714285"/>
 															</PropertyList>
 															<Language>SFX</Language>
@@ -6926,6 +6934,11 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 											<PropertyList>
 												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
