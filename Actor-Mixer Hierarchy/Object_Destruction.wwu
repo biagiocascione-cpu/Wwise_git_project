@@ -767,7 +767,7 @@
 															<PointList>
 																<Point>
 																	<XPos>0</XPos>
-																	<YPos>0</YPos>
+																	<YPos>-0</YPos>
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
@@ -2478,6 +2478,12 @@
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Barrel" ID="{8D50D6AE-C02E-4BBC-B9DD-C412749F83D3}"/>
+										<ItemList>
+											<ItemRef Name="Destruction_Barrel" ID="{5982BC1F-038C-465C-8570-77DFC73D035A}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Stone" ID="{B320BBD5-A055-46B1-B459-CE4924B0299E}"/>
 										<ItemList>
 											<ItemRef Name="Destruction_Barrel" ID="{5982BC1F-038C-465C-8570-77DFC73D035A}"/>
 										</ItemList>

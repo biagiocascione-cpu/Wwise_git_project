@@ -14,12 +14,6 @@ Content as part of this Sample Project.  This Audio Content cannot be used
 or modified for a commercial purpose nor for public demonstration.</Comment>
 			<ChildrenList>
 				<SoundcasterSession Name="Music" ID="{573ECD01-3914-4BC4-A0E1-B0B4131CD40E}">
-					<ModuleList>
-						<Module>
-							<ObjectRef Name="Music_Regions" ID="{1378381B-6304-43C8-A350-2C0C481351B1}" WorkUnitID="{7EEF7DFB-FB01-49A6-ADE2-D0FF894FF235}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="MusicArcade" ID="{65FB29FC-0A1D-4091-9C76-9C4F4B2CBB3D}"/>
@@ -257,10 +251,6 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 						<Module>
 							<ObjectRef Name="Ambient_Campfire_Play" ID="{4B7C14D3-4763-4B2C-9EAB-142865C3261F}" WorkUnitID="{3AE0B262-D812-41EC-9F52-A61D7B80BDC5}"/>
 							<Position X="1" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Music_Enemies_Layers" ID="{A0369445-7680-40E2-8659-5D9E24CBDA71}" WorkUnitID="{7EEF7DFB-FB01-49A6-ADE2-D0FF894FF235}"/>
-							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Ambient_Lava" ID="{1FD14D4E-ADA6-45D5-80BC-0EECF0F71DD9}" WorkUnitID="{3AE0B262-D812-41EC-9F52-A61D7B80BDC5}"/>

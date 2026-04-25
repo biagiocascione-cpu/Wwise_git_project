@@ -495,11 +495,7 @@
 										<Property Name="TargetClassID" Type="int32" Value="1966096"/>
 										<Property Name="TargetName" Type="string" Value="Volume"/>
 									</PropertyList>
-									<ReferenceList>
-										<Reference Name="TargetObject" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Music_Regions" ID="{1378381B-6304-43C8-A350-2C0C481351B1}" WorkUnitID="{7EEF7DFB-FB01-49A6-ADE2-D0FF894FF235}"/>
-										</Reference>
-									</ReferenceList>
+									<ReferenceList/>
 								</ControlSurfaceBinding>
 								<ControlSurfaceBinding Name="Binding" ID="{4FA578AE-450F-418D-A7D8-4D9E1974787D}">
 									<PropertyList>
@@ -507,11 +503,7 @@
 										<Property Name="TargetClassID" Type="int32" Value="1966096"/>
 										<Property Name="TargetName" Type="string" Value="Volume"/>
 									</PropertyList>
-									<ReferenceList>
-										<Reference Name="TargetObject" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Music_Enemies" ID="{72B67994-42FE-4C7E-AC72-3E813D637CC6}" WorkUnitID="{7EEF7DFB-FB01-49A6-ADE2-D0FF894FF235}"/>
-										</Reference>
-									</ReferenceList>
+									<ReferenceList/>
 								</ControlSurfaceBinding>
 							</ChildrenList>
 						</ControlSurfaceBindingGroup>

@@ -45,26 +45,14 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 						</Event>
 						<Event Name="Music_Credits" ID="{1DF0672B-D80F-47F6-9AD4-08A647433C4D}">
 							<ChildrenList>
-								<Action Name="" ID="{A42E56C4-92A3-4327-ACB8-FEC6773A75E9}" ShortID="2372943">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="12"/>
-										<Property Name="FadeTime" Type="Real64" Value="10"/>
-										<Property Name="Volume" Type="Real64" Value="10"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Woodlands_Day" ID="{C818CFAC-6C85-472C-BDD0-3B9C6B80B105}" WorkUnitID="{7EEF7DFB-FB01-49A6-ADE2-D0FF894FF235}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{DBD58527-6EDF-46E3-AEBA-28DAFA0EB208}" ShortID="975679711">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 										<Property Name="FadeTime" Type="Real64" Value="5"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Woodlands_Day" ID="{C818CFAC-6C85-472C-BDD0-3B9C6B80B105}" WorkUnitID="{7EEF7DFB-FB01-49A6-ADE2-D0FF894FF235}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="MENU AND CREDITS" ID="{A30B3E17-7858-4461-BD66-77C2D319D44B}" WorkUnitID="{2C674732-2391-4CC9-9F33-4AB0A33A6303}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -77,8 +65,8 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="DungeonAndEnemies" ID="{00E14AD2-CFF1-420B-B86D-0AF369A03306}" WorkUnitID="{71557659-FD02-4853-8643-35ABDDB6A1DA}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="DUNGEON" ID="{8DB57B36-8C55-4C81-9F16-5CD9E1682EF1}" WorkUnitID="{2C674732-2391-4CC9-9F33-4AB0A33A6303}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -91,8 +79,8 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Music_TitleScreen" ID="{B3F3F04C-3460-4415-B202-7488F71C2348}" WorkUnitID="{7EEF7DFB-FB01-49A6-ADE2-D0FF894FF235}"/>
+										<Reference Name="Target">
+											<ObjectRef Name="MENU AND CREDITS" ID="{A30B3E17-7858-4461-BD66-77C2D319D44B}" WorkUnitID="{2C674732-2391-4CC9-9F33-4AB0A33A6303}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -112,20 +100,7 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 				</Folder>
 				<Folder Name="General" ID="{263F1E25-D062-4D65-A876-D76812909E8C}" ShortID="314144814">
 					<ChildrenList>
-						<Event Name="Music_Enemies" ID="{9BACC72B-91D8-40BC-8753-DADA3E6C40A1}">
-							<ChildrenList>
-								<Action Name="" ID="{3A3C83C3-1E46-44D0-AC2B-FB84294B11FB}" ShortID="994885344">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Music_Enemies" ID="{72B67994-42FE-4C7E-AC72-3E813D637CC6}" WorkUnitID="{7EEF7DFB-FB01-49A6-ADE2-D0FF894FF235}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
+						<Event Name="Music_Enemies" ID="{9BACC72B-91D8-40BC-8753-DADA3E6C40A1}"/>
 						<Event Name="Music_Region" ID="{7ADFE735-CFF7-4FB6-AD0E-95505AC5D57D}">
 							<ChildrenList>
 								<Action Name="" ID="{2962D7EC-0483-493A-B3B8-1B425F7D5F13}" ShortID="92558142">
@@ -135,16 +110,6 @@ or modified for a commercial purpose nor for public demonstration.</Comment>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="MUSIC" ID="{47DACC38-5A7F-4337-A62B-15FC6AD9E9AA}" WorkUnitID="{2C674732-2391-4CC9-9F33-4AB0A33A6303}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{1BDA11AA-D43C-401C-98F2-2A173630098E}" ShortID="308527507">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="41"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Music_Enemies" ID="{9BACC72B-91D8-40BC-8753-DADA3E6C40A1}" WorkUnitID="{04F86131-49AD-4329-98BB-B2DD0F96BDD3}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
