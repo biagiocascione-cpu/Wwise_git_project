@@ -86,6 +86,19 @@
 								<Reference Name="PlaylistRoot">
 									<Custom>
 										<MusicPlaylistItem Name="" ID="{EE00583F-C1A1-4175-BBD1-4836101AF17B}" ShortID="870663482">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{03E00FFF-D9E0-4283-A95E-3111DEBBB964}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="False"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ChildrenList>
 												<MusicPlaylistItem Name="" ID="{7E9EEE35-459E-4263-9251-458F3B88F546}" ShortID="519906291">
 													<PropertyList>
@@ -1187,6 +1200,121 @@
 																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="DRUMS" ID="{A1E872A1-55AB-4D8B-B3D9-0E754F79C861}" ShortID="975418249">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="NO" ID="{EB862F34-CA35-424F-955C-EDFA97E21774}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="ENEMY" ID="{CB467A73-D6E3-40BD-9649-5713D049295F}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{C0443292-9DF3-473B-AFCD-96F269BE09B3}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{D3A95B0C-1213-4BBA-AB67-FCA84DE1D540}">
+																	<PropertyList>
+																		<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+																		<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<TransitionInfo>
+																		<SourceFadeOut>
+																			<MusicFade Name="Source Fade-out" ID="{7AB9689F-8BF6-4918-BA5D-39CE812E2864}">
+																				<PropertyList>
+																					<Property Name="FadeTime" Type="Real64" Value="1"/>
+																					<Property Name="FadeType" Type="int16" Value="1"/>
+																				</PropertyList>
+																			</MusicFade>
+																		</SourceFadeOut>
+																		<DestinationFadeIn>
+																			<MusicFade Name="Destination Fade-in" ID="{49F2E07D-D30C-4A61-8A95-10351881955D}">
+																				<PropertyList>
+																					<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+																				</PropertyList>
+																			</MusicFade>
+																		</DestinationFadeIn>
+																	</TransitionInfo>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ENEMIES DRUMS" ID="{D949909F-C39F-4D5D-A694-CA493EFAF068}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ENEMIES DRUMS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="42923594"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{59C52293-8513-4F51-8CB5-7803CF52D87A}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ENEMIES DRUMS" ID="{A35E66ED-950C-4A3F-9A12-882F1C5E3A4F}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="45929.0416666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ENEMIES DRUMS" ID="{D949909F-C39F-4D5D-A694-CA493EFAF068}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="YES" ID="{421B3B5D-B564-4B9C-B934-88B2FB1C594E}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{EC1DB237-7302-408A-BF4B-184E17D99B9C}">
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="NO" ID="{EB862F34-CA35-424F-955C-EDFA97E21774}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+																	</Reference>
+																</ReferenceList>
 															</MusicTrackSequence>
 														</Local>
 													</Reference>
@@ -2674,6 +2802,121 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
+										<MusicTrack Name="DRUMS" ID="{D4CEB644-BCB6-4634-AC33-551FA8970DC2}" ShortID="81741723">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="NO" ID="{EB862F34-CA35-424F-955C-EDFA97E21774}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="ENEMY" ID="{CB467A73-D6E3-40BD-9649-5713D049295F}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{A9EBAC0A-AAD1-4C54-B463-E655CC0508F4}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{B909B319-63FE-48A3-8D17-AB1AC8880F0E}">
+																	<PropertyList>
+																		<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+																		<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<TransitionInfo>
+																		<SourceFadeOut>
+																			<MusicFade Name="Source Fade-out" ID="{2D34E2B3-C1E4-4C2C-A6EC-BF69F9A28CA6}">
+																				<PropertyList>
+																					<Property Name="FadeTime" Type="Real64" Value="1"/>
+																					<Property Name="FadeType" Type="int16" Value="1"/>
+																				</PropertyList>
+																			</MusicFade>
+																		</SourceFadeOut>
+																		<DestinationFadeIn>
+																			<MusicFade Name="Destination Fade-in" ID="{1BA0BBB1-69E6-46B0-AB94-84BC8D3BC0A6}">
+																				<PropertyList>
+																					<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+																				</PropertyList>
+																			</MusicFade>
+																		</DestinationFadeIn>
+																	</TransitionInfo>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ENEMIES DRUMS" ID="{39693150-6C96-4A47-9A80-F6412CD3A93B}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ENEMIES DRUMS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="42923594"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{98CD7371-E42B-43EA-A743-797B3872270B}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ENEMIES DRUMS" ID="{B1386E71-DDE9-4730-B550-18CEBD4EF412}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="45929.0416666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ENEMIES DRUMS" ID="{39693150-6C96-4A47-9A80-F6412CD3A93B}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="YES" ID="{421B3B5D-B564-4B9C-B934-88B2FB1C594E}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{9EE01AA8-A05D-44B9-9DD5-63DB835C8982}">
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="NO" ID="{EB862F34-CA35-424F-955C-EDFA97E21774}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
 									</ChildrenList>
 									<ObjectLists>
 										<ObjectList Name="Cues">
@@ -2697,7 +2940,7 @@
 								</MusicSegment>
 								<MusicSegment Name="START A" ID="{4BABBDAC-5208-49E5-A086-3097D30D0B4D}" ShortID="299394458">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="34500"/>
+										<Property Name="EndPosition" Type="Real64" Value="45929.0416666667"/>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="90"/>
@@ -2772,6 +3015,121 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
+										<MusicTrack Name="DRUMS" ID="{CBCA34B2-C73B-43E1-A6AA-3824995635B3}" ShortID="931066618">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="NO" ID="{EB862F34-CA35-424F-955C-EDFA97E21774}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="ENEMY" ID="{CB467A73-D6E3-40BD-9649-5713D049295F}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{5EA61289-1408-4618-8811-51B363FDC824}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{7F5D3795-0ABE-40DF-8CEC-FF8E8EF03A95}">
+																	<PropertyList>
+																		<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+																		<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<TransitionInfo>
+																		<SourceFadeOut>
+																			<MusicFade Name="Source Fade-out" ID="{16013E3A-E387-4472-8482-613B6A965233}">
+																				<PropertyList>
+																					<Property Name="FadeTime" Type="Real64" Value="1"/>
+																					<Property Name="FadeType" Type="int16" Value="1"/>
+																				</PropertyList>
+																			</MusicFade>
+																		</SourceFadeOut>
+																		<DestinationFadeIn>
+																			<MusicFade Name="Destination Fade-in" ID="{CC868FFB-B86C-4C07-8695-82B267B07F8E}">
+																				<PropertyList>
+																					<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+																				</PropertyList>
+																			</MusicFade>
+																		</DestinationFadeIn>
+																	</TransitionInfo>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ENEMIES DRUMS" ID="{DC08BF02-A651-418E-AD0D-4418839A4016}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ENEMIES DRUMS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="42923594"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{3AB803DD-38F0-4617-8F9E-49C721BC0197}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ENEMIES DRUMS" ID="{934EE8C2-0E8B-4BB8-92F8-F300BC8AFD9B}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="45929.0416666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ENEMIES DRUMS" ID="{DC08BF02-A651-418E-AD0D-4418839A4016}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="YES" ID="{421B3B5D-B564-4B9C-B934-88B2FB1C594E}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{A5FF283D-3355-46E7-9362-967CDCB1A5E7}">
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="NO" ID="{EB862F34-CA35-424F-955C-EDFA97E21774}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
 									</ChildrenList>
 									<ObjectLists>
 										<ObjectList Name="Cues">
@@ -2795,7 +3153,7 @@
 								</MusicSegment>
 								<MusicSegment Name="START B" ID="{302295B3-38A1-4E84-B03C-5F3B814517BD}" ShortID="1027929215">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="36228.0570321152"/>
+										<Property Name="EndPosition" Type="Real64" Value="45929.0416666667"/>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
 										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="90"/>
@@ -2971,6 +3329,121 @@
 																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="DRUMS" ID="{8704496B-5E5E-4418-9504-696CCF713096}" ShortID="183366845">
+											<PropertyList>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="20"/>
+												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="NO" ID="{EB862F34-CA35-424F-955C-EDFA97E21774}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{56F639F1-1C67-49F4-8B8F-872989E35A0B}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="ENEMY" ID="{CB467A73-D6E3-40BD-9649-5713D049295F}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{EE4B5273-B494-4BEE-B73D-3682BB836024}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{7F7B937C-7ADE-4F4C-B8AB-AD89D35EFBD5}">
+																	<PropertyList>
+																		<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+																		<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<TransitionInfo>
+																		<SourceFadeOut>
+																			<MusicFade Name="Source Fade-out" ID="{0BF1DED6-C9BF-46FA-BB87-7926AB29ED9A}">
+																				<PropertyList>
+																					<Property Name="FadeTime" Type="Real64" Value="1"/>
+																					<Property Name="FadeType" Type="int16" Value="1"/>
+																				</PropertyList>
+																			</MusicFade>
+																		</SourceFadeOut>
+																		<DestinationFadeIn>
+																			<MusicFade Name="Destination Fade-in" ID="{588EB692-17F0-46DD-B6A8-00F22B1B43F9}">
+																				<PropertyList>
+																					<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+																				</PropertyList>
+																			</MusicFade>
+																		</DestinationFadeIn>
+																	</TransitionInfo>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ENEMIES DRUMS" ID="{F11718EF-DDB4-4524-BA03-C2D6B123512A}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ENEMIES DRUMS.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="42923594"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{349366DB-15CA-46C1-A057-A1F7114DC78B}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ENEMIES DRUMS" ID="{C8E6ECF0-B9F1-4722-8ACC-5261B9ED429C}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="45929.0416666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ENEMIES DRUMS" ID="{F11718EF-DDB4-4524-BA03-C2D6B123512A}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="YES" ID="{421B3B5D-B564-4B9C-B934-88B2FB1C594E}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{13550E13-DEFC-434D-A798-6B7B9120B4BE}">
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="NO" ID="{EB862F34-CA35-424F-955C-EDFA97E21774}" WorkUnitID="{ADE44127-9B5B-4E53-AF39-3C3AD3284471}"/>
+																	</Reference>
+																</ReferenceList>
 															</MusicTrackSequence>
 														</Local>
 													</Reference>
